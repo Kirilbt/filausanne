@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_28_134347) do
+ActiveRecord::Schema.define(version: 2022_03_28_144923) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "commodities", force: :cascade do |t|
+    t.jsonb "name_translations"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "requests", force: :cascade do |t|
     t.date "start_date"
@@ -25,6 +31,15 @@ ActiveRecord::Schema.define(version: 2022_03_28_134347) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["service_id"], name: "index_requests_on_service_id"
     t.index ["user_id"], name: "index_requests_on_user_id"
+  end
+
+  create_table "service_commodities", force: :cascade do |t|
+    t.bigint "commodity_id", null: false
+    t.bigint "service_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["commodity_id"], name: "index_service_commodities_on_commodity_id"
+    t.index ["service_id"], name: "index_service_commodities_on_service_id"
   end
 
   create_table "services", force: :cascade do |t|
@@ -54,4 +69,6 @@ ActiveRecord::Schema.define(version: 2022_03_28_134347) do
 
   add_foreign_key "requests", "services"
   add_foreign_key "requests", "users"
+  add_foreign_key "service_commodities", "commodities"
+  add_foreign_key "service_commodities", "services"
 end
