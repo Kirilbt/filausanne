@@ -6,7 +6,7 @@ ruby '3.0.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.5'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+# gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -29,6 +29,13 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
+
+# Translation
+source 'https://rubygems.org'
+
+gem 'activerecord'
+gem 'pg', :platform => :ruby
+gem 'hstore_translate'
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'

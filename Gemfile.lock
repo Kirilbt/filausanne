@@ -108,6 +108,8 @@ GEM
       sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    hstore_translate (2.0.0)
+      activerecord (>= 4.2.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.5)
@@ -248,6 +250,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord
   autoprefixer-rails (= 10.2.5)
   bootsnap (>= 1.4.4)
   byebug
@@ -255,9 +258,10 @@ DEPENDENCIES
   devise
   dotenv-rails
   font-awesome-sass
+  hstore_translate
   jbuilder (~> 2.7)
   listen (~> 3.3)
-  pg (~> 1.1)
+  pg
   pry-byebug
   pry-rails
   puma (~> 5.0)
