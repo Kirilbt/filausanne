@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_28_144923) do
+ActiveRecord::Schema.define(version: 2022_03_28_145727) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,16 @@ ActiveRecord::Schema.define(version: 2022_03_28_144923) do
     t.jsonb "name_translations"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "opening_hours", force: :cascade do |t|
+    t.jsonb "day_translations"
+    t.time "opens"
+    t.time "closes"
+    t.bigint "service_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["service_id"], name: "index_opening_hours_on_service_id"
   end
 
   create_table "requests", force: :cascade do |t|
@@ -67,6 +77,7 @@ ActiveRecord::Schema.define(version: 2022_03_28_144923) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "opening_hours", "services"
   add_foreign_key "requests", "services"
   add_foreign_key "requests", "users"
   add_foreign_key "service_commodities", "commodities"
