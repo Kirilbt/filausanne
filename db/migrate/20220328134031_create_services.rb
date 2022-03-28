@@ -3,7 +3,7 @@ class CreateServices < ActiveRecord::Migration[6.1]
     create_table :services do |t|
       t.string :type
       t.string :name
-      t.hstore :description_translations
+      t.jsonb :description_translations
       t.string :address
       t.string :phone_number
       t.string :website

@@ -108,13 +108,13 @@ GEM
       sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    hstore_translate (2.0.0)
-      activerecord (>= 4.2.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    json_translate (4.0.1)
+      activerecord (>= 4.2.0)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -251,6 +251,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  activerecord-jdbcpostgresql-adapter
   autoprefixer-rails (= 10.2.5)
   bootsnap (>= 1.4.4)
   byebug
@@ -258,8 +259,8 @@ DEPENDENCIES
   devise
   dotenv-rails
   font-awesome-sass
-  hstore_translate
   jbuilder (~> 2.7)
+  json_translate
   listen (~> 3.3)
   pg
   pry-byebug

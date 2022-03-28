@@ -31,11 +31,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise'
 
 # Translation
-source 'https://rubygems.org'
-
 gem 'activerecord'
 gem 'pg', :platform => :ruby
-gem 'hstore_translate'
+gem 'activerecord-jdbcpostgresql-adapter', :platform => :jruby
+gem 'json_translate'
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
