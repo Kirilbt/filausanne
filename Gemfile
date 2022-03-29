@@ -34,6 +34,7 @@ gem 'devise'
 gem 'activerecord'
 gem 'pg', :platform => :ruby
 gem 'activerecord-jdbcpostgresql-adapter', :platform => :jruby
+gem 'hstore_translate'
 gem 'json_translate'
 
 gem 'autoprefixer-rails', '10.2.5'
