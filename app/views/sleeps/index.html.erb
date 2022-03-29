@@ -1,5 +1,5 @@
 <% @sleeps.each do |sleep| %>
-  <%= link_to "#" do %>
+  <%= link_to sleep_path(sleep) do %>
     <div class="card-sleep">
       <%= image_tag("img-test.jpg") %>
       <div class="card-sleep-infos">
