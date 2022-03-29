@@ -11,7 +11,7 @@ class SleepsController < ApplicationController
     if open?(open, close) == "Open"
       "Closes at #{close.strftime('%H:%M')}"
     else
-      "Opens at #{open.hour.strftime('%H:%M')}"
+      "Opens at #{open.strftime('%H:%M')}"
     end
   end
 
