@@ -1,0 +1,2 @@
+class Care < Service
+end

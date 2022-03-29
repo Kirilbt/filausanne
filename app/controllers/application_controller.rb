@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
+   # before_action :authenticate_user!
   around_action :switch_locale
 
   def default_url_options
