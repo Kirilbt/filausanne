@@ -5,7 +5,11 @@
       <h2><%= sleep.name %></h2>
       <p> <%= sleep.address%></p>
       <% sleep.opening_hours.each do |hours| %>
-        <p>Open: <%= hours.opens.strftime("%k:%M")  %> Close: <%= hours.closes.strftime("%k:%M") %> <%= open?(hours.opens, hours.closes) %> </p>
+        <% if open?(hours.opens, hours.closes) == "Open" %>
+          <span id="open"><%= open?(hours.opens, hours.closes) %></span> <span><%= open_close_time(hours.opens, hours.closes) %></span>
+        <% else %>
+          <span id="close"><%= open?(hours.opens, hours.closes) %></span> <span><%= open_close_time(hours.opens, hours.closes) %></span>
+        <% end %>
       <% end %>
     </div>
   </div>

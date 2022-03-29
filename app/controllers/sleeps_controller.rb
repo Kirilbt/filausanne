@@ -7,5 +7,13 @@ class SleepsController < ApplicationController
     Time.now.hour > open.hour && Time.now.hour < close.hour ? "Open" : "Closed"
   end
 
-  helper_method :open?
+  def open_close_time(open, close)
+    if open?(open, close) == "Open"
+      "Closes at #{close.strftime('%H:%M')}"
+    else
+      "Opens at #{open.hour.strftime('%H:%M')}"
+    end
+  end
+
+  helper_method :open?, :open_close_time
 end
