@@ -1,0 +1,2 @@
+class Sleep < Service
+end
