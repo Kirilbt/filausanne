@@ -1,3 +1,12 @@
 <% @sleeps.each do |sleep| %>
-  <%= sleep.name %>
+  <div class="card-sleep">
+    <img src="#" />
+    <div class="card-sleep-infos">
+      <h2><%= sleep.name %></h2>
+      <p> <%= sleep.address%></p>
+      <% sleep.opening_hours.each do |hours| %>
+        <p>Open: <%= hours.opens.strftime("%k:%M")  %> Close: <%= hours.closes.strftime("%k:%M") %> <%= open?(hours.opens, hours.closes) %> </p>
+      <% end %>
+    </div>
+  </div>
 <% end %>
