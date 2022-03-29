@@ -1,6 +1,11 @@
 class SleepsController < ApplicationController
+  before_action :set_sleep, only: [:show]
+
   def index
     @sleeps = Service.sleeps.all
+  end
+
+  def show
   end
 
   def open?(open, close)
@@ -16,4 +21,10 @@ class SleepsController < ApplicationController
   end
 
   helper_method :open?, :open_close_time
+
+  private
+
+  def set_sleep
+    @sleep = Sleep.find(params[:id])
+  end
 end
