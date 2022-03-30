@@ -12,9 +12,9 @@ class RequestsController < ApplicationController
     @request.user = current_user
     @request.status_translations = "Pending"
     if @request.save
-      redirect_to sleeps_path
+      redirect_to sleeps_path # TO CHANGE
     else
-      render 'sleeps/show'
+      render 'sleeps/show' # TO CHANGE
     end
   end
 

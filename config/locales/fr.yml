@@ -1,10 +1,5 @@
 fr:
-  home:
-    title: "Que cherchez-vous?"
-    type_sleep: "Dormir"
-    type_eat: "Manger"
-    type_care: "Se soigner"
-  sleep:
+  care:
     index:
       open: "Ouvert"
       close: "Fermé"
@@ -12,7 +7,12 @@ fr:
     index:
       open: "Ouvert"
       close: "Fermé"
-  care:
+  home:
+    title: "Que cherchez-vous?"
+    type_sleep: "Dormir"
+    type_eat: "Manger"
+    type_care: "Se soigner"
+  sleep:
     index:
       open: "Ouvert"
       close: "Fermé"

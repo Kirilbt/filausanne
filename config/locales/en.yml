@@ -1,4 +1,12 @@
 en:
+  care:
+    index:
+      open: "Open"
+      close: "Closed"
+  eat:
+    index:
+      open: "Open"
+      close: "Closed"
   home:
     title: "What are you looking for?"
     type_sleep: "Sleep"
@@ -8,11 +16,4 @@ en:
     index:
       open: "Open"
       close: "Closed"
-  eat:
-    index:
-      open: "Open"
-      close: "Closed"
-  care:
-    index:
-      open: "Open"
-      close: "Closed"
+  
