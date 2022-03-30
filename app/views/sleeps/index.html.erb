@@ -9,9 +9,9 @@
           <% day_open = sleep.opening_hours.select { |hours|  hours.day_en == (Date.today.strftime("%A")) } %>
           <% hour_open = day_open.select { |day| Time.now.hour > day.opens.hour && Time.now.hour < day.closes.hour } %>
           <% if hour_open == [] %>
-            <span id="close">Closed</span>
+            <span id="close"><%= t 'sleep.index.close' %></span>
           <% else %>
-            <span id="open">Open</span>
+            <span id="open"><%= t 'sleep.index.open' %></span>
           <% end %>
         </div>
       </div>
