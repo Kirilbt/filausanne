@@ -1,12 +1,19 @@
-.navbar-lewagon {
+.navbar-fil {
   justify-content: space-between;
-  background: white;
+  background: $white;
+  border-bottom: 1px solid $light-gray;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-fil .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-fil .navbar-brand img {
   width: 40px;
+}
+
+.navbar-toggler {
+  background-color: $light-gray;
+  border-radius: 50px;
+  border: none;
 }

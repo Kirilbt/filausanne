@@ -1,16 +1,28 @@
-<h1><%= t 'home.title' %></h1>
-<div class="grid">
-  <div class="service sleep">
-      <%= image_tag "sleep.svg" %>
-      <p><%= t 'home.type_sleep' %></p>
+<div class="top-section">
+  <div class="container">
+    <h1><%= t 'home.title' %></h1>
   </div>
-  <div class="service eat">
-      <%= image_tag "eat.svg" %>
-      <p><%= t 'home.type_eat' %></p>
-  </div>
+</div>
 
-  <div class="service care">
-      <%= image_tag "care.svg" %>
-      <p><%= t 'home.type_care' %></p>
+<div class="container">
+  <div class="grid">
+    <%= link_to sleeps_path do %>
+      <div class="service sleep">
+        <%= image_tag "sleep.svg" %>
+        <p><%= t 'home.type_sleep' %></p>
+      </div>
+    <% end %>
+    <%= link_to eats_path do %>
+      <div class="service eat">
+        <%= image_tag "eat.svg" %>
+        <p><%= t 'home.type_eat' %></p>
+      </div>
+    <% end %>
+    <%= link_to cares_path do %>
+      <div class="service care">
+        <%= image_tag "care.svg" %>
+        <p><%= t 'home.type_care' %></p>
+      </div>
+    <% end %>
   </div>
 </div>
