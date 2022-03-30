@@ -5,8 +5,8 @@
       <div class="card-service-infos">
         <h2><%= sleep.name %></h2>
         <p> <%= sleep.address%></p>
-        <% day_open = sleep.opening_hours.select { |hours|  hours.day_translations == (Date.today.strftime("%A")) } %>
-        <% hour_open = day_open.select { |day| (Time.now.hour > day.opens.hour && Time.now.hour < day.closes.hour)}  %>
+        <% day_open = sleep.opening_hours.select { |hours|  hours.day_en == (Date.today.strftime("%A")) } %>
+        <% hour_open = day_open.select { |day| Time.now.hour > day.opens.hour && Time.now.hour < day.closes.hour } %>
         <% if hour_open == [] %>
           <span id="close">Closed</span>
         <% else %>
