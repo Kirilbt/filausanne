@@ -5,12 +5,12 @@
       <div class="card-sleep-infos">
         <h2><%= sleep.name %></h2>
         <p> <%= sleep.address%></p>
-        <% sleep.opening_hours.each do |hours| %>
-          <% if open?(hours.opens, hours.closes) == "Open" %>
-            <span id="open"><%= open?(hours.opens, hours.closes) %></span> <span><%= open_close_time(hours.opens, hours.closes) %></span>
-          <% else %>
-            <span id="close"><%= open?(hours.opens, hours.closes) %></span> <span><%= open_close_time(hours.opens, hours.closes) %></span>
-          <% end %>
+        <% day_open = sleep.opening_hours.select { |hours|  hours.day_translations == Date.today.strftime("%A") } %>
+        <% hour_open = day_open.select { |day| (Time.now.hour > day.opens.hour && Time.now.hour < day.closes.hour)}  %>
+        <% if hour_open == [] %>
+          <span id="close">Closed</span> 
+        <% else %>
+          <span id="open">Open</span>
         <% end %>
       </div>
     </div>
