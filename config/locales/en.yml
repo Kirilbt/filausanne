@@ -6,3 +6,13 @@ en:
     type_care: "Care"
   sleep:
     index:
+      open: "Open"
+      close: "Closed"
+  eat:
+    index:
+      open: "Open"
+      close: "Closed"
+  care:
+    index:
+      open: "Open"
+      close: "Closed"

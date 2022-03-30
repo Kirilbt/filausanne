@@ -4,3 +4,15 @@ fr:
     type_sleep: "Dormir"
     type_eat: "Manger"
     type_care: "Se soigner"
+  sleep:
+    index:
+      open: "Ouvert"
+      close: "Fermé"
+  eat:
+    index:
+      open: "Ouvert"
+      close: "Fermé"
+  care:
+    index:
+      open: "Ouvert"
+      close: "Fermé"
