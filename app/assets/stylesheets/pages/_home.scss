@@ -44,10 +44,6 @@ border-radius: 8px;
 .sleep {
   background: $sleep_color;
   grid-area: 1 / 1 / 2 / 2;
-
-  :hover {
-    background: black;
-  }
 }
 
 .eat {
