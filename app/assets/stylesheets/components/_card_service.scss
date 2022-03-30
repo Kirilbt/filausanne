@@ -1,4 +1,4 @@
-.card-sleep {
+.card-service {
   overflow: hidden;
   height: 120px;
   background: white;
@@ -10,19 +10,19 @@
 }
 
 
-.card-sleep img {
+.card-service img {
   height: 100%;
   width: 120px;
   object-fit: cover;
 }
 
-.card-sleep h2 {
+.card-service h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
-.card-sleep p {
+.card-service p {
   font-size: 12px;
   line-height: 1.4;
   opacity: .7;
@@ -30,7 +30,7 @@
   margin-top: 8px;
 }
 
-.card-sleep span {
+.card-service span {
   font-size: 12px;
   line-height: 1.4;
   opacity: .7;
@@ -38,7 +38,7 @@
   margin-top: 8px;
 }
 
-.card-sleep .card-sleep-infos {
+.card-service .card-service-infos {
   padding: 16px;
 }
 
