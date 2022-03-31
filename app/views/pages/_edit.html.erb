@@ -1,0 +1,25 @@
+<% object = @sleep unless @sleep.nil?  %>
+<% object = @eat unless @eat.nil?  %>
+<% object = @care unless @care.nil?  %>
+
+<div class="container">
+  <div class="grid">
+    <div class="form">
+      <h2><%= t 'simple_form.edits.title' %></h2>
+      <%= simple_form_for [ object ] do |f| %>
+        <%= f.error_notification %>
+        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+        <%= f.input :name %>
+        <%= f.input :description %>
+        <%= f.input :address %>
+        <%= f.input :phone_number %>
+        <%= f.input :website %>
+        <%= f.input :price %>
+        <%= f.input :capacity %>
+        <%# Commodities %>
+        <%= f.submit "Apply changes", class: "btn button-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

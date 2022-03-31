@@ -25,6 +25,9 @@ en:
         submit: 'Sign up'
         sign_in_link: 'Sign in'
 
+    edits:
+        title: 'Edit details'
+
     labels:
       defaults:
         first_name: 'First name'

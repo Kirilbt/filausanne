@@ -3,7 +3,7 @@ class SleepsController < ApplicationController
   before_action :must_be_admin, only: [:edit, :update]
 
   def index
-    @sleeps = Service.sleeps.all
+    @sleeps = Sleep.all
   end
 
   def show
