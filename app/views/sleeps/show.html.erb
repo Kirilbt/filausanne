@@ -1,1 +1,5 @@
-<%= @sleep.name %>
+<%= render "pages/show" %>
+
+<div class="button-show">
+  <%= link_to "#{t 'show.reservation'}", new_sleep_request_path(@sleep), class:"button-primary" %>
+</div>

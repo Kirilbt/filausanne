@@ -7,9 +7,17 @@ en:
     type_sleep: "Sleep"
     type_eat: "Eat"
     type_care: "Care"
+  show:
+    link_map: "See on map"
+    telephone: "Telephone:"
+    opening: "Opening hours:"
+    description: "Description:"
+    services: "Services available:"
+    reservation: "Reserve"
   request:
     error_start_date: "can't be before today"
     error_end_date: "must be after start date"
   new:
     request:
       btn: "Reserve"
+

@@ -1,5 +1,9 @@
 class RequestsController < ApplicationController
 
+  def index
+    @requests = Request.where(user_id: current_user)
+  end
+
   def new
     @sleep = Sleep.find(params[:sleep_id])
     @request = Request.new
@@ -10,9 +14,9 @@ class RequestsController < ApplicationController
     @sleep = Sleep.find(params[:sleep_id])
     @request.service = @sleep
     @request.user = current_user
-    @request.status_translations = "Pending"
+    @request.status = "Pending"
     if @request.save
-      redirect_to sleeps_path # TO CHANGE
+      redirect_to requests_path # TO CHANGE
     else
       render 'requests/new'
     end

@@ -1,0 +1,18 @@
+<div class="top-section">
+  <div class="container">
+    <h1>My Requests</h1>
+  </div>
+</div>
+<div class="container">
+  <% @requests.each do |request| %>
+    <div class="card-service">
+      <%= image_tag("img-test.jpg") %>
+      <div class="card-service-infos">
+        <h2><%= request.service.name %></h2>
+        <p> <%= request.service.address%></p>
+        <p> <%= request.start_date.strftime("%d-%m-%Y") %> - <%= request.end_date.strftime("%d-%m-%Y") %> </p>
+        <p> <%= request.status %> </p>
+      </div>
+    </div>
+  <% end %>
+</div>
