@@ -17,7 +17,13 @@ en:
   request:
     error_start_date: "can't be before today"
     error_end_date: "must be after start date"
+    index:
+      pending: "Pending"
+      approved: "Approved"
+      refused: "Refused"
+    edit:
+      update: "Update"
+      back: "Discard changes"
   new:
     request:
       btn: "Reserve"
-
