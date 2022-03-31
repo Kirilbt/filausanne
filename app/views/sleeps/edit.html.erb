@@ -1,0 +1,14 @@
+<%= simple_form_for [ @sleep ] do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :website %>
+  <%= f.input :price %>
+  <%= f.input :capacity %>
+  <%# Commodities %>
+  <%= f.submit "Apply changes", class: "btn button-primary" %>
+<% end %>
