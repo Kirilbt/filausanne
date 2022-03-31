@@ -14,7 +14,7 @@ class RequestsController < ApplicationController
     @sleep = Sleep.find(params[:sleep_id])
     @request.service = @sleep
     @request.user = current_user
-    @request.status_translations = "Pending"
+    @request.status = "Pending"
     if @request.save
       redirect_to sleeps_path # TO CHANGE
     else
