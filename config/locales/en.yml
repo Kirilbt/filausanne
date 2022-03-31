@@ -2,6 +2,7 @@ en:
   general:
     open: "Open"
     close: "Closed"
+    my_reservations: "My Reservations"
   home:
     title: "What are you looking for?"
     type_sleep: "Sleep"
@@ -20,4 +21,3 @@ en:
   new:
     request:
       btn: "Reserve"
-
