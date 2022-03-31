@@ -1,5 +1,9 @@
 class RequestsController < ApplicationController
 
+  def index
+    @requests = Request.where(user_id: current_user)
+  end
+
   def new
     @sleep = Sleep.find(params[:sleep_id])
     @request = Request.new
