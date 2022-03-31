@@ -6,6 +6,11 @@ class EatsController < ApplicationController
   end
 
   def show
+    @markers = {
+      lat: @eat.latitude,
+      lng: @eat.longitude,
+      info_window: render_to_string(partial: "shared/info_window", locals: { service: @eat })
+    }
   end
 
   private
