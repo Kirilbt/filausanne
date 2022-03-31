@@ -14,7 +14,7 @@ class RequestsController < ApplicationController
     if @request.save
       redirect_to sleeps_path # TO CHANGE
     else
-      render 'sleeps/show' # TO CHANGE
+      render 'requests/new'
     end
   end
 
