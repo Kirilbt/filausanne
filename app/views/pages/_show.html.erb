@@ -1,0 +1,32 @@
+<% object = @sleep unless @sleep.nil?  %>
+<% object = @eat unless @eat.nil?  %>
+<% object = @care unless @care.nil?  %>
+
+<div class="banner-show" style="background-image: url('<%= image_path("img-test.jpg") %>');">
+</div>
+
+<div class="info-show">
+  <h1><%= object.name %></h1>
+  <p><%= object.address %></p>
+  <%= link_to "#{t 'show.link_map'}", "#" %>
+</div>
+
+<div class="phone-show">
+  <p><strong> <%= t 'show.telephone' %></strong> <%= object.phone_number %></p>
+</div>
+
+<div class="opening-show">
+  <p><strong><%= t 'show.opening' %></strong> Open </p>
+</div>
+
+<div class="description-show">
+  <p><strong><%= t 'show.description' %></strong> <%= object.description %> </p>
+</div>
+
+<div class="services-show">
+  <p><strong><%= t 'show.services' %></strong> Night shelter · Day reception · Barber · Kitchen · Admin </p>
+</div>
+
+<div class="map-show">
+  <%= image_tag("map.png") %>
+</div>

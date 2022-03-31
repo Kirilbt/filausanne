@@ -4,5 +4,10 @@ en:
     type_sleep: "Sleep"
     type_eat: "Eat"
     type_care: "Care"
-  sleep:
-    index:
+  show:
+    link_map: "See on map"
+    telephone: "Telephone:"
+    opening: "Opening hours:"
+    description: "Description:"
+    services: "Services available:"
+    reservation: "Reserve"

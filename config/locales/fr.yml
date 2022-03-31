@@ -4,3 +4,10 @@ fr:
     type_sleep: "Dormir"
     type_eat: "Manger"
     type_care: "Se soigner"
+  show:
+    link_map: "Voir sur la carte"
+    telephone: "Téléphone :"
+    opening: "Heures d'ouverture :"
+    description: "Description :"
+    services: "Services disponibles :"
+    reservation: "Réserver"

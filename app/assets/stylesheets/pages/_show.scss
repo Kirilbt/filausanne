@@ -1,0 +1,77 @@
+.banner-show {
+  height: 300px;
+}
+
+.info-show {
+  margin: 0 16px;
+  padding: 32px 0;
+  border-bottom: 1px solid lightgrey;
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.phone-show {
+  border-bottom: 1px solid lightgrey;
+  margin: 0 16px;
+  padding: 16px 0;
+  p {
+    margin: 0;
+  }
+}
+
+.opening-show {
+  border-bottom: 1px solid lightgrey;
+  margin: 0 16px;
+  padding: 16px 0;
+  p {
+    margin: 0;
+  }
+}
+
+.services-show {
+  // border-bottom: 1px solid lightgrey;
+  margin: 0 16px;
+  padding: 16px 0;
+  p {
+    margin: 0;
+  }
+}
+
+.description-show {
+  border-bottom: 1px solid lightgrey;
+  margin: 0 16px;
+  padding: 16px 0;
+  p {
+    margin: 0;
+  }
+}
+
+.map-show {
+  padding: 16px 0;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.button-show {
+  // padding: 16px 0;
+  // margin: 0 16px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  position: sticky;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,255,255,1));
+  a {
+    width: 100%;
+    margin: auto 16px;
+  }
+}
