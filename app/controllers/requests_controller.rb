@@ -16,7 +16,7 @@ class RequestsController < ApplicationController
     @request.user = current_user
     @request.status = "Pending"
     if @request.save
-      redirect_to sleeps_path # TO CHANGE
+      redirect_to requests_path # TO CHANGE
     else
       render 'requests/new'
     end
