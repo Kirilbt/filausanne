@@ -1,3 +1,20 @@
-<% @cares.each do |care| %>
-  <%= care.name %>
-<% end %>
+<div class="container">
+  <% @cares.each do |care| %>
+    <%= link_to care_path(care) do %>
+      <div class="card-service">
+        <%= image_tag("img-test.jpg") %>
+        <div class="card-service-infos">
+          <h2><%= care.name %></h2>
+          <p> <%= care.address%></p>
+          <% day_open = care.opening_hours.select { |hours|  hours.day_en == (Date.today.strftime("%A")) } %>
+          <% hour_open = day_open.select { |day| Time.now.strftime("%H:%M") > day.opens.strftime("%H:%M") && Time.now.strftime("%H:%M") < day.closes.strftime("%H:%M") }  %>
+          <% if hour_open == [] %>
+            <span id="close"> <%= t 'general.close' %> </span>
+          <% else %>
+            <span id="open"><%= t 'general.open' %></span>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

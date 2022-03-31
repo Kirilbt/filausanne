@@ -1,4 +1,7 @@
 en:
+  general:
+    open: "Open"
+    close: "Closed"
   home:
     title: "What are you looking for?"
     type_sleep: "Sleep"
@@ -11,3 +14,10 @@ en:
     description: "Description:"
     services: "Services available:"
     reservation: "Reserve"
+  request:
+    error_start_date: "can't be before today"
+    error_end_date: "must be after start date"
+  new:
+    request:
+      btn: "Reserve"
+

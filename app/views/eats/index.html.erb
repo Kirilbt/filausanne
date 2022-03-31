@@ -1,18 +1,20 @@
-<% @eats.each do |eat| %>
-  <%= link_to eat_path(eat) do %>
-    <div class="card-service">
-      <%= image_tag("img-test.jpg") %>
-      <div class="card-service-infos">
-        <h2><%= eat.name %></h2>
-        <p> <%= eat.address%></p>
-        <% day_open = eat.opening_hours.select { |hours|  hours.day_translations == (Date.today.strftime("%A")) } %>
-        <% hour_open = day_open.select { |day| (Time.now.hour > day.opens.hour && Time.now.hour < day.closes.hour)}  %>
-        <% if hour_open == [] %>
-          <span id="close">Closed</span>
-        <% else %>
-          <span id="open">Open</span>
-        <% end %>
+<div class="container">
+  <% @eats.each do |eat| %>
+    <%= link_to eat_path(eat) do %>
+      <div class="card-service">
+        <%= image_tag("img-test.jpg") %>
+        <div class="card-service-infos">
+          <h2><%= eat.name %></h2>
+          <p> <%= eat.address%></p>
+          <% day_open = eat.opening_hours.select { |hours|  hours.day_en == (Date.today.strftime("%A")) } %>
+          <% hour_open = day_open.select { |day| Time.now.strftime("%H:%M") > day.opens.strftime("%H:%M") && Time.now.strftime("%H:%M") < day.closes.strftime("%H:%M") }  %>
+          <% if hour_open == [] %>
+            <span id="close"> <%= t 'general.close' %> </span>
+          <% else %>
+            <span id="open"><%= t 'general.open' %></span>
+          <% end %>
+        </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
-<% end %>
+</div>

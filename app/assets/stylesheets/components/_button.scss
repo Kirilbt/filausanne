@@ -1,0 +1,70 @@
+// Primary button
+
+.button-primary {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: $btn_primary;
+  color: #ffffff;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background: $btn_primary_darker;
+  color: #ffffff; // We might not need this, check "a" style on application css for refecto
+}
+
+.button-primary:focus {
+  outline: 4px solid rgba($blue, 0.3);
+}
+
+.button-primary:active {
+  transform: scale(0.99);
+}
+
+
+// Secondary button-secondary
+
+.button-secondary {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  border: 1px solid $font;
+  color: $font;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background: $font;
+  color: white;
+}
+
+.button-secondary:focus {
+  outline: 4px solid rgba($blue, 0.3);
+}
+
+.button-secondary:active {
+  transform: scale(0.99);
+}

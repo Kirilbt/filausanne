@@ -142,10 +142,10 @@ Service.create(
   price: 0
 )
 
-OpeningHour.create(day_translations: { fr: "Lundi", en: "Monday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Mardi", en: "Tuesday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Mercredi", en: "Wednesday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Jeudi", en: "Thursday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Vendredi", en: "Friday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Samedi", en: "Saturday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Dimanche", en: "Sunday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Point d'Eau").id)
+OpeningHour.create(day_translations: { fr: "Lundi", en: "Monday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Unisanté").id)
+OpeningHour.create(day_translations: { fr: "Mardi", en: "Tuesday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Unisanté").id)
+OpeningHour.create(day_translations: { fr: "Mercredi", en: "Wednesday" }, opens: "09", closes: "14", service_id: Service.find_by(name: "Unisanté").id)
+OpeningHour.create(day_translations: { fr: "Jeudi", en: "Thursday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Unisanté").id)
+OpeningHour.create(day_translations: { fr: "Vendredi", en: "Friday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Unisanté").id)
+OpeningHour.create(day_translations: { fr: "Samedi", en: "Saturday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Unisanté").id)
+OpeningHour.create(day_translations: { fr: "Dimanche", en: "Sunday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "Unisanté").id)
