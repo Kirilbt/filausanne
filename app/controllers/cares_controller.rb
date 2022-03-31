@@ -6,6 +6,11 @@ class CaresController < ApplicationController
   end
 
   def show
+    @markers = {
+      lat: @care.latitude,
+      lng: @care.longitude,
+      info_window: render_to_string(partial: "shared/info_window", locals: { service: @care })
+    }
   end
 
   private
