@@ -3,7 +3,7 @@ fr:
     open: "Ouvert"
     close: "Fermé"
     my_reservations: "Mes Réservations"
-    reservations_admin: "Reservations"
+    reservations_admin: "Réservations"
     fr: "French"
     en: "English"
     association: " associations trouvées"
@@ -14,11 +14,13 @@ fr:
     type_care: "Se soigner"
   show:
     link_map: "Voir sur la carte"
+    edit: "Editer"
     telephone: "Téléphone :"
     opening: "Heures d'ouverture :"
     description: "Description :"
     services: "Services disponibles :"
     reservation: "Réserver"
+    reservation_login: "Log in pour réserver"
   request:
     error_start_date: "ne peut pas être avant aujourd'hui"
     error_end_date: "doit être après la date de début"
