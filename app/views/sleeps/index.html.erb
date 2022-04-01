@@ -1,4 +1,5 @@
 <div class="container">
+  <p class="pt-3"> <strong><%= t("home.type_sleep") %></strong> <%= @sleeps.count %> <%= t("general.association") %> </p>
   <% @sleeps.each do |sleep| %>
     <%= link_to sleep_path(sleep) do %>
       <div class="card-service">
