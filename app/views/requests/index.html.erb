@@ -20,15 +20,15 @@
           <div class="status-yellow">
             <p><%= t('request.index.pending') %></p>
           </div>
-        <% when t('request.index.approved') %>
+        <% when "Approved" %>
           <div class="status-green">
             <p><%= t('request.index.approved') %></p>
           </div>
-        <% when t('request.index.refused') %>
+        <% when "Refused" %>
           <div class="status-red">
             <p><%= t('request.index.refused') %></p>
           </div>
-          <% when t('request.index.cancel') %>
+          <% when "Cancel" %>
           <div class="status-red">
             <p><%= t('request.edit.cancel') %></p>
           </div>
