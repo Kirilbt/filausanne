@@ -27,6 +27,13 @@ en:
 
     edits:
         title: 'Edit details'
+        name: 'Name'
+        description: 'Description'
+        address: 'Address'
+        phone_number: 'Phone number'
+        website: 'Website'
+        price: 'Price'
+        capacity: 'Capacity'
 
     labels:
       defaults:

@@ -32,7 +32,7 @@ class EatsController < ApplicationController
 
   def must_be_admin
     unless current_user && current_user.admin?
-      redirect_to root_path, notice: "You must be an admin to edit the details" # TO TRANSLATE
+      redirect_to root_path, notice: "You must be an admin to edit the details"
     end
   end
 end
