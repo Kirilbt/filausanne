@@ -18,9 +18,17 @@ fr:
   request:
     error_start_date: "ne peut pas être avant aujourd'hui"
     error_end_date: "doit être après la date de début"
+    index:
+      pending: "En attendant"
+      approved: "Accepté"
+      refused: "Refusé"
+    edit:
+      update: "Mettre à jour"
+      back: "Abandonner"
   new:
     request:
       btn: "Réserver"
+
 
 # github rails-i18n/rails/locale/fr.yml
 

@@ -11,7 +11,27 @@
         <h2><%= request.service.name %></h2>
         <p> <%= request.service.address%></p>
         <p> <%= request.start_date.strftime("%d-%m-%Y") %> - <%= request.end_date.strftime("%d-%m-%Y") %> </p>
-        <p> <%= request.status %> </p>
+        <% case request.status %>
+        <% when "Pending" %>
+          <div class="status-yellow">
+            <p><%= t('request.index.pending') %></p>
+          </div>
+        <% when "Approved" %>
+          <div class="status-green">
+            <p><%= t('request.index.approved') %></p>
+          </div>
+        <% when "Refused" %>
+          <div class="status-red">
+            <p><%= t('request.index.refused') %></p>
+          </div>
+          <% when "Annuler" %>
+          <div class="status-red">
+            <p>Annuler</p>
+          </div>
+        <% end %>
+        <%= link_to edit_request_path(request) do %>
+          <div class='edit-btn'> <%= image_tag "edit-btn.svg"  %> </div>
+        <% end %>
       </div>
     </div>
   <% end %>

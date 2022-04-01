@@ -1,7 +1,11 @@
 class RequestsController < ApplicationController
 
   def index
-    @requests = Request.where(user_id: current_user)
+    if current_user.admin?
+      @requests = Request.available
+    else
+      @requests = Request.where(user_id: current_user)
+    end
   end
 
   def new
@@ -16,9 +20,23 @@ class RequestsController < ApplicationController
     @request.user = current_user
     @request.status = "Pending"
     if @request.save
-      redirect_to requests_path # TO CHANGE
+      redirect_to requests_path
     else
       render 'requests/new'
+    end
+  end
+
+  def edit
+    @request = Request.find(params[:id])
+  end
+
+  def update
+    @request = Request.find(params[:id])
+    if @request.update(request_params)
+      @request.status = "Pending"
+      redirect_to requests_path
+    else
+      render 'requests/edit'
     end
   end
 
