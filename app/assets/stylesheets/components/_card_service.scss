@@ -1,6 +1,6 @@
 .card-service {
   overflow: hidden;
-  height: 120px;
+  height: 160px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
@@ -62,20 +62,27 @@
   display: inline;
 }
 
-.status-red p {
-  background: rgb(255, 184, 181);
-  border-radius: 6px;
-  color: rgb(182, 26, 26);
-  text-align: center;
-  padding: 2px 8px;
-  display: inline;
+.status-red{
+  p {
+    background: rgb(255, 184, 181);
+    border-radius: 6px;
+    color: rgb(182, 26, 26);
+    text-align: center;
+    padding: 2px 8px;
+    display: inline;
+
+  }
 }
 
-.status-green p {
-  background: rgb(202, 255, 181);
-  border-radius: 6px;
-  color: rgb(18, 141, 7);
-  text-align: center;
-  padding: 2px 8px;
-  display: inline;
+.status-green {
+  p {
+    background: rgb(202, 255, 181);
+    border-radius: 6px;
+    color: rgb(18, 141, 7);
+    text-align: center;
+    padding: 2px 8px;
+    display: inline;
+    margin-bottom: 16px;
+
+  }
 }
