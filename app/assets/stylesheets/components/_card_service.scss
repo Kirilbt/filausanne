@@ -67,7 +67,8 @@
   border-radius: 6px;
   color: rgb(182, 26, 26);
   text-align: center;
-  padding: 2px 0;
+  padding: 2px 8px;
+  display: inline;
 }
 
 .status-green p {
@@ -75,5 +76,6 @@
   border-radius: 6px;
   color: rgb(18, 141, 7);
   text-align: center;
-  padding: 2px 0;
+  padding: 2px 8px;
+  display: inline;
 }

@@ -6,6 +6,9 @@
         <%= f.input :end_date, as: :date, html5: true, label: "Check-out" %>
         <%= f.submit t('request.edit.update'), class: "btn button-primary" %>
       <% end %>
+      <%= simple_form_for(@request) do |f| %>
+        <%= f.submit t('request.edit.btn_cancel'), class: "btn button-secondary" %>
+      <% end %>
       <%= link_to t('request.edit.back'), requests_path, class: "btn button-secondary" %>
     </div>
   </div>
