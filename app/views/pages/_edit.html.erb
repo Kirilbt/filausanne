@@ -6,7 +6,7 @@
   <div class="grid">
     <div class="form">
       <h2><%= t 'simple_form.edits.title' %></h2>
-      <%= simple_form_for [ object ] do |f| %>
+      <%= simple_form_for(object) do |f| %>
         <%= f.error_notification %>
         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
@@ -21,7 +21,6 @@
         <%# Commodities %>
         <%= f.submit "Update", class: "btn button-primary" %>
       <% end %>
-      <%= link_to 'back', sleep_path(sleep) %>
     </div>
   </div>
 </div>

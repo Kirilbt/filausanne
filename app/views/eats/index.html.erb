@@ -2,7 +2,11 @@
   <% @eats.each do |eat| %>
     <%= link_to eat_path(eat) do %>
       <div class="card-service">
-        <%= image_tag("img-test.jpg") %>
+        <% if eat.photo.key? %>
+          <img src=<%= eat.photo.url %> alt="">
+        <% else %>
+          <%= image_tag("img-test.jpg") %>
+        <% end %>
         <div class="card-service-infos">
           <h2><%= eat.name %></h2>
           <p> <%= eat.address%></p>
