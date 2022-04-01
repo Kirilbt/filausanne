@@ -28,6 +28,8 @@ fr:
       back: "Abandonner"
       btn_cancel: "Annuler la demande"
       cancel: "Demande Annulée"
+      approved: "Accepter"
+      refused: "Refuser"
   new:
     request:
       btn: "Réserver"

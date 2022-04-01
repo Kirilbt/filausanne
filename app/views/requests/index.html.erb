@@ -1,10 +1,14 @@
 <div class="top-section">
   <div class="container">
+  <% if current_user.admin? %>
+    <h1>Requests</h1>
+  <% else %>
     <h1>My Requests</h1>
+  <% end %>
   </div>
 </div>
 <div class="container">
-  <% @requests.reverse_each do |request| %>
+  <% @requests.order("created_at asc").reverse_each do |request| %>
     <div class="card-service">
       <%= image_tag("img-test.jpg") %>
       <div class="card-service-infos">
@@ -16,11 +20,11 @@
           <div class="status-yellow">
             <p><%= t('request.index.pending') %></p>
           </div>
-        <% when "Approved" %>
+        <% when t('request.index.approved') %>
           <div class="status-green">
             <p><%= t('request.index.approved') %></p>
           </div>
-        <% when "Refused" %>
+        <% when t('request.index.refused') %>
           <div class="status-red">
             <p><%= t('request.index.refused') %></p>
           </div>
@@ -29,8 +33,19 @@
             <p><%= t('request.edit.cancel') %></p>
           </div>
         <% end %>
-        <%= link_to edit_request_path(request) do %>
-          <div class='edit-btn'> <%= image_tag "edit-btn.svg"  %> </div>
+        <% if current_user.admin? && request.status != t('request.index.cancel') %>
+          <span>
+            <%= simple_form_for(request) do |f| %>
+              <%= f.submit t('request.edit.approved'), class: "button-green" %>
+              <%= f.submit t('request.edit.refused'), class: "button-red" %>
+            <% end %>
+          </span>
+        <% elsif request.status != t('request.index.cancel') && request.status != t('request.index.refused') %>
+          <%= link_to edit_request_path(request) do %>
+            <div class='edit-btn'> <%= image_tag "edit-btn.svg"  %> </div>
+          <% end %>
+        <% elsif current_user.admin == "false" %>
+          <div class='edit-btn-opacity'> <%= image_tag "edit-btn.svg"  %> </div>
         <% end %>
       </div>
     </div>

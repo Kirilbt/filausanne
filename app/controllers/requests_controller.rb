@@ -35,10 +35,16 @@ class RequestsController < ApplicationController
     if params[:commit] == t('request.edit.btn_cancel')
       @request.update(status: t('request.index.cancel'))
       return redirect_to requests_path
+    elsif params[:commit] == t('request.edit.approved')
+      @request.update(status: t('request.index.approved'))
+      return redirect_to requests_path
+    elsif params[:commit] == t('request.edit.refused')
+      @request.update(status: t('request.index.refused'))
+      return redirect_to requests_path
     end
 
     if @request.update(request_params)
-      @request.status = "Pending"
+      @request.update(status: "Pending")
       redirect_to requests_path
     else
       render 'requests/edit'
