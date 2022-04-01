@@ -22,6 +22,8 @@ en:
     error_start_date: "can't be before today"
     error_end_date: "must be after start date"
     index:
+      title: "My Reservations"
+      title_admin: "Reservations"
       pending: "Pending"
       approved: "Approved"
       refused: "Refused"
