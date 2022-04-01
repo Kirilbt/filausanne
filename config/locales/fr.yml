@@ -23,6 +23,8 @@ fr:
     error_start_date: "ne peut pas être avant aujourd'hui"
     error_end_date: "doit être après la date de début"
     index:
+      title: "Mes réservations"
+      title_admin: "Réservations"
       pending: "En attendant"
       approved: "Accepté"
       refused: "Refusé"
