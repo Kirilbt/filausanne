@@ -1,0 +1,63 @@
+fr:
+  simple_form:
+    "yes": 'Oui'
+    "no": 'Non'
+    required:
+      text: 'obligatoire'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Please review the problems below:"
+
+    # Examples
+    sessions:
+      new:
+        title: 'Log in'
+        submit: 'Log in'
+        sign_up_link: 'Sign up'
+        forgot_password_link: 'Mot de passe oublié?'
+
+    registrations:
+      new:
+        title: 'Sign up'
+        submit: 'Sign up'
+        sign_in_link: 'Sign in'
+
+    passwords:
+      new:
+        title: 'Mot de passe oublié?'
+
+    edits:
+        title: 'Editer details'
+        name: 'Prénom'
+        description: 'Description'
+        address: 'Adresse'
+        phone_number: 'Numéro de Téléphone'
+        website: 'Website'
+        price: 'Prix'
+        capacity: 'Capacité'
+
+    labels:
+      defaults:
+        first_name: 'Prénom'
+        last_name: 'Nom'
+        phone_number: 'Numéro de Téléphone'
+        email: 'E-mail'
+        password: 'Password'
+        password_confirmation: 'Password confirmation'
+      user:
+        new:
+          remember_me: 'Remember me'
+        edit:
+    hints:
+      defaults:
+        username: 'User name to sign in'
+        # password: "Don't use special characters, please"
+    # include_blanks:
+    #   defaults:
+    #     age: 'Rather not say'
+    # prompts:
+    #   defaults:
+    #     age: 'Select your age'
