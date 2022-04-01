@@ -6,6 +6,7 @@ en:
     reservations_admin: "Reservations"
     en: "English"
     fr: "Français"
+    association: " associations found"
   home:
     title: "What are you looking for?"
     type_sleep: "Sleep"

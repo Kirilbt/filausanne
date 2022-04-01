@@ -6,6 +6,7 @@ fr:
     reservations_admin: "Reservations"
     fr: "French"
     en: "English"
+    association: " associations trouvées"
   home:
     title: "Que cherchez-vous?"
     type_sleep: "Dormir"

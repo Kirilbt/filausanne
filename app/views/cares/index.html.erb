@@ -1,4 +1,5 @@
 <div class="container">
+  <p class="pt-3"> <strong><%= t("home.type_care") %></strong> <%= @cares.count %> <%= t("general.association") %> </p>
   <% @cares.each do |care| %>
     <%= link_to care_path(care) do %>
       <div class="card-service">
