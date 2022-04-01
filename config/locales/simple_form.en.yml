@@ -25,6 +25,10 @@ en:
         submit: 'Sign up'
         sign_in_link: 'Sign in'
 
+    passwords:
+      new:
+        title: 'Forgot your password?'
+
     edits:
         title: 'Edit details'
         name: 'Name'

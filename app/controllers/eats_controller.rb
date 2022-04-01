@@ -28,7 +28,7 @@ class EatsController < ApplicationController
   private
 
   def eat_params
-    params.require(:eat).permit(:name, :description, :address, :phone_number, :website, :price, :capacity)
+    params.require(:eat).permit(:name, :description, :address, :phone_number, :website, :price, :capacity, :photo)
   end
 
   def set_eat
