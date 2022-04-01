@@ -30,6 +30,8 @@ en:
       back: "Discard changes"
       btn_cancel: "Cancel request"
       cancel: "Request canceled"
+      approved: "Accept"
+      refused: "Refuse"
   new:
     request:
       btn: "Reserve"
