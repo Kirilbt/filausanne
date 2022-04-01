@@ -21,7 +21,11 @@
             <%= link_to t('home.type_care'), cares_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to t('general.my_reservations'), requests_path, class: "nav-link" %>
+            <% if current_user.admin %>
+              <%= link_to t('general.reservations_admin'), requests_path, class: "nav-link" %>
+            <% else %>
+              <%= link_to t('general.my_reservations'), requests_path, class: "nav-link" %>
+            <% end %>
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,6 +55,17 @@
           </li>
           <li class="nav-item">
             <%= link_to t('home.type_care'), cares_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= params[:locale] ? (I18n.t "general.#{params[:locale]}") : (I18n.t "general.#{I18n.default_locale}") %>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <% locales = I18n.available_locales.select { |locale| locale.to_s != params[:locale] } %>
+                <% locales.each do |locale| %>
+                <%= link_to(I18n.t("general.#{locale}"),  {locale: locale}, class: "dropdown-item") %>
+                <% end %>
+            </div>
           </li>
           <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>

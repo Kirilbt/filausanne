@@ -3,6 +3,7 @@ fr:
     open: "Ouvert"
     close: "Fermé"
     my_reservations: "Mes Réservations"
+    reservations_admin: "Reservations"
     fr: "French"
     en: "English"
   home:
