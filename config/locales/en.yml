@@ -13,11 +13,13 @@ en:
     type_care: "Care"
   show:
     link_map: "See on map"
+    edit: "Edit"
     telephone: "Telephone:"
     opening: "Opening hours:"
     description: "Description:"
     services: "Services available:"
     reservation: "Reserve"
+    reservation_login: "Log in to reserve"
   request:
     error_start_date: "can't be before today"
     error_end_date: "must be after start date"
