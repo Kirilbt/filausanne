@@ -2,7 +2,7 @@ class RequestsController < ApplicationController
 
   def index
     if current_user.admin?
-      @requests = Request.available
+      @requests = Request.all
     else
       @requests = Request.where(user_id: current_user)
     end
