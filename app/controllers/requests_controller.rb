@@ -32,6 +32,11 @@ class RequestsController < ApplicationController
 
   def update
     @request = Request.find(params[:id])
+    if params[:commit] == t('request.edit.btn_cancel')
+      @request.update(status: t('request.index.cancel'))
+      return redirect_to requests_path
+    end
+
     if @request.update(request_params)
       @request.status = "Pending"
       redirect_to requests_path

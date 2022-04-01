@@ -4,7 +4,7 @@
   </div>
 </div>
 <div class="container">
-  <% @requests.each do |request| %>
+  <% @requests.reverse_each do |request| %>
     <div class="card-service">
       <%= image_tag("img-test.jpg") %>
       <div class="card-service-infos">
@@ -24,9 +24,9 @@
           <div class="status-red">
             <p><%= t('request.index.refused') %></p>
           </div>
-          <% when "Annuler" %>
+          <% when t('request.index.cancel') %>
           <div class="status-red">
-            <p>Annuler</p>
+            <p><%= t('request.edit.cancel') %></p>
           </div>
         <% end %>
         <%= link_to edit_request_path(request) do %>
