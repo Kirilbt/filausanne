@@ -38,7 +38,7 @@
 
 .button-secondary {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.6rem;
   margin: 0;
   text-decoration: none;
   border: 1px solid $font;
@@ -66,4 +66,13 @@
 
 .button-secondary:active {
   transform: scale(0.99);
+}
+
+.edit-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  img {
+    width: 16px;
+  }
 }

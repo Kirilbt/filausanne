@@ -1,4 +1,5 @@
 OpeningHour.destroy_all
+Request.destroy_all
 Service.destroy_all
 
 Service.create(

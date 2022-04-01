@@ -7,6 +7,11 @@ class SleepsController < ApplicationController
   end
 
   def show
+    @markers = {
+      lat: @sleep.latitude,
+      lng: @sleep.longitude,
+      info_window: render_to_string(partial: "shared/info_window", locals: { service: @sleep })
+    }
   end
 
   def edit

@@ -7,6 +7,7 @@
   align-items: center;
   border-radius: 8px;
   margin: 16px 0px;
+  position: relative;
 }
 
 
@@ -50,4 +51,29 @@
 #close {
   font-weight: bold;
   color: red;
+}
+
+.status-yellow p {
+  background: rgb(248, 230, 160);
+  border-radius: 6px;
+  color: rgb(182, 134, 2);
+  text-align: center;
+  padding: 2px 8px;
+  display: inline;
+}
+
+.status-red p {
+  background: rgb(255, 184, 181);
+  border-radius: 6px;
+  color: rgb(182, 26, 26);
+  text-align: center;
+  padding: 2px 0;
+}
+
+.status-green p {
+  background: rgb(202, 255, 181);
+  border-radius: 6px;
+  color: rgb(18, 141, 7);
+  text-align: center;
+  padding: 2px 0;
 }
