@@ -1,5 +1,13 @@
 .banner-show {
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    min-width: 100%;
+  }
 }
 
 .info-show {

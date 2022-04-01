@@ -24,9 +24,12 @@ fr:
       pending: "En attendant"
       approved: "Accepté"
       refused: "Refusé"
+      cancel: "Cancel"
     edit:
       update: "Mettre à jour"
       back: "Abandonner"
+      btn_cancel: "Annuler la demande"
+      cancel: "Demande Annulée"
   new:
     request:
       btn: "Réserver"

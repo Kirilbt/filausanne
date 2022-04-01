@@ -2,7 +2,12 @@
 <% object = @eat unless @eat.nil?  %>
 <% object = @care unless @care.nil?  %>
 
-<div class="banner-show" style="background-image: url('<%= image_path("img-test.jpg") %>');">
+<div class="banner-show">
+  <% if object.photo.key? %>
+    <img src=<%= object.photo.url %> alt="">
+  <% else %>
+    <%= image_tag("img-test.jpg") %>
+  <% end %>
 </div>
 
 <div class="info-show">

@@ -24,9 +24,12 @@ en:
       pending: "Pending"
       approved: "Approved"
       refused: "Refused"
+      cancel: "Cancel"
     edit:
       update: "Update"
       back: "Discard changes"
+      btn_cancel: "Cancel request"
+      cancel: "Request canceled"
   new:
     request:
       btn: "Reserve"

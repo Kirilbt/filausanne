@@ -1,0 +1,26 @@
+<% object = @sleep unless @sleep.nil?  %>
+<% object = @eat unless @eat.nil?  %>
+<% object = @care unless @care.nil?  %>
+
+<div class="container">
+  <div class="grid">
+    <div class="form">
+      <h2><%= t 'simple_form.edits.title' %></h2>
+      <%= simple_form_for(object) do |f| %>
+        <%= f.error_notification %>
+        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+        <%= f.input :name, label: t('simple_form.edits.name') %>
+        <%= f.input :description, label: t('simple_form.edits.description') %>
+        <%= f.input :address, label: t('simple_form.edits.address') %>
+        <%= f.input :phone_number, label: t('simple_form.edits.phone_number') %>
+        <%= f.input :website, label: t('simple_form.edits.website') %>
+        <%= f.input :price, label: t('simple_form.edits.price') %>
+        <%= f.input :capacity, label: t('simple_form.edits.capacity') %>
+        <%= f.input :photo, as: :file %>
+        <%# Commodities %>
+        <%= f.submit "Update", class: "btn button-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
