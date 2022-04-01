@@ -3,6 +3,8 @@ en:
     open: "Open"
     close: "Closed"
     my_reservations: "My Reservations"
+    en: "English"
+    fr: "Français"
   home:
     title: "What are you looking for?"
     type_sleep: "Sleep"
