@@ -28,7 +28,7 @@ class SleepsController < ApplicationController
   private
 
   def sleep_params
-    params.require(:sleep).permit(:name, :description, :address, :phone_number, :website, :price, :capacity)
+    params.require(:sleep).permit(:name, :description, :address, :phone_number, :website, :price, :capacity, :photo)
   end
 
   def set_sleep

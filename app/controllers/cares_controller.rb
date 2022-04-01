@@ -28,7 +28,7 @@ class CaresController < ApplicationController
   private
 
   def care_params
-    params.require(:care).permit(:name, :description, :address, :phone_number, :website, :price, :capacity)
+    params.require(:care).permit(:name, :description, :address, :phone_number, :website, :price, :capacity, :photo)
   end
 
   def set_care

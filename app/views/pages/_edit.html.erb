@@ -17,6 +17,7 @@
         <%= f.input :website, label: t('simple_form.edits.website') %>
         <%= f.input :price, label: t('simple_form.edits.price') %>
         <%= f.input :capacity, label: t('simple_form.edits.capacity') %>
+        <%= f.input :photo, as: :file %>
         <%# Commodities %>
         <%= f.submit "Update", class: "btn button-primary" %>
       <% end %>
