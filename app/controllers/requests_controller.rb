@@ -33,13 +33,13 @@ class RequestsController < ApplicationController
   def update
     @request = Request.find(params[:id])
     if params[:commit] == t('request.edit.btn_cancel')
-      @request.update(status: t('request.index.cancel'))
+      @request.update(status: "Cancel")
       return redirect_to requests_path
     elsif params[:commit] == t('request.edit.approved')
-      @request.update(status: t('request.index.approved'))
+      @request.update(status: "Approved")
       return redirect_to requests_path
     elsif params[:commit] == t('request.edit.refused')
-      @request.update(status: t('request.index.refused'))
+      @request.update(status: "Refused")
       return redirect_to requests_path
     end
 
