@@ -3,6 +3,8 @@ fr:
     open: "Ouvert"
     close: "Fermé"
     my_reservations: "Mes Réservations"
+    fr: "French"
+    en: "English"
   home:
     title: "Que cherchez-vous?"
     type_sleep: "Dormir"
