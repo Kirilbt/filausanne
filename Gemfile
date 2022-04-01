@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
 
+gem "geocoder"
+
 # Translation
 gem 'activerecord'
 gem 'pg', :platform => :ruby

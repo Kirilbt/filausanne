@@ -2,6 +2,7 @@ fr:
   general:
     open: "Ouvert"
     close: "Fermé"
+    my_reservations: "Mes Réservations"
   home:
     title: "Que cherchez-vous?"
     type_sleep: "Dormir"
