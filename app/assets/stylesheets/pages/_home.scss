@@ -18,7 +18,7 @@
 
 .service {
 width: 100%;
-height: 150px;
+height: 125px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -54,4 +54,17 @@ border-radius: 8px;
 .care {
   background: $care_color;
   grid-area: 2 / 1 / 3 / 2;
+}
+
+.contact {
+  background: $contact_color;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.urgent {
+  grid-area: 3 / 1 / 4 / 3;
+
+  .btn {
+    width: 100%;
+  }
 }

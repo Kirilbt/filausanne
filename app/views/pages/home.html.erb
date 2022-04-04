@@ -24,5 +24,16 @@
         <p><%= t 'home.type_care' %></p>
       </div>
     <% end %>
+    <%= link_to cares_path do %>
+      <div class="service contact">
+        <%= image_tag "care.svg" %>
+        <p><%= t 'home.type_contact' %></p>
+      </div>
+    <% end %>
+    <%= link_to '#' do %>
+      <div class="urgent" >
+        <%= link_to t('home.btn_urgent'), urgent_path, class: "btn button-urgent" %>
+      </div>
+    <% end %>
   </div>
 </div>

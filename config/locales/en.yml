@@ -12,6 +12,9 @@ en:
     type_sleep: "Sleep"
     type_eat: "Eat"
     type_care: "Care"
+    type_contact: "Contact"
+    type_urgent: "Urgent"
+    btn_urgent: "For tonight"
   show:
     link_map: "See on map"
     edit: "Edit"

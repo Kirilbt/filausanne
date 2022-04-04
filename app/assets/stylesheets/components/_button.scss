@@ -33,8 +33,7 @@
   transform: scale(0.99);
 }
 
-
-// Secondary button-secondary
+// Secondary button
 
 .button-secondary {
   display: inline-block;
@@ -68,6 +67,78 @@
   transform: scale(0.99);
 }
 
+// Danger button
+
+.button-danger {
+  display: inline-block;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  margin: 0;
+  text-decoration: none;
+  background: $btn_danger;
+  color: #ffffff;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button-danger:hover,
+.button-danger:focus {
+  background: $btn_danger_darker;
+  color: #ffffff; // We might not need this, check "a" style on application css for refecto
+}
+
+.button-danger:focus {
+  outline: 4px solid rgba($blue, 0.3);
+}
+
+.button-danger:active {
+  transform: scale(0.99);
+}
+
+// Urgent button
+
+.button-urgent {
+  display: inline-block;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  margin: 0;
+  text-decoration: none;
+  background: $btn_urgent;
+  color: #ffffff;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button-urgent:hover,
+.button-urgent:focus {
+  background: $btn_urgent_darker;
+  color: #ffffff; // We might not need this, check "a" style on application css for refecto
+}
+
+.button-urgent:focus {
+  outline: 4px solid rgba($blue, 0.3);
+}
+
+.button-urgent:active {
+  transform: scale(0.99);
+}
+
+// Edit button
+
 .edit-btn {
   position: absolute;
   top: 8px;
@@ -86,6 +157,8 @@
     width: 16px;
   }
 }
+
+// Other
 
 .button-red {
   background-color: white;
