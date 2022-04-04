@@ -39,6 +39,8 @@ gem 'pg', :platform => :ruby
 gem 'activerecord-jdbcpostgresql-adapter', :platform => :jruby
 gem 'hstore_translate'
 gem 'json_translate'
+gem 'i18n-tasks', '~> 1.0.5'
+gem 'deepl-rb'
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
