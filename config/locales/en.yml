@@ -7,10 +7,6 @@ en:
     en: "English"
     fr: "Français"
     association: " associations found"
-    status: # DO NOT CHANGE
-      approved: "Approved"
-      refused: "Refused"
-      cancel : "Cancel"
   home:
     title: "What are you looking for?"
     type_sleep: "Sleep"

@@ -7,10 +7,6 @@ fr:
     fr: "French"
     en: "English"
     association: " associations trouvées"
-    status: # DO NOT CHANGE
-      approved: "Approved"
-      refused: "Refused"
-      cancel : "Cancel"
   home:
     title: "Que cherchez-vous?"
     type_sleep: "Dormir"
@@ -45,10 +41,12 @@ fr:
       approved: "Accepter"
       refused: "Refuser la demande"
       phone: "Numéro de téléphone"
-  new:
-    request:
+    new:
       btn: "Réserver"
-
+      text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais.
+      Le bureau prend en compte votre préférence, mais en cas d’indisponibilité il vous attribuera un autre hébergement."
+      text-urgence: "Pour un hébergement d’urgence, merci de vous diriger directement à l’association dans les horaires proposés."
+      text-label: "Vous pouvez changer l’association de votre préférence"
 
 # github rails-i18n/rails/locale/fr.yml
 
