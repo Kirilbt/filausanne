@@ -4,7 +4,19 @@
       <%= image_tag "logo-fil.svg" %> fil
     <% end %>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="nav-item dropdown">
+            <a href="#" class="nav-link nav-item language" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-light fa-globe"></i> <%= params[:locale] ? (I18n.t "general.#{params[:locale]}") : (I18n.t "general.#{I18n.default_locale}") %>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <% locales = I18n.available_locales.select { |locale| locale.to_s != params[:locale] } %>
+                <% locales.each do |locale| %>
+                <%= link_to(I18n.t("general.#{locale}"),  {locale: locale}, class: "dropdown-item") %>
+                <% end %>
+            </div>
+    </div>
+
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -60,7 +72,7 @@
             <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <%= params[:locale] ? (I18n.t "general.#{params[:locale]}") : (I18n.t "general.#{I18n.default_locale}") %>
             </a>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu dropdown-menu-end" id="navbarSupportedContentTwo" aria-labelledby="navbarDropdown">
                 <% locales = I18n.available_locales.select { |locale| locale.to_s != params[:locale] } %>
                 <% locales.each do |locale| %>
                 <%= link_to(I18n.t("general.#{locale}"),  {locale: locale}, class: "dropdown-item") %>

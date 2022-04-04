@@ -4,6 +4,10 @@
   border-bottom: 1px solid $light-gray;
 }
 
+.language {
+  font-size: 16px;
+  color: $font;
+}
 .navbar-fil .navbar-collapse {
   flex-grow: 0;
 }
