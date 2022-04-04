@@ -32,12 +32,12 @@ class RequestsController < ApplicationController
 
   def update
     @request = Request.find(params[:id])
-    @sleep = Service.find(params[:request][:service_id])
-    @request.service = @sleep
     if params[:commit] == t('request.edit.btn_cancel')
       @request.update(status: "Cancel")
       return redirect_to requests_path
     elsif params[:commit] == t('request.edit.update')
+      @sleep = Service.find(params[:request][:service_id])
+      @request.service = @sleep
       @request.update(request_params)
       @request.update(status: "Approved")
       return redirect_to requests_path

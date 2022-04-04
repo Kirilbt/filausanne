@@ -41,6 +41,7 @@ fr:
       approved: "Accepter"
       refused: "Refuser la demande"
       phone: "Numéro de téléphone"
+      text-label: "Association de préférence"
     new:
       btn: "Réserver"
       text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais.

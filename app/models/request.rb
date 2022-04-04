@@ -2,7 +2,7 @@ class Request < ApplicationRecord
   belongs_to :user
   belongs_to :service
 
-  validates :start_date, :end_date, presence: true
+  # validates :start_date, :end_date, presence: true
   validate :start_date_after_today?, :end_date_after_start_date?
 
   private

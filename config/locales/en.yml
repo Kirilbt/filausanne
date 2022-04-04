@@ -41,6 +41,5 @@ en:
       approved: "Accept"
       refused: "Request refused"
       phone: "Phone number"
-  new:
-    request:
+    new:
       btn: "Reserve"

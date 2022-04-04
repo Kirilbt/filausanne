@@ -4,7 +4,7 @@
       <p><%= t('request.index.request') %> <%= @request.user.first_name%> <%= @request.user.last_name%></p>
       <p><%= t('request.edit.phone')%> <%= @request.user.phone_number %></p>
       <%= simple_form_for(@request) do |f| %>
-        <%= f.association :service, collection: Service.where(type: "Sleep"), selected: @request.service_id, label: t('request.new.text-label')%>
+        <%= f.association :service, collection: Service.where(type: "Sleep"), selected: @request.service_id, label: t('request.edit.text-label')%>
         <%= f.input :start_date, as: :date, html5: true, label: "Check-in" %>
         <%= f.input :end_date, as: :date, html5: true, label: "Check-out" %>
         <%= f.submit t('request.edit.update'), class: "btn button-primary" %>
