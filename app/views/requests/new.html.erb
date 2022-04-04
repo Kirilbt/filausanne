@@ -2,7 +2,7 @@
   <div class="grid">
     <div class="form">
       <%= simple_form_for [ @sleep, @request ] do |f| %>
-        <%= f.association :service, collection: Service.where(type: "Sleep"), selected: @sleep.name, label: t('request.new.text-label')%>
+        <%= f.association :service, collection: Service.where(type: "Sleep"), selected: @sleep.id, label: t('request.new.text-label')%>
         <%= f.submit t('request.new.btn'), class: "btn button-primary" %>
       <% end %>
       <p> <%= t('request.new.text') %> </p>

@@ -5,12 +5,12 @@
       <p><%= t('request.edit.phone')%> <%= @request.user.phone_number %></p>
       <%= simple_form_for(@request) do |f| %>
         <%= f.association :service, collection: Service.where(type: "Sleep"), selected: @request.service_id, label: t('request.edit.text-label')%>
-        <%= f.input :start_date, as: :date, html5: true, label: "Check-in" %>
-        <%= f.input :end_date, as: :date, html5: true, label: "Check-out" %>
+        <%= f.input :start_date, as: :date, html5: true, label: "Check-in", required: true %>
+        <%= f.input :end_date, as: :date, html5: true, label: "Check-out", required: true %>
         <%= f.submit t('request.edit.update'), class: "btn button-primary" %>
       <% end %>
       <%= simple_form_for(@request) do |f| %>
-        <%= f.submit t('request.edit.refused'), class: "btn button-secondary" %>
+        <%= f.submit t('request.edit.refused'), class: "buttom-red" %>
       <% end %>
       <%= link_to t('request.edit.back'), requests_path, class: "btn button-secondary" %>
     </div>
