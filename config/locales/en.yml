@@ -1,45 +1,262 @@
+---
 en:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validation failed: %{errors}'
+        restrict_dependent_destroy:
+          has_many: You cannot delete the record because the dependent %{record} exist
+          has_one: You cannot delete the record because a dependent %{record} exists
+  date:
+    abbr_day_names:
+    - sun
+    - mon
+    - mar
+    - sea
+    - game
+    - fri
+    - sam
+    abbr_month_names:
+    -
+    - jan.
+    - feb.
+    - mar.
+    - apr.
+    - may
+    - june
+    - jul.
+    - august
+    - sept.
+    - oct.
+    - nov.
+    - dec.
+    day_names:
+    - sunday
+    - monday
+    - tuesday
+    - wednesday
+    - thursday
+    - friday
+    - saturday
+    formats:
+      default: "%d/%m/%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
+    month_names:
+    -
+    - january
+    - february
+    - march
+    - april
+    - may
+    - june
+    - july
+    - august
+    - september
+    - october
+    - november
+    - december
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: about an hour
+        other: approximately %{count} hours
+      about_x_months:
+        one: about a month
+        other: approximately %{count} months
+      about_x_years:
+        one: about a year
+        other: approximately %{count} years old
+      almost_x_years:
+        one: almost a year
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+        zero: less than a minute
+      less_than_x_seconds:
+        one: less than a second
+        other: less than %{count} seconds
+        zero: less than a second
+      over_x_years:
+        one: more than one year
+        other: over %{count} years old
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
+      x_years:
+        one: 1 year
+        other: "%{count} years"
+    prompts:
+      day: Day
+      hour: Time
+      minute: Minute
+      month: Month
+      second: Second
+      year: Year
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: must be accepted
+      blank: must be completed
+      confirmation: does not match %{attribute}
+      empty: must be completed
+      equal_to: must be equal to %{count}
+      even: must be even
+      exclusion: is not available
+      greater_than: must be greater than %{count}
+      greater_than_or_equal_to: must be greater than or equal to %{count}
+      inclusion: is not included in the list
+      invalid: is not valid
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      model_invalid: 'Failed validation: %{errors}'
+      not_a_number: is not a number
+      not_an_integer: must be a whole number
+      odd: must be odd
+      other_than: must be different from %{count}
+      present: must be empty
+      required: must exist
+      taken: is already in use
+      too_long:
+        one: is too long (not more than one character)
+        other: is too long (no more than %{count} characters)
+      too_short:
+        one: is too short (at least one character)
+        other: is too short (at least %{count} characters)
+      wrong_length:
+        one: is not the right length (must be one character)
+        other: is not the right length (must be %{count} characters)
+    template:
+      body: Please check the following fields
+      header:
+        one: 'Unable to register this(tte) %{model} : 1 error'
+        other: 'Unable to register this(t) %{model}: %{count} errors'
   general:
-    open: "Open"
-    close: "Closed"
-    my_reservations: "My Reservations"
-    reservations_admin: "Reservations"
-    en: "English"
-    fr: "Français"
     association: " associations found"
+    close: Closed
+    en: English
+    fr: Français
+    my_reservations: My Reservations
+    open: Open
+    reservations_admin: Reservations
+  helpers:
+    select:
+      prompt: Please select
+    submit:
+      create: Create a %{model}
+      submit: Save this(tte) %{model}
+      update: Edit this(tte) %{model}
   home:
-    title: "What are you looking for?"
-    type_sleep: "Sleep"
-    type_eat: "Eat"
-    type_care: "Care"
-  show:
-    link_map: "See on map"
-    edit: "Edit"
-    telephone: "Telephone:"
-    opening: "Opening hours:"
-    description: "Description:"
-    services: "Services available:"
-    reservation: "Reserve"
-    reservation_login: "Log in to reserve"
+    title: What are you looking for?
+    type_care: Care
+    type_eat: Eat
+    type_sleep: Sleep
+    type_test: Testing
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: billion
+          million: million
+          quadrillion: million billion
+          thousand: thousand
+          trillion: trillion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: byte
+            other: bytes
+          eb: Eo
+          gb: Go
+          kb: ko
+          mb: Mo
+          pb: Po
+          tb: To
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
   request:
-    error_start_date: "can't be before today"
-    error_end_date: "must be after start date"
-    index:
-      title: "My Reservations"
-      title_admin: "Reservations"
-      pending: "Pending"
-      approved: "Request approved"
-      refused: "Request refused"
-      cancel: "Request cancel"
-      request: "Request from"
-      request_btn: "See request"
     edit:
-      update: "Accept request"
-      back: "Discard changes"
-      btn_cancel: "Refuse request"
-      cancel: "Request canceled"
-      approved: "Accept"
-      refused: "Request refused"
+      approved: Accept
+      back: Discard changes
+      btn_cancel: Refuse request
+      cancel: Request canceled
+      refused: Request refuse
+      update: Accept request
       phone: "Phone number"
     new:
       btn: "Reserve"
+    error_end_date: must be after start date
+    error_start_date: can't be before today
+    index:
+      approved: Request approved
+      cancel: Request cancel
+      pending: Request pending
+      refused: Refused
+      title: My Reservations
+      title_admin: Reservations
+      request: Request from
+      request_btn: See request
+  show:
+    description: 'Description:'
+    edit: Edit
+    link_map: See on map
+    opening: 'Opening hours:'
+    reservation: Reserve
+    reservation_login: Log in to reserve
+    services: 'Services available:'
+    telephone: 'Telephone:'
+  support:
+    array:
+      last_word_connector: " and"
+      two_words_connector: " and"
+      words_connector: ","
+  time:
+    am: am
+    formats:
+      default: "%d %B %Y %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
+    pm: pm

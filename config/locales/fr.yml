@@ -1,65 +1,12 @@
+---
 fr:
-  general:
-    open: "Ouvert"
-    close: "Fermé"
-    my_reservations: "Mes Réservations"
-    reservations_admin: "Réservations"
-    fr: "French"
-    en: "English"
-    association: " associations trouvées"
-  home:
-    title: "Que cherchez-vous?"
-    type_sleep: "Dormir"
-    type_eat: "Manger"
-    type_care: "Se soigner"
-  show:
-    link_map: "Voir sur la carte"
-    edit: "Editer"
-    telephone: "Téléphone :"
-    opening: "Heures d'ouverture :"
-    description: "Description :"
-    services: "Services disponibles :"
-    reservation: "Réserver"
-    reservation_login: "Log in pour réserver"
-  request:
-    error_start_date: "ne peut pas être avant aujourd'hui"
-    error_end_date: "doit être après la date de début"
-    index:
-      title: "Mes réservations"
-      title_admin: "Réservations"
-      pending: "En attendant"
-      approved: "Demande accepté"
-      refused: "Demande refusée"
-      cancel: "Demande annulée"
-      request: "Demande de"
-      request_btn: "Voir demande"
-    edit:
-      update: "Accepter la demande"
-      back: "Abandonner"
-      btn_cancel: "Annuler la demande"
-      cancel: "Demande annulée"
-      approved: "Accepter"
-      refused: "Refuser la demande"
-      phone: "Numéro de téléphone"
-      text-label: "Association de préférence"
-    new:
-      btn: "Réserver"
-      text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais.
-      Le bureau prend en compte votre préférence, mais en cas d’indisponibilité il vous attribuera un autre hébergement."
-      text-urgence: "Pour un hébergement d’urgence, merci de vous diriger directement à l’association dans les horaires proposés."
-      text-label: "Vous pouvez changer l’association de votre préférence"
-
-# github rails-i18n/rails/locale/fr.yml
-
   activerecord:
     errors:
       messages:
         record_invalid: 'La validation a échoué : %{errors}'
         restrict_dependent_destroy:
-          has_one: Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record}
-            dépendant(e) existe
-          has_many: Vous ne pouvez pas supprimer l'enregistrement parce que les %{record}
-            dépendants existent
+          has_many: Vous ne pouvez pas supprimer l'enregistrement parce que les %{record} dépendants existent
+          has_one: Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record} dépendant(e) existe
   date:
     abbr_day_names:
     - dim
@@ -128,38 +75,38 @@ fr:
         one: presqu'un an
         other: presque %{count} ans
       half_a_minute: une demi‑minute
-      less_than_x_seconds:
-        zero: moins d'une seconde
-        one: moins d'une seconde
-        other: moins de %{count} secondes
       less_than_x_minutes:
-        zero: moins d'une minute
         one: moins d'une minute
         other: moins de %{count} minutes
+        zero: moins d'une minute
+      less_than_x_seconds:
+        one: moins d'une seconde
+        other: moins de %{count} secondes
+        zero: moins d'une seconde
       over_x_years:
         one: plus d'un an
         other: plus de %{count} ans
-      x_seconds:
-        one: 1 seconde
-        other: "%{count} secondes"
-      x_minutes:
-        one: 1 minute
-        other: "%{count} minutes"
       x_days:
         one: 1 jour
         other: "%{count} jours"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
       x_months:
         one: 1 mois
         other: "%{count} mois"
+      x_seconds:
+        one: 1 seconde
+        other: "%{count} secondes"
       x_years:
         one: 1 an
         other: "%{count} ans"
     prompts:
-      second: Seconde
-      minute: Minute
-      hour: Heure
       day: Jour
+      hour: Heure
+      minute: Minute
       month: Mois
+      second: Seconde
       year: Année
   errors:
     format: "%{attribute} %{message}"
@@ -199,6 +146,15 @@ fr:
       header:
         one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
         other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
+  general:
+    association: " associations trouvées"
+    close: Fermé
+    en: English
+    fr: French
+    pt: Português
+    my_reservations: Mes Réservations
+    open: Ouvert
+    reservations_admin: Réservations
   helpers:
     select:
       prompt: Veuillez sélectionner
@@ -206,6 +162,15 @@ fr:
       create: Créer un(e) %{model}
       submit: Enregistrer ce(tte) %{model}
       update: Modifier ce(tte) %{model}
+  home:
+    title: Que cherchez-vous?
+    type_care: Se soigner
+    type_eat: Manger
+    type_sleep: Dormir
+    type_test: En train de tester
+  new:
+    request:
+      btn: Réserver
   number:
     currency:
       format:
@@ -256,6 +221,42 @@ fr:
     precision:
       format:
         delimiter: ''
+  request:
+    error_start_date: "ne peut pas être avant aujourd'hui"
+    error_end_date: "doit être après la date de début"
+    index:
+      title: "Mes réservations"
+      title_admin: "Réservations"
+      pending: "En attendant"
+      approved: "Demande accepté"
+      refused: "Demande refusée"
+      cancel: "Demande annulée"
+      request: "Demande de"
+      request_btn: "Voir demande"
+    edit:
+      update: "Accepter la demande"
+      back: "Abandonner"
+      btn_cancel: "Annuler la demande"
+      cancel: "Demande annulée"
+      approved: "Accepter"
+      refused: "Refuser la demande"
+      phone: "Numéro de téléphone"
+      text-label: "Association de préférence"
+    new:
+      btn: "Réserver"
+      text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais.
+      Le bureau prend en compte votre préférence, mais en cas d’indisponibilité il vous attribuera un autre hébergement."
+      text-urgence: "Pour un hébergement d’urgence, merci de vous diriger directement à l’association dans les horaires proposés."
+      text-label: "Vous pouvez changer l’association de votre préférence"
+  show:
+    link_map: "Voir sur la carte"
+    edit: "Editer"
+    telephone: "Téléphone :"
+    opening: "Heures d'ouverture :"
+    description: "Description :"
+    services: "Services disponibles :"
+    reservation: "Réserver"
+    reservation_login: "Log in pour réserver"
   support:
     array:
       last_word_connector: " et "
