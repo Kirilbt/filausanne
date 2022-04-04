@@ -14,8 +14,8 @@ class RequestsController < ApplicationController
   end
 
   def create
-    @request = Request.new(request_params)
-    @sleep = Sleep.find(params[:sleep_id])
+    @request = Request.new
+    @sleep = Service.find(params[:request][:service_id])
     @request.service = @sleep
     @request.user = current_user
     @request.status = "Pending"
@@ -35,14 +35,16 @@ class RequestsController < ApplicationController
     if params[:commit] == t('request.edit.btn_cancel')
       @request.update(status: "Cancel")
       return redirect_to requests_path
-    elsif params[:commit] == t('request.edit.approved')
+    elsif params[:commit] == t('request.edit.update')
+      @sleep = Service.find(params[:request][:service_id])
+      @request.service = @sleep
+      @request.update(request_params)
       @request.update(status: "Approved")
       return redirect_to requests_path
     elsif params[:commit] == t('request.edit.refused')
       @request.update(status: "Refused")
       return redirect_to requests_path
     end
-
     if @request.update(request_params)
       @request.update(status: "Pending")
       redirect_to requests_path

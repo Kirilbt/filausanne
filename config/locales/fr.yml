@@ -222,31 +222,41 @@ fr:
       format:
         delimiter: ''
   request:
-    edit:
-      approved: Accepter
-      back: Abandonner
-      btn_cancel: Annuler la demande
-      cancel: Demande Annulée
-      refused: Refuser
-      update: Mettre à jour
-    error_end_date: doit être après la date de début
-    error_start_date: ne peut pas être avant aujourd'hui
+    error_start_date: "ne peut pas être avant aujourd'hui"
+    error_end_date: "doit être après la date de début"
     index:
-      approved: Accepté
-      cancel: Cancel
-      pending: En attendant
-      refused: Refusé
-      title: Mes réservations
-      title_admin: Réservations
+      title: "Mes réservations"
+      title_admin: "Réservations"
+      pending: "En attendant"
+      approved: "Demande accepté"
+      refused: "Demande refusée"
+      cancel: "Demande annulée"
+      request: "Demande de"
+      request_btn: "Voir demande"
+    edit:
+      update: "Accepter la demande"
+      back: "Abandonner"
+      btn_cancel: "Annuler la demande"
+      cancel: "Demande annulée"
+      approved: "Accepter"
+      refused: "Refuser la demande"
+      phone: "Numéro de téléphone"
+      text-label: "Association de préférence"
+    new:
+      btn: "Réserver"
+      text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais.
+      Le bureau prend en compte votre préférence, mais en cas d’indisponibilité il vous attribuera un autre hébergement."
+      text-urgence: "Pour un hébergement d’urgence, merci de vous diriger directement à l’association dans les horaires proposés."
+      text-label: "Vous pouvez changer l’association de votre préférence"
   show:
-    description: 'Description :'
-    edit: Editer
-    link_map: Voir sur la carte
-    opening: 'Heures d''ouverture :'
-    reservation: Réserver
-    reservation_login: Log in pour réserver
-    services: 'Services disponibles :'
-    telephone: 'Téléphone :'
+    link_map: "Voir sur la carte"
+    edit: "Editer"
+    telephone: "Téléphone :"
+    opening: "Heures d'ouverture :"
+    description: "Description :"
+    services: "Services disponibles :"
+    reservation: "Réserver"
+    reservation_login: "Log in pour réserver"
   support:
     array:
       last_word_connector: " et "

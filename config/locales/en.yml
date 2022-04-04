@@ -168,9 +168,6 @@ en:
     type_eat: Eat
     type_sleep: Sleep
     type_test: Testing
-  new:
-    request:
-      btn: Reserve
   number:
     currency:
       format:
@@ -225,19 +222,24 @@ en:
     edit:
       approved: Accept
       back: Discard changes
-      btn_cancel: Cancel request
+      btn_cancel: Refuse request
       cancel: Request canceled
-      refused: Refuse
-      update: Update
+      refused: Request refuse
+      update: Accept request
+      phone: "Phone number"
+    new:
+      btn: "Reserve"
     error_end_date: must be after start date
     error_start_date: can't be before today
     index:
-      approved: Approved
-      cancel: Cancel
-      pending: Pending
+      approved: Request approved
+      cancel: Request cancel
+      pending: Request pending
       refused: Refused
       title: My Reservations
       title_admin: Reservations
+      request: Request from
+      request_btn: See request
   show:
     description: 'Description:'
     edit: Edit

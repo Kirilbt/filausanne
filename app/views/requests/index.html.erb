@@ -8,13 +8,15 @@
   </div>
 </div>
 <div class="container">
-  <% @requests.order("created_at asc").reverse_each do |request| %>
+  <% @requests.order("created_at desc").each do |request| %>
     <div class="card-service">
-      <%= image_tag("img-test.jpg") %>
+      <%= image_tag("img-test.jpg")%>
       <div class="card-service-infos">
         <h2><%= request.service.name %></h2>
-        <p> <%= request.service.address%></p>
-        <p> <%= request.start_date.strftime("%d-%m-%Y") %> - <%= request.end_date.strftime("%d-%m-%Y") %> </p>
+        <p> <%= t('request.index.request') %> <%= request.user.first_name%> <%= request.user.last_name%> - <%= request.user.phone_number %></p>
+          <% if (request.start_date != nil) %>
+            <p> <%= request.start_date.strftime("%d-%m-%Y") %> - <%= request.end_date.strftime("%d-%m-%Y") %> </p>
+          <% end %>
         <% case request.status %>
         <% when "Pending" %>
           <div class="status-yellow">
@@ -33,19 +35,12 @@
             <p><%= t('request.edit.cancel') %></p>
           </div>
         <% end %>
-        <% if current_user.admin? && request.status != t('request.index.cancel') %>
-          <span>
-            <%= simple_form_for(request) do |f| %>
-              <%= f.submit t('request.edit.approved'), class: "button-green" %>
-              <%= f.submit t('request.edit.refused'), class: "button-red" %>
-            <% end %>
-          </span>
-        <% elsif request.status != t('request.index.cancel') && request.status != t('request.index.refused') %>
-          <%= link_to edit_request_path(request) do %>
-            <div class='edit-btn'> <%= image_tag "edit-btn.svg"  %> </div>
+        <% if current_user.admin? && request.status != "Cancel" %>
+          <%= link_to t('request.index.request_btn'), edit_request_path(request), class: "button-green" %>
+        <% elsif request.status != "Cancel" && request.status != "Refused" %>
+          <%= simple_form_for(request) do |f| %>
+            <%= f.submit t('request.edit.btn_cancel'), class: "button-red" %>
           <% end %>
-        <% elsif current_user.admin == "false" %>
-          <div class='edit-btn-opacity'> <%= image_tag "edit-btn.svg"  %> </div>
         <% end %>
       </div>
     </div>
