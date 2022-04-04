@@ -7,6 +7,10 @@ fr:
     fr: "French"
     en: "English"
     association: " associations trouvées"
+    status: # DO NOT CHANGE
+      approved: "Approved"
+      refused: "Refused"
+      cancel : "Cancel"
   home:
     title: "Que cherchez-vous?"
     type_sleep: "Dormir"
@@ -28,16 +32,19 @@ fr:
       title: "Mes réservations"
       title_admin: "Réservations"
       pending: "En attendant"
-      approved: "Accepté"
-      refused: "Refusé"
-      cancel: "Cancel"
+      approved: "Demande accepté"
+      refused: "Demande refusée"
+      cancel: "Demande annulée"
+      request: "Demande de"
+      request_btn: "Voir demande"
     edit:
-      update: "Mettre à jour"
+      update: "Accepter la demande"
       back: "Abandonner"
       btn_cancel: "Annuler la demande"
-      cancel: "Demande Annulée"
+      cancel: "Demande annulée"
       approved: "Accepter"
-      refused: "Refuser"
+      refused: "Refuser la demande"
+      phone: "Numéro de téléphone"
   new:
     request:
       btn: "Réserver"
