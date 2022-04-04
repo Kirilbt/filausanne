@@ -5,7 +5,7 @@
     <% end %>
 
     <div class="nav-item dropdown">
-            <a href="#" class="nav-link nav-item language" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#" class="nav-item language" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa fa-light fa-globe"></i> <%= params[:locale] ? (I18n.t "general.#{params[:locale]}") : (I18n.t "general.#{I18n.default_locale}") %>
             </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
