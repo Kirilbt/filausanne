@@ -1,3 +1,14 @@
+<%= link_to sleeps_path do %>
+  <div class="type-nav bg-sleep">
+    <div class="container">
+      <div class="type-nav-content">
+        <%= image_tag "arrow.svg", class:"arrow" %>
+        <%= image_tag "sleep.svg", class:"type-icon" %>
+        <p><strong><%= t 'home.type_sleep' %></strong></p>
+      </div>
+    </div>
+  </div>
+<% end %>
 <%= render "pages/show" %>
 <% if current_user %>
 <% unless current_user.admin? %>
