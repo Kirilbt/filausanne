@@ -17,10 +17,17 @@
       <% end %>
       <div class="card-service-infos">
         <h2><%= request.service.name %></h2>
-        <p> <%= t('request.index.request') %> <%= request.user.first_name%> <%= request.user.last_name%> - <%= request.user.phone_number %></p>
-          <% if (request.start_date != nil) %>
-            <p> <%= request.start_date.strftime("%d-%m-%Y") %> - <%= request.end_date.strftime("%d-%m-%Y") %> </p>
-          <% end %>
+       <% if current_user.admin?  %>
+          <p> <%= t('request.index.request') %> <%= request.user.first_name%> <%= request.user.last_name%> - <%= request.user.phone_number %></p>
+            <% if (request.start_date != nil) %>
+              <p> <%= request.start_date.strftime("%d-%m-%Y") %> - <%= request.end_date.strftime("%d-%m-%Y") %> </p>
+            <% end %>
+        <% else %>
+          <p> <%= request.service.address%></p>
+        <% end %>
+        <% if (request.start_date != nil) %>
+          <p> <%= request.start_date.strftime("%d-%m-%Y") %> - <%= request.end_date.strftime("%d-%m-%Y") %> </p>
+        <% end %>
         <div class="elements">
           <% case request.status %>
           <% when "Pending" %>

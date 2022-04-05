@@ -147,6 +147,8 @@ fr:
         one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
         other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
   general:
+    twilio_sms_approved: "Votre demande de réservation a été acceptée. Association: %{name} Date: %{start_date} - %{end_date} Adresse: %{address}"
+    twilio_sms_refused: "Votre demande de réservation du %{date} a été refussée"
     association: " associations trouvées"
     close: Fermé
     en: English
@@ -168,10 +170,9 @@ fr:
     type_eat: Manger
     type_sleep: Dormir
     type_emergency: Urgence
-    type_test: En train de tester
-  new:
-    request:
-      btn: Réserver
+    type_contact: "Contact"
+    type_urgent: "Urgente"
+    btn_urgent: "Pour ce soir"
   number:
     currency:
       format:
@@ -228,7 +229,7 @@ fr:
     index:
       title: "Mes réservations"
       title_admin: "Réservations"
-      pending: "En attendant"
+      pending: "En attente"
       approved: "Demande accepté"
       refused: "Demande refusée"
       cancel: "Demande annulée"
@@ -248,7 +249,7 @@ fr:
       text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais.
       Le bureau prend en compte votre préférence, mais en cas d’indisponibilité il vous attribuera un autre hébergement."
       text-urgence: "Pour un hébergement d’urgence, merci de vous diriger directement à l’association dans les horaires proposés."
-      text-label: "Vous pouvez changer l’association de votre préférence"
+      text-label: "Vous pouvez changer l’association de votre préférence."
   show:
     link_map: "Voir sur la carte"
     edit: "Editer"

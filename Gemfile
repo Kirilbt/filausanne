@@ -33,6 +33,9 @@ gem 'devise'
 gem "geocoder"
 gem 'cloudinary', '~> 1.16.0'
 
+# Twilio send SMS
+gem 'twilio-ruby'
+
 # Translation
 gem 'activerecord'
 gem 'pg', :platform => :ruby

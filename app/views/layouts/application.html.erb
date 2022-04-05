@@ -13,8 +13,9 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-    <%= yield %>
+    <%= render 'shared/welcome' if params[:locale] == nil %>
+    <%= render 'shared/navbar' unless params[:locale] == nil %>
+    <%= render 'shared/flashes' unless params[:locale] == nil %>
+    <%= yield unless params[:locale] == nil%>
   </body>
 </html>

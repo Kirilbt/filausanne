@@ -18,6 +18,7 @@ class RequestsController < ApplicationController
     @sleep = Service.find(params[:request][:service_id])
     @request.service = @sleep
     @request.user = current_user
+    @request.language = params[:locale]
     @request.status = "Pending"
     if @request.save
       redirect_to requests_path
@@ -40,9 +41,11 @@ class RequestsController < ApplicationController
       @request.service = @sleep
       @request.update(request_params)
       @request.update(status: "Approved")
+      TwilioClient.new.send_sms(User.find(@request.user_id).phone_number, t('general.twilio_sms_approved', locale: @request.language, name: "#{@sleep.name}", start_date: "#{@request.start_date.strftime("%d-%m-%Y")}", end_date: "#{@request.end_date.strftime("%d-%m-%Y")}", address: "#{@sleep.address}"))
       return redirect_to requests_path
     elsif params[:commit] == t('request.edit.refused')
       @request.update(status: "Refused")
+      TwilioClient.new.send_sms(User.find(@request.user_id).phone_number, t('general.twilio_sms_refused', locale: @request.language, date: "#{@request.created_at.strftime("%d-%m-%Y")}"))
       return redirect_to requests_path
     end
     if @request.update(request_params)
