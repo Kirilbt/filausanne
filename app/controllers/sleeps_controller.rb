@@ -4,7 +4,6 @@ class SleepsController < ApplicationController
 
   def index
     @sleeps = Sleep.all
-    raise
   end
 
   def show
