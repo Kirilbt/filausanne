@@ -11,6 +11,7 @@
         <div class="card-service-infos">
           <h2><%= service.name %></h2>
           <p> <%= service.address%></p>
+          <span class="card-service-type <%= service.type.downcase %>"><%= service.type %></span>
           <% day_open = service.opening_hours.select { |hours|  hours.day_en == (Date.today.strftime("%A")) } %>
           <% hour_open = day_open.select { |day| Time.now.strftime("%H:%M") > day.opens.strftime("%H:%M") && Time.now.strftime("%H:%M") < day.closes.strftime("%H:%M") }  %>
           <% if hour_open == [] %>
