@@ -229,7 +229,7 @@ fr:
     index:
       title: "Mes réservations"
       title_admin: "Réservations"
-      pending: "En attendant"
+      pending: "En attente"
       approved: "Demande accepté"
       refused: "Demande refusée"
       cancel: "Demande annulée"

@@ -220,20 +220,13 @@ pt:
       format:
         delimiter: ''
   request:
-    edit:
-      approved: Aceite
-      back: Interromper
-      btn_cancel: Pedido de cancelamento
-      cancel: Aplicação cancelada
-      refused: Recusar
-      update: Atualização
     error_end_date: deve ser após a data de início
     error_start_date: não pode ser antes de hoje
     index:
-      approved: Aceito
-      cancel: Cancelar
-      pending: Enquanto isso
-      refused: Rejeitado
+      approved: Pedido aceite
+      cancel: Pedido cancelado
+      pending: Pendente
+      refused: Pedido rejeitado
       title: As minhas reservas
       title_admin: Reservas
       request: "Pedido de"
