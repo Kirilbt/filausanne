@@ -169,6 +169,9 @@ pt:
     type_care: Saúde
     type_eat: Comer
     type_sleep: Dormir
+    type_contact: "Contacto"
+    type_urgent: "Urgente"
+    btn_urgent: "Para esta noite"
   number:
     currency:
       format:

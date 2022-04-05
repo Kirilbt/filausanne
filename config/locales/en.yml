@@ -169,7 +169,6 @@ en:
     type_care: Care
     type_eat: Eat
     type_sleep: Sleep
-    type_test: Testing
     type_contact: "Contact"
     type_urgent: "Urgent"
     btn_urgent: "For tonight"
@@ -232,6 +231,7 @@ en:
       refused: Request refuse
       update: Accept request
       phone: "Phone number"
+      text-label: "Preferred association"
     new:
       btn: "Reserve"
       text: "Your request will be reviewed by the reservation office. You will receive an answer as soon as possible.
