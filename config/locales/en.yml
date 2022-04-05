@@ -168,6 +168,9 @@ en:
     type_eat: Eat
     type_sleep: Sleep
     type_test: Testing
+    type_contact: "Contact"
+    type_urgent: "Urgent"
+    btn_urgent: "For tonight"
   number:
     currency:
       format:

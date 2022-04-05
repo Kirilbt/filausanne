@@ -86,3 +86,25 @@
 
   }
 }
+
+// Type tag
+
+.card-service-type {
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  .sleep span  {
+    background: $sleep_color;
+    color: $sleep_color_darker;
+  }
+
+  .eat span {
+    background: $eat_color;
+    color: $eat_color_darker;
+  }
+
+  .care span {
+    background: $care_color;
+    color: $care_color_darker;
+  }
+}

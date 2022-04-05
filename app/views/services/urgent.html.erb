@@ -1,0 +1,26 @@
+<div class="container">
+  <p class="pt-3"> <strong><%= t("home.type_urgent") %></strong> <%= @urgents.count %> <%= t("general.association") %> </p>
+  <% @urgents.each do |service| %>
+    <%= link_to service_path(service) do %>
+      <div class="card-service">
+        <% if service.photo.key? %>
+          <img src=<%= service.photo.url %> alt="">
+        <% else %>
+          <%= image_tag("img-test.jpg") %>
+        <% end %>
+        <div class="card-service-infos">
+          <h2><%= service.name %></h2>
+          <p> <%= service.address%></p>
+          <span class="card-service-type <%= service.type.downcase %>"><%= service.type %></span>
+          <% day_open = service.opening_hours.select { |hours|  hours.day_en == (Date.today.strftime("%A")) } %>
+          <% hour_open = day_open.select { |day| Time.now.strftime("%H:%M") > day.opens.strftime("%H:%M") && Time.now.strftime("%H:%M") < day.closes.strftime("%H:%M") }  %>
+          <% if hour_open == [] %>
+            <span id="close"> <%= t 'general.close' %> </span>
+          <% else %>
+            <span id="open"><%= t 'general.open' %></span>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
