@@ -1,6 +1,7 @@
 <% object = @sleep unless @sleep.nil?  %>
 <% object = @eat unless @eat.nil?  %>
 <% object = @care unless @care.nil?  %>
+<% object = @service unless @service.nil?  %>
 
 <div class="banner-show">
   <% if object.photo.key? %>
@@ -31,6 +32,16 @@
 <% end %>
 
 <% if @care %>
+  <% if current_user %>
+    <% if current_user.admin %>
+      <div class="edit-show">
+        <%= link_to t('show.edit'), edit_care_path, class: "button-primary" %>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>
+
+<% if @service %>
   <% if current_user %>
     <% if current_user.admin %>
       <div class="edit-show">
