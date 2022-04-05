@@ -10,7 +10,11 @@
 <div class="container">
   <% @requests.order("created_at desc").each do |request| %>
     <div class="card-service">
-      <%= image_tag("img-test.jpg")%>
+      <% if request.service.photo.key? %>
+          <img src=<%= request.service.photo.url %> alt="">
+        <% else %>
+          <%= image_tag("img-test.jpg") %>
+      <% end %>
       <div class="card-service-infos">
         <h2><%= request.service.name %></h2>
         <p> <%= t('request.index.request') %> <%= request.user.first_name%> <%= request.user.last_name%> - <%= request.user.phone_number %></p>
