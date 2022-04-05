@@ -1,0 +1,80 @@
+.all-page {
+  position: relative;
+  background-color: $green;
+  height: 100vh;
+  width: 100vw;
+}
+
+.welcome {
+  padding: 50px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.radio-language {
+  position: relative;
+  margin:10px 0;
+  padding:0;
+  width: 200px;
+  height: 40px;
+  border:1px solid $light-gray;
+  border-radius: 5px;
+}
+
+.radio-language {
+  label {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+    color: white;
+  }
+  input {
+    opacity:0.011;
+    z-index:100;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+  input:checked + label {
+    background:$light-gray;
+    color: $green;
+  }
+  label {
+    padding:5px;
+    cursor:pointer;
+    z-index:90;
+  }
+
+  input[type="radio"]:hover + label {
+    background: $eat_color;
+  }
+}
+
+input[type="submit"] {
+  width: 200px;
+  display: inline-block;
+  margin: 10px 0;
+}
