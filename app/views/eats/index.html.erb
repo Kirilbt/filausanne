@@ -1,3 +1,14 @@
+<%= link_to root_path do %>
+  <div class="type-nav bg-eat">
+    <div class="container">
+      <div class="type-nav-content">
+        <%= image_tag "arrow.svg", class:"arrow" %>
+        <%= image_tag "eat.svg", class:"type-icon" %>
+        <p><strong><%= t 'home.type_eat' %></strong> <%= @eats.count %> <%= t("general.association") %></p>
+      </div>
+    </div>
+  </div>
+<% end %>
 <div class="container">
   <p class="pt-3"> <strong><%= t("home.type_eat") %></strong> <%= @eats.count %> <%= t("general.association") %> </p>
   <% @eats.each do |eat| %>
