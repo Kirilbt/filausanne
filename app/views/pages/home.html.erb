@@ -1,39 +1,49 @@
-<div class="top-section">
-  <div class="container">
-    <h1><%= t 'home.title' %></h1>
-  </div>
-</div>
+<div class="home-container">
+  <div style="width: 100%; height: 50vh;"
+    id="map-home"
+    data-controller="mapboxhome"
+    data-mapboxhome-markers-value="<%= @markers.to_json %>"
+    data-mapboxhome-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 
-<div class="container">
-  <div class="grid">
-    <%= link_to sleeps_path do %>
-      <div class="service sleep">
-        <%= image_tag "sleep.svg" %>
-        <p><%= t 'home.type_sleep' %></p>
+  <div class="services">
+    <div class="top-section">
+      <div class="container">
+        <h2><%= t 'home.title' %></h2>
       </div>
-    <% end %>
-    <%= link_to eats_path do %>
-      <div class="service eat">
-        <%= image_tag "eat.svg" %>
-        <p><%= t 'home.type_eat' %></p>
+    </div>
+
+    <div class="container">
+      <div class="grid">
+        <%= link_to sleeps_path do %>
+          <div class="service sleep">
+            <%= image_tag "sleep.svg" %>
+            <p><%= t 'home.type_sleep' %></p>
+          </div>
+        <% end %>
+        <%= link_to eats_path do %>
+          <div class="service eat">
+            <%= image_tag "eat.svg" %>
+            <p><%= t 'home.type_eat' %></p>
+          </div>
+        <% end %>
+        <%= link_to cares_path do %>
+          <div class="service care">
+            <%= image_tag "care.svg" %>
+            <p><%= t 'home.type_care' %></p>
+          </div>
+        <% end %>
+        <%= link_to cares_path do %>
+          <div class="service contact">
+            <%= image_tag "care.svg" %>
+            <p><%= t 'home.type_contact' %></p>
+          </div>
+        <% end %>
+        <%= link_to '#' do %>
+          <div class="urgent" >
+            <%= link_to t('home.btn_urgent'), urgent_path, class: "btn button-urgent" %>
+          </div>
+        <% end %>
       </div>
-    <% end %>
-    <%= link_to cares_path do %>
-      <div class="service care">
-        <%= image_tag "care.svg" %>
-        <p><%= t 'home.type_care' %></p>
-      </div>
-    <% end %>
-    <%= link_to cares_path do %>
-      <div class="service contact">
-        <%= image_tag "care.svg" %>
-        <p><%= t 'home.type_contact' %></p>
-      </div>
-    <% end %>
-    <%= link_to '#' do %>
-      <div class="urgent" >
-        <%= link_to t('home.btn_urgent'), urgent_path, class: "btn button-urgent" %>
-      </div>
-    <% end %>
+    </div>
   </div>
 </div>
