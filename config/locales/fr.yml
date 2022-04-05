@@ -147,6 +147,8 @@ fr:
         one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
         other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
   general:
+    twilio_sms_approved: "Votre demande de réservation a été acceptée. Association: %{name} Date: %{start_date} - %{end_date} Adresse: %{address}"
+    twilio_sms_refused: "Votre demande de réservation du %{date} a été refussée"
     association: " associations trouvées"
     close: Fermé
     en: English
