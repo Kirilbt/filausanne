@@ -17,7 +17,7 @@
       <% end %>
       <div class="card-service-infos">
         <h2><%= request.service.name %></h2>
-        <% if current_user.admin?  %>
+       <% if current_user.admin?  %>
           <p> <%= t('request.index.request') %> <%= request.user.first_name%> <%= request.user.last_name%> - <%= request.user.phone_number %></p>
             <% if (request.start_date != nil) %>
               <p> <%= request.start_date.strftime("%d-%m-%Y") %> - <%= request.end_date.strftime("%d-%m-%Y") %> </p>
@@ -28,31 +28,37 @@
         <% if (request.start_date != nil) %>
           <p> <%= request.start_date.strftime("%d-%m-%Y") %> - <%= request.end_date.strftime("%d-%m-%Y") %> </p>
         <% end %>
-        <% case request.status %>
-        <% when "Pending" %>
-          <div class="status-yellow">
-            <p><%= t('request.index.pending') %></p>
-          </div>
-        <% when "Approved" %>
-          <div class="status-green">
-            <p><%= t('request.index.approved') %></p>
-          </div>
-        <% when "Refused" %>
-          <div class="status-red">
-            <p><%= t('request.index.refused') %></p>
-          </div>
-          <% when "Cancel" %>
-          <div class="status-red">
-            <p><%= t('request.edit.cancel') %></p>
-          </div>
-        <% end %>
-        <% if current_user.admin? && request.status != "Cancel" %>
-          <%= link_to t('request.index.request_btn'), edit_request_path(request), class: "button-green" %>
-        <% elsif request.status != "Cancel" && request.status != "Refused" %>
-          <%= simple_form_for(request) do |f| %>
-            <%= f.submit t('request.edit.btn_cancel'), class: "button-red" %>
+        <div class="elements">
+          <% case request.status %>
+          <% when "Pending" %>
+            <div class="status-yellow">
+              <p><%= t('request.index.pending') %></p>
+            </div>
+          <% when "Approved" %>
+            <div class="status-green">
+              <p><%= t('request.index.approved') %></p>
+            </div>
+          <% when "Refused" %>
+            <div class="status-red">
+              <p><%= t('request.index.refused') %></p>
+            </div>
+            <% when "Cancel" %>
+            <div class="status-red">
+              <p><%= t('request.edit.cancel') %></p>
+            </div>
           <% end %>
-        <% end %>
+          <% if current_user.admin? && request.status != "Cancel" %>
+            <div class="button-view-request">
+              <%= link_to t('request.index.request_btn'), edit_request_path(request) %> <i class="fa fa-solid fa-angle-right"></i>
+            </div>
+          <% elsif request.status != "Cancel" && request.status != "Refused" %>
+            <%= simple_form_for(request) do |f| %>
+            <div class="button-cancel-request">
+              <%= f.submit t('request.edit.btn_cancel', class: "button-cancel-request") %> <i class="fa fa-solid fa-xmark"></i>
+            </div>
+            <% end %>
+          <% end %>
+        </div>
       </div>
     </div>
   <% end %>

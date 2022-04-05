@@ -1,5 +1,15 @@
+<%= link_to root_path do %>
+  <div class="type-nav bg-urgent">
+    <div class="container">
+      <div class="type-nav-content">
+        <%= image_tag "arrow.svg", class:"arrow" %>
+        <%= image_tag "urgent.svg", class:"type-icon" %>
+        <p><strong><%= t 'home.type_urgent' %></strong> <%= @urgents.count %> <%= t("general.association") %></p>
+      </div>
+    </div>
+  </div>
+<% end %>
 <div class="container">
-  <p class="pt-3"> <strong><%= t("home.type_urgent") %></strong> <%= @urgents.count %> <%= t("general.association") %> </p>
   <% @urgents.each do |service| %>
     <%= link_to service_path(service) do %>
       <div class="card-service">

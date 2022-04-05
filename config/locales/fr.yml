@@ -169,6 +169,7 @@ fr:
     type_care: Se soigner
     type_eat: Manger
     type_sleep: Dormir
+    type_emergency: Urgence
     type_contact: "Contact"
     type_urgent: "Urgente"
     btn_urgent: "Pour ce soir"
@@ -233,7 +234,7 @@ fr:
       refused: "Demande refusée"
       cancel: "Demande annulée"
       request: "Demande de"
-      request_btn: "Voir demande"
+      request_btn: "Voir"
     edit:
       update: "Accepter la demande"
       back: "Abandonner"

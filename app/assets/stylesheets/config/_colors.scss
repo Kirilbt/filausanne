@@ -1,13 +1,16 @@
 // Define variables for your color scheme
 
 // For example:
+$yellow: #e7a120;
+$yellow-25: #FFC65A25;
+$green: #149301;
+$green-25: #18a40225;
 $red: #FD1015;
-$blue: #0D6EFD;
-$yellow: #FFC65A;
+$red-25: #fd101425;
 $orange: #E67E22;
-$green: #1EDD88;
+$blue: #0D6EFD;
 $gray: #0E0000;
-$light-gray: #F4F4F4;
+$light-gray: #eeeeee;
 $white: #ffffff;
 
 // Colors
@@ -15,13 +18,15 @@ $font: #333;
 
 // Type
 $sleep_color: #ffe894;
-$sleep_color_darker: #fddf72;
+$sleep_color_darker: #D08900;
 $eat_color: #b8deb6;
-$eat_color_darker: #9ada96;
+$eat_color_darker: #5baa55;
 $care_color: #ffc9b1;
-$care_color_darker: #ffa680;
-$contact_color: #B1DAFF;
-$contact_color_darker: #8dcaff;
+$care_color_darker: #E54E0B;
+$emergency_color: #B1DAFF;
+$emergency_color_darker: #3b83c3;
+$urgent_color: #4B4B4B;
+$urgent_color_darker: #333333;
 
 // Buttons
 $btn_primary: #57c098;
