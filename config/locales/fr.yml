@@ -169,10 +169,9 @@ fr:
     type_care: Se soigner
     type_eat: Manger
     type_sleep: Dormir
-    type_test: En train de tester
-  new:
-    request:
-      btn: Réserver
+    type_contact: "Contact"
+    type_urgent: "Urgente"
+    btn_urgent: "Pour ce soir"
   number:
     currency:
       format:
