@@ -2,7 +2,6 @@
   overflow: hidden;
   height: 160px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   border-radius: 8px;
@@ -28,7 +27,7 @@
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .card-service span {
@@ -41,70 +40,122 @@
 
 .card-service .card-service-infos {
   padding: 16px;
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  // Type tag
+
+  .card-service-type {
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 8px;
+  }
+
+  .sleep {
+    background: $sleep_color;
+    color: $sleep_color_darker;
+  }
+
+  .eat {
+    background: $eat_color;
+    color: $eat_color_darker;
+  }
+
+  .care {
+    background: $care_color;
+    color: $care_color_darker;
+  }
+
+  .emergency {
+    background: $emergency_color;
+    color: $emergency_color_darker;
+  }
 }
 
 #open {
   font-weight: bold;
-  color: green
+  color: $green;
+  background: $green-25;
+  padding: 4px 8px;
+  border-radius: 8px;
 }
 
 #close {
   font-weight: bold;
-  color: red;
+  color: $red;
+  background: $red-25;
+  padding: 4px 8px;
+  border-radius: 8px;
 }
 
-.status-yellow p {
-  background: rgb(248, 230, 160);
-  border-radius: 6px;
-  color: rgb(182, 134, 2);
-  text-align: center;
-  padding: 2px 8px;
-  display: inline;
-}
-
-.status-red{
+.status-yellow {
   p {
-    background: rgb(255, 184, 181);
-    border-radius: 6px;
-    color: rgb(182, 26, 26);
-    text-align: center;
-    padding: 2px 8px;
+    font-weight: bold;
+    color: $yellow;
+    background: $yellow-25;
+    padding: 4px 8px;
+    border-radius: 8px;
     display: inline;
+  }
+}
 
+.status-red {
+  p {
+    font-weight: bold;
+    color: $red;
+    background: $red-25;
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: inline;
   }
 }
 
 .status-green {
   p {
-    background: rgb(202, 255, 181);
-    border-radius: 6px;
-    color: rgb(18, 141, 7);
-    text-align: center;
-    padding: 2px 8px;
+    font-weight: bold;
+    color: $green;
+    background: $green-25;
+    padding: 4px 8px;
+    border-radius: 8px;
     display: inline;
-    margin-bottom: 16px;
-
   }
 }
 
-// Type tag
+.elements {
+  // display: flex;
+  // justify-content: space-between;
 
-.card-service-type {
-  padding: 4px 8px;
-  border-radius: 4px;
-
-  .sleep span  {
-    background: $sleep_color;
-    color: $sleep_color_darker;
+  i {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
   }
 
-  .eat span {
-    background: $eat_color;
-    color: $eat_color_darker;
+  .button-cancel-request {
+    font-size: 12px;
+    font-weight: bold;
+    color: $red;
+    background: $red-25;
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: inline;
   }
 
-  .care span {
-    background: $care_color;
-    color: $care_color_darker;
+  .button-view-request {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    background: $light-gray;
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: inline;
+  }
+
+  input[type=button] {
+    border: none;
+    outline: none;
+    background: none;
   }
 }

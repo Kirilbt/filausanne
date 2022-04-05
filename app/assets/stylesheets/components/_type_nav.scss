@@ -1,0 +1,56 @@
+.type-nav {
+  padding: 16px 0;
+  z-index: 1000;
+  position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.type-nav-content {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+
+  .arrow {
+    width: 24px;
+  }
+
+  .type-icon {
+    display: block;
+    background: white;
+    padding: 8px;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin: 0 16px;
+  }
+}
+
+.bg-sleep {
+  background: $sleep_color;
+}
+
+.bg-eat {
+  background: $eat_color;
+}
+
+.bg-care {
+  background: $care_color;
+}
+
+.bg-emergency {
+  background: $emergency_color;
+}
+
+.bg-urgent {
+  background: $urgent_color;
+  color: white;
+
+  .arrow{
+    filter: invert(100%) sepia(24%) saturate(0%) hue-rotate(271deg) brightness(104%) contrast(100%);
+  }
+}
