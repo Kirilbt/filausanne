@@ -1,0 +1,63 @@
+pt:
+  simple_form:
+    "yes": 'Sim'
+    "no": 'Não'
+    required:
+      text: 'necessário'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Por favor, reveja os problemas abaixo:"
+
+    # Examples
+    sessions:
+      new:
+        title: 'Iniciar Sessão'
+        submit: 'Iniciar Sessão'
+        sign_up_link: 'Inscrever-se'
+        forgot_password_link: 'Esqueceu-se da palavra-passe?'
+
+    registrations:
+      new:
+        title: 'Inscrever-se'
+        submit: 'Inscrever-se'
+        sign_in_link: 'Iniciar sessão'
+
+    passwords:
+      new:
+        title: 'Esqueceu-se da palavra-passe?'
+
+    edits:
+        title: 'Editar detalhes'
+        name: 'Nome'
+        description: 'Descrição'
+        address: 'Morada'
+        phone_number: 'Número de telefone'
+        website: 'Website'
+        price: 'Preço'
+        capacity: 'Capacidade'
+
+    labels:
+      defaults:
+        first_name: 'Nome próprio'
+        last_name: 'Apelido'
+        phone_number: 'Número de telefone'
+        email: 'E-mail'
+        password: 'Password'
+        password_confirmation: 'Confirmação da password'
+      user:
+        new:
+          remember_me: 'Lembre-se de mim'
+        edit:
+    hints:
+      defaults:
+        username: 'User name to sign in'
+        # password: "Don't use special characters, please"
+    # include_blanks:
+    #   defaults:
+    #     age: 'Rather not say'
+    # prompts:
+    #   defaults:
+    #     age: 'Select your age'
