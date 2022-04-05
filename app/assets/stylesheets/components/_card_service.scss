@@ -2,7 +2,6 @@
   overflow: hidden;
   height: 160px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   border-radius: 8px;
@@ -28,7 +27,7 @@
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .card-service span {
@@ -41,16 +40,41 @@
 
 .card-service .card-service-infos {
   padding: 16px;
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  .sleep {
+    background: $sleep_color;
+    color: $sleep_color_darker;
+  }
+
+  .eat {
+    background: $eat_color;
+    color: $eat_color_darker;
+  }
+
+  .care {
+    background: $care_color;
+    color: $care_color_darker;
+  }
 }
 
 #open {
   font-weight: bold;
-  color: green
+  color: $green;
+  background: $green-25;
+  padding: 4px 8px;
+  border-radius: 8px;
 }
 
 #close {
   font-weight: bold;
-  color: red;
+  color: $red;
+  background: $red-25;
+  padding: 4px 8px;
+  border-radius: 8px;
 }
 
 .status-yellow p {
@@ -90,21 +114,9 @@
 // Type tag
 
 .card-service-type {
+  font-weight: bold;
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: 8px;
 
-  .sleep span  {
-    background: $sleep_color;
-    color: $sleep_color_darker;
-  }
 
-  .eat span {
-    background: $eat_color;
-    color: $eat_color_darker;
-  }
-
-  .care span {
-    background: $care_color;
-    color: $care_color_darker;
-  }
 }

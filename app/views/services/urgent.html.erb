@@ -10,7 +10,6 @@
   </div>
 <% end %>
 <div class="container">
-  <p class="pt-3"> <strong><%= t("home.type_urgent") %></strong> <%= @urgents.count %> <%= t("general.association") %> </p>
   <% @urgents.each do |service| %>
     <%= link_to service_path(service) do %>
       <div class="card-service">
