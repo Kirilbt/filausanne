@@ -155,6 +155,8 @@ pt:
     my_reservations: Minhas Reservas
     open: Aberto
     reservations_admin: Reservas
+    twilio_sms_approved: "O seu pedido de reserva foi aceite. Associação: %{name} Data: %{start_date} - %{end_date} Morada: %{address}"
+    twilio_sms_refused: "O seu pedido de reserva do %{date} foi rejeitado"
   helpers:
     select:
       prompt: Por favor selecione
@@ -167,9 +169,6 @@ pt:
     type_care: Saúde
     type_eat: Comer
     type_sleep: Dormir
-  new:
-    request:
-      btn: Livro
   number:
     currency:
       format:
@@ -237,12 +236,14 @@ pt:
       refused: Rejeitado
       title: As minhas reservas
       title_admin: Reservas
+    new:
+      btn: Reservar
   show:
     description: 'Descrição:'
     edit: Editar
     link_map: Ver no mapa
     opening: 'Horário de funcionamento :'
-    reservation: Livro
+    reservation: Reservar
     reservation_login: Entrar para reservar
     services: 'Serviços disponíveis:'
     telephone: 'Telefone :'
