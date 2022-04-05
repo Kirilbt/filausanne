@@ -234,6 +234,10 @@ en:
       phone: "Phone number"
     new:
       btn: "Reserve"
+      text: "Your request will be reviewed by the reservation office. You will receive an answer as soon as possible.
+      The office will take your preference into account, but in case of unavailability, they will assign you another accommodation."
+      text-urgence: "For emergency accommodation, please go directly to the association within the proposed hours."
+      text-label: "You can change the association of your preference."
     error_end_date: must be after start date
     error_start_date: can't be before today
     index:

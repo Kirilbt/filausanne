@@ -236,8 +236,23 @@ pt:
       refused: Rejeitado
       title: As minhas reservas
       title_admin: Reservas
+      request: "Pedido de"
+      request_btn: "Ver pedido"
+    edit:
+      update: "Aceitar o pedido"
+      back: "Voltar"
+      btn_cancel: "Anular pedido"
+      cancel: "Pedido anulado"
+      approved: "Aceitar"
+      refused: "Recusar pedido"
+      phone: "Número de telefone"
+      text-label: "Associação de preferencia"
     new:
       btn: Reservar
+      text: "O seu pedido será examinado pelo gabinete de reservas. Receberá uma resposta o mais rapidamente possível.
+      O escritório terá em conta a sua preferência, mas em caso de indisponibilidade, atribuir-lhe-ão outro alojamento."
+      text-urgence: "Para um alojamento de emergência, dirija-se directamente à associação durante as horas propostas."
+      text-label: "Pode escolher a associação da sua preferência."
   show:
     description: 'Descrição:'
     edit: Editar

@@ -9,21 +9,21 @@ fr:
       # When using html, text and mark won't be used.
       # html: '<abbr title="required">*</abbr>'
     error_notification:
-      default_message: "Please review the problems below:"
+      default_message: "Veuillez examiner les problèmes ci-dessous:"
 
     # Examples
     sessions:
       new:
-        title: 'Log in'
-        submit: 'Log in'
-        sign_up_link: 'Sign up'
+        title: 'Connectez-vous'
+        submit: 'Connectez-vous'
+        sign_up_link: 'Inscrivez-vous'
         forgot_password_link: 'Mot de passe oublié?'
 
     registrations:
       new:
-        title: 'Sign up'
-        submit: 'Sign up'
-        sign_in_link: 'Sign in'
+        title: 'Inscrivez-vous'
+        submit: 'Inscrivez-vous'
+        sign_in_link: 'Se connecter'
 
     passwords:
       new:
@@ -45,11 +45,11 @@ fr:
         last_name: 'Nom'
         phone_number: 'Numéro de Téléphone'
         email: 'E-mail'
-        password: 'Password'
-        password_confirmation: 'Password confirmation'
+        password: 'Mot de passe'
+        password_confirmation: 'Confirmation du mot de passe'
       user:
         new:
-          remember_me: 'Remember me'
+          remember_me: 'Souviens-toi de moi'
         edit:
     hints:
       defaults:
