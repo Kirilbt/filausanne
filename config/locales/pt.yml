@@ -1,0 +1,260 @@
+---
+pt:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'La validation a échoué : %{errors}'
+        restrict_dependent_destroy:
+          has_many: Você não pode apagar o registro porque o dependente %{registo} existe
+          has_one: Você não pode apagar o registro porque existe um dependente %{registo}
+  date:
+    abbr_day_names:
+    - dom
+    - seg
+    - ter
+    - qua
+    - qui
+    - sex
+    - sab
+    abbr_month_names:
+    -
+    - jan.
+    - fev.
+    - mar.
+    - abr.
+    - maio
+    - junho
+    - jul.
+    - agosto
+    - set.
+    - out.
+    - nov.
+    - dez.
+    day_names:
+    - domingo
+    - segunda-feira
+    - terça-feira
+    - quarta-feira
+    - quinta-feira
+    - sexta-feira
+    - sábado
+    formats:
+      default: "%d/%m/%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
+    month_names:
+    -
+    - janeiro
+    - fevereiro
+    - março
+    - abril
+    - maio
+    - junho
+    - julho
+    - agosto
+    - setembro
+    - outubro
+    - novembro
+    - dezembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: cerca de uma hora
+        other: aproximadamente %{count} horas
+      about_x_months:
+        one: cerca de um mês
+        other: aproximadamente %{count} meses
+      about_x_years:
+        one: cerca de um ano
+        other: aproximadamente %{count} anos
+      almost_x_years:
+        one: quase um ano
+        other: quase %{count} anos
+      half_a_minute: meio minuto
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: menos de %{count} minutos
+        zero: menos de um minuto
+      less_than_x_seconds:
+        one: menos de um segundo
+        other: menos de %{count} segundos
+        zero: menos de um segundo
+      over_x_years:
+        one: mais do que um ano
+        other: acima de %{count} anos de idade
+      x_days:
+        one: 1 dia
+        other: "%{count} dias"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_months:
+        one: 1 mês
+        other: "%{count} meses"
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+      x_years:
+        one: 1 ano
+        other: "%{count} anos"
+    prompts:
+      day: Dia
+      hour: Hora
+      minute: Ata
+      month: Mês
+      second: Segundo
+      year: Ano
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: deve ser aceite
+      blank: deve ser preenchido
+      confirmation: não corresponde a %{atributo}
+      empty: deve ser preenchido
+      equal_to: deve ser igual a %{count}
+      even: deve estar equilibrado
+      exclusion: não está disponível
+      greater_than: deve ser maior que %{count}
+      greater_than_or_equal_to: deve ser maior ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: não é válido
+      less_than: deve ser inferior a %{count}
+      less_than_or_equal_to: deve ser menor ou igual a %{count}
+      model_invalid: 'Validação falhou: %{errors}'
+      not_a_number: não é um número
+      not_an_integer: deve ser um número inteiro
+      odd: deve ser estranho
+      other_than: deve ser diferente de %{count}
+      present: deve estar vazio
+      required: tem de existir
+      taken: já está em uso
+      too_long:
+        one: é muito longo (não mais do que um personagem)
+        other: é muito longo (não mais do que %{count} caracteres)
+      too_short:
+        one: é muito curto (pelo menos um personagem)
+        other: é muito curto (pelo menos %{count} caracteres)
+      wrong_length:
+        one: não é o comprimento certo (deve ser um carácter)
+        other: não é o comprimento correto (deve ser %{count} caracteres)
+    template:
+      body: Por favor, verifique os seguintes campos
+      header:
+        one: 'Não foi possível registar isto %{model}: 1 erro'
+        other: 'Não foi possível registar isto %{model}: %{count} erros'
+  general:
+    association: " associações encontradas"
+    close: Fechado
+    en: English
+    fr: Français
+    pt: Português
+    my_reservations: Minhas Reservas
+    open: Aberto
+    reservations_admin: Reservas
+  helpers:
+    select:
+      prompt: Por favor selecione
+    submit:
+      create: Crie um %{modelo}
+      submit: Guardar isto(tte) %{modelo}
+      update: Modifique isto %{modelo}
+  home:
+    title: O que você está procurando?
+    type_care: Saúde
+    type_eat: Comer
+    type_sleep: Dormir
+  new:
+    request:
+      btn: Livro
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: bilhão
+          million: milhões
+          quadrillion: milhão de milhões
+          thousand: mil
+          trillion: trilhão
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: byte
+            other: bytes
+          eb: Eo
+          gb: Vá
+          kb: ko
+          mb: Mo
+          pb: Po
+          tb: Para
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  request:
+    edit:
+      approved: Aceite
+      back: Interromper
+      btn_cancel: Pedido de cancelamento
+      cancel: Aplicação cancelada
+      refused: Recusar
+      update: Atualização
+    error_end_date: deve ser após a data de início
+    error_start_date: não pode ser antes de hoje
+    index:
+      approved: Aceito
+      cancel: Cancelar
+      pending: Enquanto isso
+      refused: Rejeitado
+      title: As minhas reservas
+      title_admin: Reservas
+  show:
+    description: 'Descrição:'
+    edit: Editar
+    link_map: Ver no mapa
+    opening: 'Horário de funcionamento :'
+    reservation: Livro
+    reservation_login: Entrar para reservar
+    services: 'Serviços disponíveis:'
+    telephone: 'Telefone :'
+  support:
+    array:
+      last_word_connector: " e"
+      two_words_connector: " e"
+      words_connector: ","
+  time:
+    am: sou
+    formats:
+      default: "%d %B %Y %Hh %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
+    pm: pm

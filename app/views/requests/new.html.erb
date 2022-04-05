@@ -2,10 +2,11 @@
   <div class="grid">
     <div class="form">
       <%= simple_form_for [ @sleep, @request ] do |f| %>
-        <%= f.input :start_date, as: :date, html5: true, label: "Check-in" %>
-        <%= f.input :end_date, as: :date, html5: true, label: "Check-out" %>
-        <%= f.submit t('new.request.btn'), class: "btn button-primary" %>
+        <%= f.association :service, collection: Service.where(type: "Sleep"), selected: @sleep.id, label: t('request.new.text-label')%>
+        <%= f.submit t('request.new.btn'), class: "btn button-primary" %>
       <% end %>
+      <p> <%= t('request.new.text') %> </p>
+      <p> <%= t('request.new.text-urgence') %> </p>
     </div>
   </div>
 </div>
