@@ -242,7 +242,7 @@ en:
       title: My Reservations
       title_admin: Reservations
       request: Request from
-      request_btn: See request
+      request_btn: View
   show:
     description: 'Description:'
     edit: Edit

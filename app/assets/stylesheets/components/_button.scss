@@ -159,27 +159,3 @@
     width: 16px;
   }
 }
-
-// Other
-
-.button-red {
-  background-color: white;
-  border-radius: 6px;
-  border: 1px solid $red;
-  color: $red;
-  text-align: center;
-  padding: 2px 8px;
-  display: inline;
-  margin-top: 16px;
-}
-
-.button-green {
-  background-color: white;
-  border-radius: 6px;
-  border: 1px solid $green;
-  color: $green;
-  text-align: center;
-  padding: 2px 8px;
-  display: inline;
-  margin-top: 16px;
-}

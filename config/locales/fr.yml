@@ -233,7 +233,7 @@ fr:
       refused: "Demande refusée"
       cancel: "Demande annulée"
       request: "Demande de"
-      request_btn: "Voir demande"
+      request_btn: "Voir"
     edit:
       update: "Accepter la demande"
       back: "Abandonner"
