@@ -41,8 +41,8 @@ export default class extends Controller {
       customMarker.className = "marker"
       customMarker.style.backgroundImage = `url('${marker.image_url}')`
       customMarker.style.backgroundSize = "cover"
-      customMarker.style.width = "48px"
-      customMarker.style.height = "63px"
+      customMarker.style.width = "40px" // 48/1.2 = 40
+      customMarker.style.height = "53px" // 64/1.2 = 53
 
       new mapboxgl.Marker(customMarker, {anchor:'bottom'})
         .setLngLat([ marker.lng, marker.lat ])
