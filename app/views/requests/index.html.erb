@@ -54,7 +54,7 @@
           <% elsif request.status != "Cancel" && request.status != "Refused" %>
             <%= simple_form_for(request) do |f| %>
             <div class="button-cancel-request">
-              <%= f.submit t('request.edit.btn_cancel', class: "button-cancel-request") %> <i class="fa fa-solid fa-xmark"></i>
+              <%= f.submit t('request.edit.btn_cancel') %> <i class="fa fa-solid fa-xmark"></i>
             </div>
             <% end %>
           <% end %>

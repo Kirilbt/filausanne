@@ -124,8 +124,6 @@
 }
 
 .elements {
-  // display: flex;
-  // justify-content: space-between;
 
   i {
     margin: 0;
@@ -141,6 +139,15 @@
     padding: 4px 8px;
     border-radius: 8px;
     display: inline;
+
+    input[type=submit] {
+      font-size: 12px;
+      font-weight: bold;
+      color: $red;
+      border: none;
+      background: #ffffff00;
+      width: auto;
+    }
   }
 
   .button-view-request {
@@ -153,9 +160,5 @@
     display: inline;
   }
 
-  input[type=button] {
-    border: none;
-    outline: none;
-    background: none;
-  }
+
 }

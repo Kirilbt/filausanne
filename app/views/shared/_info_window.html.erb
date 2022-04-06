@@ -1,2 +1,4 @@
-<h3><%= service.name %></h3>
-<p><%= service.address %></p>
+<%= link_to service_path(service) do %>
+  <h2><%= service.name %></h2>
+  <p><%= service.address %></p>
+<% end %>
