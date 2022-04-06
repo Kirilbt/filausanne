@@ -172,6 +172,11 @@ en:
     type_contact: "Contact"
     type_urgent: "Urgent"
     btn_urgent: "For tonight"
+  emergency:
+    police: "Police"
+    ambulance: "Ambulance"
+    firefighter: "Firefighter"
+    toxicology: "Toxicology info(intoxications)"
   number:
     currency:
       format:

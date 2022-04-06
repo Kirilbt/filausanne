@@ -173,6 +173,11 @@ fr:
     type_contact: "Contact"
     type_urgent: "Urgente"
     btn_urgent: "Pour ce soir"
+  emergency:
+    police: "Police"
+    ambulance: "Ambulance"
+    firefighter: "Pompier"
+    toxicology: "Toxicologie info(intoxications)"
   number:
     currency:
       format:

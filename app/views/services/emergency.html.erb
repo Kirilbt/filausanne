@@ -1,0 +1,61 @@
+<%= link_to root_path do %>
+  <div class="type-nav bg-emergency">
+    <div class="container">
+      <div class="type-nav-content">
+        <%= image_tag "arrow.svg", class:"arrow" %>
+        <%= image_tag "emergency.svg", class:"type-icon" %>
+        <p><strong><%= t 'home.type_emergency' %></strong> </p>
+      </div>
+    </div>
+  </div>
+<% end %>
+<div class="container">
+
+  <%= link_to 'tel:1177' do %>
+    <div class="card-emergency">
+      <div>
+        <span> <%= t('emergency.police') %> </span>
+        <p>117</p>
+      </div>
+      <div>
+        <%= image_tag "emergency.svg", class:"type-icon" %>
+      </div>
+    </div>
+  <% end %>
+
+  <%= link_to 'tel:1444' do %>
+    <div class="card-emergency">
+      <div>
+        <span><%= t('emergency.ambulance') %></span>
+        <p>144</p>
+      </div>
+      <div>
+        <%= image_tag "emergency.svg", class:"type-icon" %>
+      </div>
+    </div>
+  <% end %>
+
+  <%= link_to 'tel:1188' do %>
+    <div class="card-emergency">
+      <div>
+        <span><%= t('emergency.firefighter') %></span>
+        <p>118</p>
+      </div>
+      <div>
+        <%= image_tag "emergency.svg", class:"type-icon" %>
+      </div>
+    </div>
+  <% end %>
+
+  <%= link_to 'tel:1455' do %>
+    <div class="card-emergency">
+      <div>
+        <span><%= t('emergency.toxicology') %></span>
+        <p>145</p>
+      </div>
+      <div>
+        <%= image_tag "emergency.svg", class:"type-icon" %>
+      </div>
+    </div>
+  <% end %>
+</div>
