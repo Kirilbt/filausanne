@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
   scope "(:locale)", locale: /en|fr|pt/ do
+    devise_for :users
     root to: 'pages#home'
     resources :services, only: [:show]
     resources :eats, only: [:index, :show, :edit, :update]

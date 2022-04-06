@@ -1,6 +1,7 @@
 class SleepsController < ApplicationController
   before_action :set_sleep, only: [:show]
   before_action :must_be_admin, only: [:edit, :update]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @sleeps = Sleep.all
