@@ -1,2 +1,12 @@
 <h3><%= service.name %></h3>
 <p><%= service.address %></p>
+
+<%= link_to service_path(service) do %>
+  <% if service.photo.key? %>
+    <img src=<%= service.photo.url%> class="info_window_thumbnails" />
+  <% else %>
+    <%= image_tag("img-test.jpg") %>
+  <% end %>
+  <h2><%= service.name %></h2>
+  <p><%= service.address %></p>
+<% end %>
