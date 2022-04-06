@@ -177,7 +177,14 @@ fr:
     type_eat: Manger
     type_emergency: Urgence
     type_sleep: Dormir
-    type_urgent: Urgente
+    type_contact: "Contact"
+    type_urgent: "Urgente"
+    btn_urgent: "Pour ce soir"
+  emergency:
+    police: "Police"
+    ambulance: "Ambulance"
+    firefighter: "Pompier"
+    toxicology: "Toxicologie info(intoxications)"
   number:
     currency:
       format:
@@ -238,6 +245,9 @@ fr:
       refused: Refuser la demande
       text-label: Association de préférence
       update: Accepter la demande
+      category-1: "Statut 1 - jusqu'à 30 nuits"
+      category-2: "Statut 2 - jusqu'à 15 nuits"
+      category-3: "Statut 3 - jusqu'à 7 nuits"
     error_end_date: doit être après la date de début
     error_start_date: ne peut pas être avant aujourd'hui
     index:
@@ -250,10 +260,15 @@ fr:
       title: Mes réservations
       title_admin: Réservations
     new:
-      btn: Réserver
-      text: Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais. Le bureau prend en compte votre préférence, mais en cas d’indisponibilité il vous attribuera un autre hébergement.
-      text-label: Vous pouvez changer l’association de votre préférence.
-      text-urgence: Pour un hébergement d’urgence, merci de vous diriger directement à l’association dans les horaires proposés.
+      btn: "Réserver"
+      text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais.
+      Le bureau prend en compte votre préférence, mais en cas d’indisponibilité il vous attribuera un autre hébergement."
+      text-urgence: "Pour un hébergement d’urgence, merci de vous diriger directement à l’association dans les horaires proposés."
+      text-label: "Vous pouvez changer l’association de votre préférence."
+      text-first: "Pour la première fois, il est nécessaire de s’inscrire durant la journée au Bureau des réservations. Le Bureau des Réservations est ouvert de 14h à 16h30, les lundi, mardi, mercredi et vendredi."
+      category-1: "Votre statut vous permet une durée de séjour jusqu'à 30 nuits, renouvelable."
+      category-2: "Votre statut vous permet une durée de séjour jusqu'à 15 nuits, renouvelable."
+      category-3: "Votre statut vous permet une durée de séjour jusqu'à 7 nuits, renouvelable."
   show:
     description: 'Description :'
     edit: Editer

@@ -9,6 +9,48 @@
   position: relative;
 }
 
+.card-emergency {
+  overflow: hidden;
+  height: 80px;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin: 16px 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  .type-icon {
+    display: block;
+    filter: invert(31%) sepia(99%) saturate(1814%) hue-rotate(81deg) brightness(96%) contrast(103%);
+    background: $green-25;
+    padding: 8px;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin: 0 16px;
+  }
+
+  span {
+    font-size: 16px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+    padding-left: 16px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 0px;
+    padding-left: 16px;
+  }
+}
 
 .card-service img {
   height: 100%;
@@ -124,8 +166,6 @@
 }
 
 .elements {
-  // display: flex;
-  // justify-content: space-between;
 
   i {
     margin: 0;
@@ -141,6 +181,15 @@
     padding: 4px 8px;
     border-radius: 8px;
     display: inline;
+
+    input[type=submit] {
+      font-size: 12px;
+      font-weight: bold;
+      color: $red;
+      border: none;
+      background: #ffffff00;
+      width: auto;
+    }
   }
 
   .button-view-request {
@@ -153,9 +202,5 @@
     display: inline;
   }
 
-  input[type=button] {
-    border: none;
-    outline: none;
-    background: none;
-  }
+
 }

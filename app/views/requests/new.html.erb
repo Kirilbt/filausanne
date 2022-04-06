@@ -1,12 +1,38 @@
+<%= link_to sleep_path(@sleep) do %>
+  <div class="type-nav bg-sleep">
+    <div class="container">
+      <div class="type-nav-content">
+        <%= image_tag "arrow.svg", class:"arrow" %>
+        <%= image_tag "sleep.svg", class:"type-icon" %>
+        <p><strong><%= @sleep.name %></strong></p>
+      </div>
+    </div>
+  </div>
+<% end %>
 <div class="container">
   <div class="grid">
     <div class="form">
-      <%= simple_form_for [ @sleep, @request ] do |f| %>
-        <%= f.association :service, collection: Service.where(type: "Sleep"), selected: @sleep.id, label: t('request.new.text-label')%>
-        <%= f.submit t('request.new.btn'), class: "btn button-primary" %>
+      <% if current_user.category.nil? %>
+        <p> <%= t('request.new.text-first') %> </p>
+        <p><strong>Bureau des réservations</strong></p>
+        <p>Service social Lausanne (SSL)</p>
+        <p>Rue Saint-Martin 12</p>
+        <p>1003 Lausanne</p>
+      <% else %>
+        <% if current_user.category == 1 %>
+          <p> <%= t('request.new.category-1') %> </p>
+        <% elsif current_user.category == 2 %>
+          <p> <%= t('request.new.category-2') %> </p>
+        <% elsif current_user.category == 3 %>
+          <p> <%= t('request.new.category-3') %> </p>
+        <% end %>
+        <%= simple_form_for [ @sleep, @request ] do |f| %>
+          <%= f.association :service, collection: Service.where(type: "Sleep"), selected: @sleep.id, label: t('request.new.text-label')%>
+          <%= f.submit t('request.new.btn'), class: "btn button-primary" %>
+        <% end %>
+        <p> <%= t('request.new.text') %> </p>
+        <p> <%= t('request.new.text-urgence') %> </p>
       <% end %>
-      <p> <%= t('request.new.text') %> </p>
-      <p> <%= t('request.new.text-urgence') %> </p>
     </div>
   </div>
 </div>

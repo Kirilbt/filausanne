@@ -1,8 +1,15 @@
 <div class="container">
   <div class="grid">
     <div class="form">
-      <p><%= t('request.index.request') %> <%= @request.user.first_name%> <%= @request.user.last_name%></p>
+      <h3><%= t('request.index.request') %> <%= @request.user.first_name%> <%= @request.user.last_name%></h3>
       <p><%= t('request.edit.phone')%> <%= @request.user.phone_number %></p>
+      <% if @request.user.category == 1 %>
+        <p> <%= t('request.edit.category-1') %> </p>
+      <% elsif @request.user.category == 2 %>
+        <p> <%= t('request.edit.category-2') %> </p>
+      <% elsif @request.user.category == 3 %>
+        <p> <%= t('request.edit.category-3') %> </p>
+      <% end %>
       <%= simple_form_for(@request) do |f| %>
         <%= f.association :service, collection: Service.where(type: "Sleep"), selected: @request.service_id, label: t('request.edit.text-label')%>
         <%= f.input :start_date, as: :date, html5: true, label: "Check-in", required: true %>

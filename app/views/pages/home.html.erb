@@ -13,7 +13,7 @@
     </div>
 
     <div class="container">
-      <div class="grid">
+      <div class="grid-home">
         <%= link_to sleeps_path do %>
           <div class="service sleep">
             <%= image_tag "sleep.svg" %>
@@ -32,17 +32,15 @@
             <p><%= t 'home.type_care' %></p>
           </div>
         <% end %>
-        <%= link_to '#' do %>
+        <%= link_to emergency_path do %>
           <div class="service emergency">
             <%= image_tag "emergency.svg" %>
             <p><%= t 'home.type_emergency' %></p>
           </div>
         <% end %>
-        <%= link_to '#' do %>
-          <div class="urgent" >
-            <%= link_to t('home.btn_urgent'), urgent_path, class: "btn button-urgent" %>
-          </div>
-        <% end %>
+        <div class="urgent" >
+          <%= link_to t('home.btn_urgent'), urgent_path, class: "btn button-urgent" %>
+        </div>
       </div>
     </div>
   </div>

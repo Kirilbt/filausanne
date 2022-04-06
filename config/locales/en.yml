@@ -171,7 +171,14 @@ en:
     type_contact: Contact
     type_eat: Eat
     type_sleep: Sleep
-    type_urgent: Urgent
+    type_contact: "Contact"
+    type_urgent: "Urgent"
+    btn_urgent: "For tonight"
+  emergency:
+    police: "Police"
+    ambulance: "Ambulance"
+    firefighter: "Firefighter"
+    toxicology: "Toxicology info(intoxications)"
   number:
     currency:
       format:
@@ -232,6 +239,21 @@ en:
       refused: Request refuse
       text-label: Preferred association
       update: Accept request
+      phone: "Phone number"
+      text-label: "Preferred association"
+      category-1: "Status 1 - up to 30 nights"
+      category-2: "Status 2 - up to 15 nights"
+      category-3: "Status 3 - up to 7 nights"
+    new:
+      btn: "Reserve"
+      text: "Your request will be reviewed by the reservation office. You will receive an answer as soon as possible.
+      The office will take your preference into account, but in case of unavailability, they will assign you another accommodation."
+      text-urgence: "For emergency accommodation, please go directly to the association within the proposed hours."
+      text-label: "You can change the association of your preference."
+      text-first: "For the first time, it is necessary to register during the day at the Bureau des réservations. The Bureau des réservations is open from 2:00 p.m. to 4:30 p.m. on Monday, Tuesday, Wednesday and Friday."
+      category-1: "Your status allows you to stay up to 30 nights, renewable."
+      category-2: "Your status allows you to stay up to 15 nights, renewable."
+      category-3: "Your status allows you to stay up to 7 nights, renewable."
     error_end_date: must be after start date
     error_start_date: can't be before today
     index:

@@ -171,7 +171,14 @@ pt:
     type_contact: Contacto
     type_eat: Comer
     type_sleep: Dormir
-    type_urgent: Urgente
+    type_contact: "Contacto"
+    type_urgent: "Urgente"
+    btn_urgent: "Para esta noite"
+  emergency:
+    police: "Polícia"
+    ambulance: "Ambulância"
+    firefighter: "Bombeiros"
+    toxicology: "Info toxicologia(intoxicações)"
   number:
     currency:
       format:
@@ -243,11 +250,30 @@ pt:
       request_btn: Ver pedido
       title: As minhas reservas
       title_admin: Reservas
+      request: "Pedido de"
+      request_btn: "Ver pedido"
+    edit:
+      update: "Aceitar o pedido"
+      back: "Voltar"
+      btn_cancel: "Anular pedido"
+      cancel: "Pedido anulado"
+      approved: "Aceitar"
+      refused: "Recusar pedido"
+      phone: "Número de telefone"
+      text-label: "Associação de preferencia"
+      category-1: "Estatuto 1 - até 30 noites"
+      category-2: "Estatuto 2 - até 15 noites"
+      category-3: "Estatuto 3 - até 7 noites"
     new:
       btn: Reservar
-      text: O seu pedido será examinado pelo gabinete de reservas. Receberá uma resposta o mais rapidamente possível. O escritório terá em conta a sua preferência, mas em caso de indisponibilidade, atribuir-lhe-ão outro alojamento.
-      text-label: Pode escolher a associação da sua preferência.
-      text-urgence: Para um alojamento de emergência, dirija-se directamente à associação durante as horas propostas.
+      text: "O seu pedido será examinado pelo gabinete de reservas. Receberá uma resposta o mais rapidamente possível.
+      O escritório terá em conta a sua preferência, mas em caso de indisponibilidade, atribuir-lhe-ão outro alojamento."
+      text-urgence: "Para um alojamento de emergência, dirija-se directamente à associação durante as horas propostas."
+      text-label: "Pode escolher a associação da sua preferência."
+      text-first: "Para a primeira vez, é necessário registar-se durante o dia no Bureau des réservations. O Bureau des réservations está aberto das 14:00 às 16:30 na segunda, terça, quarta e sexta-feira."
+      category-1: "O seu estatuto permite-lhe ficar até 30 noites, renováveis."
+      category-2: "O seu estatuto permite-lhe ficar até 15 noites, renováveis."
+      category-3: "O seu estatuto permite-lhe ficar até 7 noites, renováveis."
   show:
     description: 'Descrição:'
     edit: Editar

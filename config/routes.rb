@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     resources :cares, only: [:index, :show, :edit, :update]
     resources :requests, only: [:index, :edit, :update]
     get 'urgent', to: 'services#urgent'
+    get 'emergency', to: 'services#emergency'
   end
 end
