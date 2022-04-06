@@ -147,16 +147,21 @@ fr:
         one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
         other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
   general:
-    twilio_sms_approved: "Votre demande de réservation a été acceptée. Association: %{name} Date: %{start_date} - %{end_date} Adresse: %{address}"
-    twilio_sms_refused: "Votre demande de réservation du %{date} a été refussée"
     association: " associations trouvées"
     close: Fermé
+    de: Deutsche
     en: English
+    es: Español
     fr: French
-    pt: Português
+    it: Italiano
     my_reservations: Mes Réservations
     open: Ouvert
+    pt: Português
     reservations_admin: Réservations
+    ru: Русский
+    twilio_sms_approved: 'Votre demande de réservation a été acceptée. Association: %{name} Date: %{start_date} - %{end_date} Adresse: %{address}'
+    twilio_sms_refused: Votre demande de réservation du %{date} a été refussée
+    uk: Український
   helpers:
     select:
       prompt: Veuillez sélectionner
@@ -165,11 +170,13 @@ fr:
       submit: Enregistrer ce(tte) %{model}
       update: Modifier ce(tte) %{model}
   home:
+    btn_urgent: Pour ce soir
     title: Que cherchez-vous?
     type_care: Se soigner
+    type_contact: Contact
     type_eat: Manger
-    type_sleep: Dormir
     type_emergency: Urgence
+    type_sleep: Dormir
     type_contact: "Contact"
     type_urgent: "Urgente"
     btn_urgent: "Pour ce soir"
@@ -229,29 +236,29 @@ fr:
       format:
         delimiter: ''
   request:
-    error_start_date: "ne peut pas être avant aujourd'hui"
-    error_end_date: "doit être après la date de début"
-    index:
-      title: "Mes réservations"
-      title_admin: "Réservations"
-      pending: "En attente"
-      approved: "Demande accepté"
-      refused: "Demande refusée"
-      cancel: "Demande annulée"
-      request: "Demande de"
-      request_btn: "Voir"
     edit:
-      update: "Accepter la demande"
-      back: "Abandonner"
-      btn_cancel: "Annuler la demande"
-      cancel: "Demande annulée"
-      approved: "Accepter"
-      refused: "Refuser la demande"
-      phone: "Numéro de téléphone"
-      text-label: "Association de préférence"
+      approved: Accepter
+      back: Abandonner
+      btn_cancel: Annuler la demande
+      cancel: Demande annulée
+      phone: Numéro de téléphone
+      refused: Refuser la demande
+      text-label: Association de préférence
+      update: Accepter la demande
       category-1: "Statut 1 - jusqu'à 30 nuits"
       category-2: "Statut 2 - jusqu'à 15 nuits"
       category-3: "Statut 3 - jusqu'à 7 nuits"
+    error_end_date: doit être après la date de début
+    error_start_date: ne peut pas être avant aujourd'hui
+    index:
+      approved: Demande accepté
+      cancel: Demande annulée
+      pending: En attente
+      refused: Demande refusée
+      request: Demande de
+      request_btn: Voir
+      title: Mes réservations
+      title_admin: Réservations
     new:
       btn: "Réserver"
       text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais.
@@ -263,14 +270,14 @@ fr:
       category-2: "Votre statut vous permet une durée de séjour jusqu'à 15 nuits, renouvelable."
       category-3: "Votre statut vous permet une durée de séjour jusqu'à 7 nuits, renouvelable."
   show:
-    link_map: "Voir sur la carte"
-    edit: "Editer"
-    telephone: "Téléphone :"
-    opening: "Heures d'ouverture :"
-    description: "Description :"
-    services: "Services disponibles :"
-    reservation: "Réserver"
-    reservation_login: "Log in pour réserver"
+    description: 'Description :'
+    edit: Editer
+    link_map: Voir sur la carte
+    opening: 'Heures d''ouverture :'
+    reservation: Réserver
+    reservation_login: Log in pour réserver
+    services: 'Services disponibles :'
+    telephone: 'Téléphone :'
   support:
     array:
       last_word_connector: " et "

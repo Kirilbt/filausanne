@@ -151,12 +151,12 @@ pt:
     close: Fechado
     en: English
     fr: Français
-    pt: Português
     my_reservations: Minhas Reservas
     open: Aberto
+    pt: Português
     reservations_admin: Reservas
-    twilio_sms_approved: "O seu pedido de reserva foi aceite. Associação: %{name} Data: %{start_date} - %{end_date} Morada: %{address}"
-    twilio_sms_refused: "O seu pedido de reserva do %{date} foi rejeitado"
+    twilio_sms_approved: 'O seu pedido de reserva foi aceite. Associação: %{name} Data: %{start_date} - %{end_date} Morada: %{address}'
+    twilio_sms_refused: O seu pedido de reserva do %{date} foi rejeitado
   helpers:
     select:
       prompt: Por favor selecione
@@ -165,8 +165,10 @@ pt:
       submit: Guardar isto(tte) %{modelo}
       update: Modifique isto %{modelo}
   home:
+    btn_urgent: Para esta noite
     title: O que você está procurando?
     type_care: Saúde
+    type_contact: Contacto
     type_eat: Comer
     type_sleep: Dormir
     type_contact: "Contacto"
@@ -228,6 +230,15 @@ pt:
       format:
         delimiter: ''
   request:
+    edit:
+      approved: Aceitar
+      back: Voltar
+      btn_cancel: Anular pedido
+      cancel: Pedido anulado
+      phone: Número de telefone
+      refused: Recusar pedido
+      text-label: Associação de preferencia
+      update: Aceitar o pedido
     error_end_date: deve ser após a data de início
     error_start_date: não pode ser antes de hoje
     index:
@@ -235,6 +246,8 @@ pt:
       cancel: Pedido cancelado
       pending: Pendente
       refused: Pedido rejeitado
+      request: Pedido de
+      request_btn: Ver pedido
       title: As minhas reservas
       title_admin: Reservas
       request: "Pedido de"

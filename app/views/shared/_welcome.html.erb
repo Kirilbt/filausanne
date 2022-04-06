@@ -5,7 +5,7 @@
         <% I18n.available_locales.each do |locale| %>
           <div class="radio-language">
             <input type="radio" id="<%= locale %>" name="locale" value="<%= locale %>">
-            <label for="locale"> <%= I18n.t "general.#{locale}" %></label><br>
+            <label for="locale"> <%= t("general.#{locale.to_s}", locale: :fr) %></label><br>
           </div>
         <% end %>
         <input type="submit" value="Submit" class="button-primary button-language">
