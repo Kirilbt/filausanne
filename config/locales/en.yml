@@ -147,6 +147,7 @@ en:
         one: 'Unable to register this(tte) %{model} : 1 error'
         other: 'Unable to register this(t) %{model}: %{count} errors'
   general:
+    log_out: "Log out"
     association: " associations found"
     close: Closed
     en: English
@@ -174,6 +175,7 @@ en:
     type_contact: "Contact"
     type_urgent: "Urgent"
     btn_urgent: "For tonight"
+    type_emergency: "Urgent"
   emergency:
     police: "Police"
     ambulance: "Ambulance"
