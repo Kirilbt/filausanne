@@ -25,6 +25,6 @@ module Fil
 
     config.i18n.load_path += Dir[Rails.root.join('fr', 'locales', '*.{rb,yml}')]
     config.i18n.default_locale = :fr
-    I18n.available_locales = [:en, :fr, :pt]
+    I18n.available_locales = [:de, :en, :es, :fr, :it, :pt, :ru, :uk]
   end
 end

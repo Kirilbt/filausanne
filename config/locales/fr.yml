@@ -151,9 +151,14 @@ fr:
     twilio_sms_refused: "Votre demande de réservation du %{date} a été refussée"
     association: " associations trouvées"
     close: Fermé
+    de: Deutsche
     en: English
+    es: Español
     fr: French
+    it: Italiano
     pt: Português
+    ru: Русский
+    uk: Український
     my_reservations: Mes Réservations
     open: Ouvert
     reservations_admin: Réservations
