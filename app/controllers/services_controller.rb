@@ -1,6 +1,6 @@
 class ServicesController < ApplicationController
   before_action :set_service, only: [:show]
-  skip_before_action :authenticate_user!, only: [:urgent, :show]
+  skip_before_action :authenticate_user!, only: [:urgent, :show, :emergency]
 
   def urgent
     @urgents = Service.select { |service| service.urgent == true }

@@ -11,7 +11,8 @@ class SleepsController < ApplicationController
     @markers = {
       lat: @sleep.latitude,
       lng: @sleep.longitude,
-      info_window: render_to_string(partial: "shared/info_window", locals: { service: @sleep })
+      info_window: render_to_string(partial: "shared/info_window", locals: { service: @sleep }),
+      image_url: helpers.asset_url("pin_sleep.svg")
     }
   end
 
