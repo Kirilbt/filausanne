@@ -10,14 +10,6 @@
   </div>
 <% end %>
 <%= render "pages/show" %>
-<% if current_user %>
-<% unless current_user.admin? %>
-  <div class="button-show">
-    <%= link_to "#{t 'show.reservation'}", new_sleep_request_path(@sleep), class:"button-primary" %>
-  </div>
-  <% end %>
-<% else %>
 <div class="button-show">
-    <%= link_to "#{t 'show.reservation_login'}", new_sleep_request_path(@sleep), class:"btn disabled button-primary", role:"button", aria_disabled:"true" %>
-  </div>
-<% end %>
+  <%= link_to "#{t 'show.reservation'}", new_sleep_request_path(@sleep), class:"button-primary" %>
+</div>

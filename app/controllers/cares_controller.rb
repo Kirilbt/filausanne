@@ -1,6 +1,7 @@
 class CaresController < ApplicationController
   before_action :set_care, only: [:show]
   before_action :must_be_admin, only: [:edit, :update]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @cares = Service.cares.all
