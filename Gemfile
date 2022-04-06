@@ -44,6 +44,7 @@ gem 'hstore_translate'
 gem 'json_translate'
 gem 'i18n-tasks', '~> 1.0.5'
 gem 'deepl-rb'
+gem 'easy_translate'
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'

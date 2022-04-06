@@ -5,7 +5,7 @@ base_locale: fr
 ## All available locales are inferred from the data by default. Alternatively, specify them explicitly:
 # locales: [fr, en]
 ## Reporting locale, default: en. Available: en, ru.
-# internal_locale: en
+internal_locale: en
 
 # Read and write translations.
 data:

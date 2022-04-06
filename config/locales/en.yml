@@ -151,12 +151,12 @@ en:
     close: Closed
     en: English
     fr: Français
-    pt: Português
     my_reservations: My Reservations
     open: Open
+    pt: Português
     reservations_admin: Reservations
-    twilio_sms_approved: "Your reservation request has been accepted. Association: %{name} Date: %{start_date} - %{end_date} Address: %{address}"
-    twilio_sms_refused: "Your reservation request from  %{date} has been denied"
+    twilio_sms_approved: 'Your reservation request has been accepted. Association: %{name} Date: %{start_date} - %{end_date} Address: %{address}'
+    twilio_sms_refused: Your reservation request from  %{date} has been denied
   helpers:
     select:
       prompt: Please select
@@ -165,13 +165,13 @@ en:
       submit: Save this(tte) %{model}
       update: Edit this(tte) %{model}
   home:
+    btn_urgent: For tonight
     title: What are you looking for?
     type_care: Care
+    type_contact: Contact
     type_eat: Eat
     type_sleep: Sleep
-    type_contact: "Contact"
-    type_urgent: "Urgent"
-    btn_urgent: "For tonight"
+    type_urgent: Urgent
   number:
     currency:
       format:
@@ -228,16 +228,10 @@ en:
       back: Discard changes
       btn_cancel: Refuse request
       cancel: Request canceled
+      phone: Phone number
       refused: Request refuse
+      text-label: Preferred association
       update: Accept request
-      phone: "Phone number"
-      text-label: "Preferred association"
-    new:
-      btn: "Reserve"
-      text: "Your request will be reviewed by the reservation office. You will receive an answer as soon as possible.
-      The office will take your preference into account, but in case of unavailability, they will assign you another accommodation."
-      text-urgence: "For emergency accommodation, please go directly to the association within the proposed hours."
-      text-label: "You can change the association of your preference."
     error_end_date: must be after start date
     error_start_date: can't be before today
     index:
@@ -245,10 +239,15 @@ en:
       cancel: Request cancel
       pending: Request pending
       refused: Refused
-      title: My Reservations
-      title_admin: Reservations
       request: Request from
       request_btn: View
+      title: My Reservations
+      title_admin: Reservations
+    new:
+      btn: Reserve
+      text: Your request will be reviewed by the reservation office. You will receive an answer as soon as possible. The office will take your preference into account, but in case of unavailability, they will assign you another accommodation.
+      text-label: You can change the association of your preference.
+      text-urgence: For emergency accommodation, please go directly to the association within the proposed hours.
   show:
     description: 'Description:'
     edit: Edit

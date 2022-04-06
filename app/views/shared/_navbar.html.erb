@@ -6,12 +6,12 @@
 
     <div class="nav-item dropdown">
       <a href="#" class="nav-item language" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fa fa-light fa-globe"></i> <%= params[:locale] ? (I18n.t "general.#{params[:locale]}") : (I18n.t "general.#{I18n.default_locale}") %>
+        <i class="fa fa-light fa-globe"></i> <%= params[:locale] ? (I18n.t "general.#{params[:locale]}", locale: :fr) : (I18n.t "general.#{I18n.default_locale}") %>
       </a>
       <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
           <% locales = I18n.available_locales.select { |locale| locale.to_s != params[:locale] } %>
           <% locales.each do |locale| %>
-          <%= link_to(I18n.t("general.#{locale}"),  {locale: locale}, class: "dropdown-item") %>
+            <%= link_to(I18n.t("general.#{locale}", locale: :fr),  {locale: locale}, class: "dropdown-item") %>
           <% end %>
       </div>
     </div>

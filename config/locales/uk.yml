@@ -1,2 +1,277 @@
 ---
 uk:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Помилка перевірки: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Ви не можете видалити запис, оскільки існує залежний %{record}
+          has_one: Ви не можете видалити запис, оскільки існує залежний %{record}
+  date:
+    abbr_day_names:
+    - сонце
+    - пн
+    - березень
+    - ср
+    - Гра
+    - пт
+    - сидів
+    abbr_month_names:
+    -
+    - Січ
+    - лютий
+    - березень
+    - квітень
+    - може
+    - червень
+    - липень
+    - серпень
+    - сім.
+    - жовт.
+    - лист.
+    - груд.
+    day_names:
+    - неділя
+    - понеділок
+    - вівторок
+    - середа
+    - четвер
+    - п'ятниця
+    - субота
+    formats:
+      default: "%d/%m/%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
+    month_names:
+    -
+    - січня
+    - лютий
+    - березень
+    - квітень
+    - може
+    - червень
+    - липень
+    - серпень
+    - Вересень
+    - жовтень
+    - Листопад
+    - Грудень
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: Приблизно одна година
+        other: близько %{count} годин
+      about_x_months:
+        one: близько місяця
+        other: близько %{count} місяців
+      about_x_years:
+        one: близько року
+        other: близько %{count} років
+      almost_x_years:
+        one: майже рік
+        other: майже %{count} років
+      half_a_minute: півхвилини
+      less_than_x_minutes:
+        one: менше хвилини
+        other: менше %{count} хвилин
+        zero: менше хвилини
+      less_than_x_seconds:
+        one: менше секунди
+        other: менше %{count} секунд
+        zero: менше секунди
+      over_x_years:
+        one: більше року
+        other: більше %{count} років
+      x_days:
+        one: 1 день
+        other: "%{count} днів"
+      x_minutes:
+        one: 1 хвилина
+        other: Х__0 хвилин
+      x_months:
+        one: 1 місяць
+        other: "%{count} місяців"
+      x_seconds:
+        one: 1 секунда
+        other: "%{count} секунд"
+      x_years:
+        one: 1 рік
+        other: "%{count} років"
+    prompts:
+      day: День
+      hour: Час
+      minute: Хвилина
+      month: Місяць
+      second: Друге
+      year: Рік
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: має бути прийнято
+      blank: треба заповнити)
+      confirmation: не відповідає %{attribute}
+      empty: треба заповнити)
+      equal_to: має дорівнювати %{count}
+      even: має бути рівною
+      exclusion: недоступний
+      greater_than: має бути більшим за %{count}
+      greater_than_or_equal_to: має бути більше або дорівнювати %{count}
+      inclusion: не входить до списку
+      invalid: Недійсний
+      less_than: має бути менше %{count}
+      less_than_or_equal_to: має бути менше або дорівнювати %{count}
+      model_invalid: 'Помилка перевірки: %{errors}'
+      not_a_number: не є числом
+      not_an_integer: має бути цілим числом
+      odd: має бути непарним
+      other_than: має відрізнятися від %{count}
+      present: має бути порожнім
+      required: має існувати
+      taken: вже використовується
+      too_long:
+        one: занадто довгий (не більше одного символу)
+        other: занадто довгий (не більше %{count} символів)
+      too_short:
+        one: занадто короткий (принаймні один символ)
+        other: занадто короткий (принаймні %{count} символів)
+      wrong_length:
+        one: не є правильною довжиною (повинен бути одним символом)
+        other: неправильна довжина (має бути %{count} символів)
+    template:
+      body: 'Перевірте такі поля:'
+      header:
+        one: 'Не вдається зберегти цю(голову) %{model}: 1 помилка'
+        other: 'Не вдається зберегти %{model}: %{count} помилок'
+  general:
+    association: " знайдені асоціації"
+    close: Фірма
+    de: німецька
+    en: Français
+    es: іспанська
+    fr: французький
+    it: Italiano
+    my_reservations: Мої бронювання
+    open: відчинено
+    pt: Португальці
+    reservations_admin: Бронювання
+    ru: Русский
+    twilio_sms_approved: 'Ваш запит на бронювання прийнято. Асоціація: %{name} Дата: %{start_date} - %{end_date} Адреса: %{address}'
+    twilio_sms_refused: Ваш запит на бронювання для %{date} відхилено
+    uk: Український
+  helpers:
+    select:
+      prompt: виберіть будь ласка
+    submit:
+      create: Створіть %{model}
+      submit: Збережіть цей %{model}
+      update: Змініть цей %{model}
+  home:
+    btn_urgent: На сьогоднішній вечір
+    title: Що ти шукаєш?
+    type_care: Вилікувати себе
+    type_contact: Контакти
+    type_eat: Їсти
+    type_emergency: Надзвичайна ситуація
+    type_sleep: Спати
+    type_urgent: Терміново
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: млрд
+          million: мільйонів
+          quadrillion: мільйонів мільярдів
+          thousand: тис
+          trillion: трильйон
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: байт
+            other: байтів
+          eb: Eo
+          gb: ГБ
+          kb: kb
+          mb: пн
+          pb: Po
+          tb: До
+    percentage:
+      format:
+        delimiter: ''
+        format: "%не%"
+    precision:
+      format:
+        delimiter: ''
+  request:
+    edit:
+      approved: Прийняти
+      back: Здаватися
+      btn_cancel: Скасуйте запит
+      cancel: Запит скасовано
+      phone: Телефонний номер
+      refused: Відмовити у запиті
+      text-label: Асоціація переваг
+      update: Прийняти запит
+    error_end_date: має бути після дати початку
+    error_start_date: не може бути раніше сьогодні
+    index:
+      approved: Запит прийнято
+      cancel: Запит скасовано
+      pending: Очікування
+      refused: Запит відхилено
+      request: Запит
+      request_btn: Бачити
+      title: Мої застереження
+      title_admin: Бронювання
+    new:
+      btn: Резервувати
+      text: Ваш запит буде розглянуто відділом бронювання. Ви отримаєте відповідь якомога швидше. Офіс враховує Ваші побажання, але в разі недоступності призначає Вам інше житло.
+      text-label: Ви можете змінити асоціацію на свій смак.
+      text-urgence: Для екстреного проживання звертайтеся безпосередньо до асоціації протягом запропонованих годин.
+  show:
+    description: 'Опис:'
+    edit: Редагувати
+    link_map: Дивіться на карті
+    opening: 'Робочий час :'
+    reservation: Резервувати
+    reservation_login: Увійдіть, щоб забронювати
+    services: 'Доступні послуги:'
+    telephone: 'Телефон:'
+  support:
+    array:
+      last_word_connector: " і"
+      two_words_connector: " і"
+      words_connector: ","
+  time:
+    am: ранку
+    formats:
+      default: "%d %B %Y %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
+    pm: вечора
