@@ -265,11 +265,6 @@ en:
       request_btn: View
       title: My Reservations
       title_admin: Reservations
-    new:
-      btn: Reserve
-      text: Your request will be reviewed by the reservation office. You will receive an answer as soon as possible. The office will take your preference into account, but in case of unavailability, they will assign you another accommodation.
-      text-label: You can change the association of your preference.
-      text-urgence: For emergency accommodation, please go directly to the association within the proposed hours.
   show:
     description: 'Description:'
     edit: Edit
