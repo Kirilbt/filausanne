@@ -1,2 +1,303 @@
 ---
 de:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Die Validierung ist fehlgeschlagen: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Sie können den Datensatz nicht löschen, weil die abhängigen %{record} existieren
+          has_one: Sie können den Datensatz nicht löschen, da ein(e) abhängige(r) %{record} existiert
+  date:
+    abbr_day_names:
+    - so
+    - mo
+    - mar
+    - meer
+    - spiel
+    - fr
+    - sam
+    abbr_month_names:
+    -
+    - jan.
+    - feb.
+    - mar.
+    - apr.
+    - mai
+    - juni
+    - jul.
+    - august
+    - '7.'
+    - okt.
+    - nov.
+    - dek.
+    day_names:
+    - sonntag
+    - montag
+    - dienstag
+    - mittwoch
+    - donnerstag
+    - freitag
+    - samstag
+    formats:
+      default: "%d/%m/%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
+    month_names:
+    -
+    - januar
+    - februar
+    - märz
+    - april
+    - mai
+    - juni
+    - juli
+    - august
+    - september
+    - oktober
+    - november
+    - dezember
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: etwa eine Stunde
+        other: etwa %{count} Stunden
+      about_x_months:
+        one: etwa einen Monat
+        other: ca. %{count} Monate
+      about_x_years:
+        one: etwa ein Jahr
+        other: ca. %{count} Jahre
+      almost_x_years:
+        one: fast ein Jahr
+        other: fast %{count} Jahre
+      half_a_minute: eine halbe Minute
+      less_than_x_minutes:
+        one: weniger als eine Minute
+        other: weniger als %{count} Minuten
+        zero: weniger als eine Minute
+      less_than_x_seconds:
+        one: weniger als eine Sekunde
+        other: weniger als %{count} Sekunden
+        zero: weniger als eine Sekunde
+      over_x_years:
+        one: mehr als ein Jahr
+        other: über %{count} Jahre
+      x_days:
+        one: 1 Tag
+        other: "%{count} Tage"
+      x_minutes:
+        one: 1 Minute
+        other: "%{count} Minuten"
+      x_months:
+        one: 1 Monat
+        other: "%{count} Monat"
+      x_seconds:
+        one: 1 Sekunde
+        other: "%{count} Sekunden"
+      x_years:
+        one: 1 Jahr
+        other: "%{count} Jahre"
+    prompts:
+      day: Tag
+      hour: Uhrzeit
+      minute: Minute
+      month: Monat
+      second: Zweite
+      year: Jahr
+  emergency:
+    ambulance: Ambulanz
+    firefighter: Feuerwehrmann
+    police: Polizei
+    toxicology: Toxikologie info(Vergiftungen)
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: muss akzeptiert werden
+      blank: muss ausgefüllt werden
+      confirmation: stimmt nicht mit %{attribute} überein
+      empty: muss ausgefüllt werden
+      equal_to: muss gleich %{count} sein
+      even: muss gerade sein
+      exclusion: ist nicht verfügbar
+      greater_than: muss größer als %{count} sein
+      greater_than_or_equal_to: muss größer oder gleich %{count} sein
+      inclusion: ist nicht in der Liste enthalten
+      invalid: ist ungültig
+      less_than: muss weniger als %{count} betragen
+      less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+      model_invalid: 'Validierung fehlgeschlagen: %{errors}'
+      not_a_number: ist keine Zahl
+      not_an_integer: muss eine ganze Zahl sein
+      odd: muss ungerade sein
+      other_than: muss sich von %{count} unterscheiden
+      present: muss leer sein
+      required: muss existieren
+      taken: wird bereits verwendet
+      too_long:
+        one: zu lang ist (nicht mehr als ein Zeichen)
+        other: zu lang ist (nicht mehr als %{count} Zeichen)
+      too_short:
+        one: ist zu kurz (mindestens ein Zeichen)
+        other: ist zu kurz (mindestens %{count} Zeichen)
+      wrong_length:
+        one: hat nicht die richtige Länge (muss ein einzelnes Zeichen enthalten)
+        other: hat nicht die richtige Länge (muss %{count} Zeichen enthalten)
+    template:
+      body: Bitte überprüfen Sie die folgenden Felder
+      header:
+        one: 'Diese(r) %{model} konnte nicht gespeichert werden: 1 Fehler'
+        other: 'Kann diese(n) %{model} nicht speichern: %{count} Fehler'
+  general:
+    association: " gefundene Assoziationen"
+    close: Geschlossen
+    de: Deutsche
+    en: English
+    es: Español
+    fr: Französisch
+    it: Italiano
+    log_out: Abmelden
+    my_reservations: Meine Buchungen
+    open: Geöffnet
+    pt: Português
+    reservations_admin: Reservierungen
+    ru: Русский
+    twilio_sms_approved: 'Ihre Buchungsanfrage wurde angenommen. Verein: %{name} Datum: %{start_date} - %{end_date} Adresse: %{address}'
+    twilio_sms_refused: Ihre Buchungsanfrage vom %{date} wurde abgelehnt
+    uk: Український
+  helpers:
+    select:
+      prompt: Bitte wählen Sie
+    submit:
+      create: Erstelle eine(n) %{model}
+      submit: Diese(n) %{model} speichern
+      update: Diese(n) %{model} bearbeiten
+  home:
+    btn_urgent: Ohne Reservierung
+    title: Was suchen Sie?
+    type_care: Sich pflegen
+    type_contact: Kontakt
+    type_eat: Essen
+    type_emergency: Notfall
+    type_sleep: Schlafen
+    type_urgent: Dringend
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: milliarde
+          million: million
+          quadrillion: million Milliarden
+          thousand: tausend
+          trillion: billion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: byte
+            other: bytes
+          eb: Eo
+          gb: Go
+          kb: ko
+          mb: Mo
+          pb: Po
+          tb: To
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  request:
+    edit:
+      approved: Akzeptieren
+      back: Aufgeben
+      btn_cancel: Antrag abbrechen
+      cancel: Antrag storniert
+      category-1: Status 1 - bis zu 30 Nächte
+      category-2: Status 2 - bis zu 15 Nächte
+      category-3: Status 3 - bis zu 7 Nächte
+      phone: Telefonnummer
+      refused: Antrag ablehnen
+      text-label: Bevorzugte Assoziation
+      update: Antrag annehmen
+    error_end_date: muss nach dem Startdatum liegen
+    error_start_date: kann erst heute sein
+    index:
+      approved: Antrag angenommen
+      cancel: Antrag storniert
+      pending: In der Warteschleife
+      refused: Abgelehnter Antrag
+      request: Antrag auf
+      request_btn: Siehe
+      title: Meine Buchungen
+      title_admin: Reservierungen
+    new:
+      btn: Buchen
+      category-1: Ihr Status erlaubt Ihnen eine Aufenthaltsdauer von bis zu 30 Nächten, die verlängert werden kann.
+      category-2: Ihr Status erlaubt Ihnen eine Aufenthaltsdauer von bis zu 15 Nächten, die verlängert werden kann.
+      category-3: Ihr Status erlaubt Ihnen eine Aufenthaltsdauer von bis zu 7 Nächten, die verlängert werden kann.
+      text: Ihre Anfrage wird vom Reservierungsbüro geprüft. Sie erhalten so schnell wie möglich eine Antwort per SMS. Das Büro berücksichtigt Ihre Präferenz, wird Ihnen aber im Falle der Nichtverfügbarkeit eine andere Unterkunft zuweisen.
+      text-first: Zum ersten Mal ist es notwendig, sich tagsüber im Reservierungsbüro anzumelden. Das Reservierungsbüro ist montags, dienstags, mittwochs und freitags von 14:00 bis 16:30 Uhr geöffnet.
+      text-label: Sie können die von Ihnen bevorzugte Assoziation ändern.
+      text-urgence: Für eine Notunterkunft wenden Sie sich bitte innerhalb der angebotenen Zeiten direkt an die Organisation.
+  seeds:
+    description:
+      borde_47: '"Borde 47" ist eine Winternotunterkunft, die von der Stadt Lausanne verwaltet wird. Sie ist vom 1. Dezember 2021 bis zum 30. April 2022 jede Nacht von 21:00 bis 8:00 Uhr geöffnet und bietet 42 Plätze in Studios mit Bad. Den Nutzerinnen und Nutzern werden grundlegende Körperpflegeprodukte zur Verfügung gestellt. Jeden Abend und jeden Morgen wird ein Snack angeboten.'
+      echelle: L'Echelle, eine Einrichtung der Mutter-Sofia-Stiftung, die vom Sozialdienst Lausanne (SSL) unterstützt wird, ist mehrmals pro Woche mit einem Wohnmobil unterwegs, das als Büro und Lebensmittelvorrat dient. Die Unterstützung richtet sich an Personen, die in Lausanne wohnen und ihre finanzielle Situation wieder in den Griff bekommen möchten.
+      emus: Das Mobile Team für soziale Notfälle (EMUS) steht der Bevölkerung, ob gefährdet oder nicht, zur Verfügung, um medizinisch-soziale Unterstützung zu leisten. Sie interveniert zu Hause oder auf der Straße und hilft bei der Suche nach einer geeigneten Lösung. Seit dem 1. Juli 2021 ist sie an UNISANTE angegliedert. Nur im Kanton Waadt
+      epicerie_caritas: Die von Caritas Waadt geführten Caritas-Märkte bieten Grundnahrungsmittel (Gemüse, Obst, Getreide, Milchprodukte) an, die 30 bis 50 Prozent unter den Marktpreisen liegen. Die verkauften Produkte stammen hauptsächlich aus Produktionsüberschüssen, beschädigten Serien, Falschlieferungen oder Liquidationen. Die Ware ist jedoch stets von einwandfreier Qualität.
+      etape: L'Etape Saint-Martin ist eine ganzjährig geöffnete Anlaufstelle, die dem Bedürfnis nach Unterbringung von wohnungslosen Personen in der Stadt Lausanne Rechnung trägt. Sie bietet allen Personen ohne Wohnmöglichkeit eine provisorische und zeitlich begrenzte Unterbringungsmöglichkeit. L'Etape Saint-Martin verfügt über 41 Plätze. Sie ist jede Nacht von 21.00 bis 08.00 Uhr geöffnet. Den Nutzerinnen und Nutzern stehen angepasste sanitäre Einrichtungen sowie grundlegende Körperpflegeprodukte zur Verfügung. Jeden Abend wird eine Mahlzeit und jeden Morgen ein Snack angeboten.
+      marmotte: La Marmotte wird von der Heilsarmee betrieben und beherbergt bis zu 30 Personen pro Nacht, jeden Tag im Jahr von 20:30 bis 8:30 Uhr. Den Bewohnern stehen Duschen und Hygieneartikel zur Verfügung. Jeden Abend wird eine Mahlzeit und jeden Morgen ein Snack angeboten.
+      point_eau: le Point d'Eau Lausanne ist ein Zentrum, das sich der Gesundheit und der Wiedereingliederung von besonders gefährdeten Menschen widmet. Jedes Jahr bietet Point d'Eau Tausende von Hygieneleistungen sowie medizinische, para-medizinische und zahnmedizinische Versorgung an. Er beschäftigt ein Team von vierzehn Personen (6 Vollzeitäquivalente), das von 160 Freiwilligen (Empfangspersonal, Ärzte, Krankenpfleger, Podologen, Zahnärzte usw.) unterstützt wird.
+      repit: Le Répit hat, um sich der Gesundheitssituation anzupassen, eine der riesigen Hallen des Palais de Beaulieu in Beschlag genommen. Le Répit ist jeden Abend von 10.00 bis 8.00 Uhr geöffnet und hat in einer Nacht bis zu 170 Personen beherbergt.
+      sleep_in: Das Sleep-In beherbergt bis zu 26 Personen pro Nacht, jeden Tag im Jahr von 20:30 bis 8:00 Uhr. Es stehen Duschen und Hygieneartikel zur Verfügung. Die Nutzer haben die Möglichkeit, abends die Küche zum Kochen zu nutzen, und jeden Morgen wird ein Snack angeboten.
+      soupe_populaire: Die Suppenküche ist eine Einrichtung der Mutter-Sofia-Stiftung, die vom Sozialdienst Lausanne (SSL) unterstützt wird. Sie ist jeden Abend sowie mittwochs, freitags und sonntags zur Mittagszeit geöffnet und bietet jedem, der bedingungslos Hilfe benötigt, eine warme Mahlzeit, ein offenes Ohr und Orientierung.
+      unisante: Dienst für Notfälle. Das Zentrum führt Behandlungen in Gefängnissen sowie für Menschen mit Migrationshintergrund und Risikopersonen durch. Es führt auch Präventionskampagnen durch, z. B. zur Aufklärung über sexuell übertragbare Infektionen bei Studenten auf dem Lausanner Campus, in der LGBTI-Gemeinschaft oder bei Sexarbeiterinnen.
+  show:
+    description: 'Beschreibung :'
+    edit: Bearbeiten
+    link_map: Auf der Karte anzeigen
+    opening: 'Öffnungszeiten:'
+    reservation: Buchen
+    reservation_login: Log in zum Buchen
+    services: 'Verfügbare Dienste :'
+    telephone: 'Telefon :'
+  support:
+    array:
+      last_word_connector: " und"
+      two_words_connector: " und"
+      words_connector: ","
+  time:
+    am: am
+    formats:
+      default: "%d %B %Y %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
+    pm: pm

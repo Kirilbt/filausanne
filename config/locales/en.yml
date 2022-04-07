@@ -108,6 +108,11 @@ en:
       month: Month
       second: Second
       year: Year
+  emergency:
+    ambulance: Ambulance
+    firefighter: Firefighter
+    police: Police
+    toxicology: Toxicology info(intoxications)
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -147,17 +152,22 @@ en:
         one: 'Unable to register this(tte) %{model} : 1 error'
         other: 'Unable to register this(t) %{model}: %{count} errors'
   general:
-    log_out: "Log out"
     association: " associations found"
     close: Closed
+    de: Deutsche
     en: English
+    es: Español
     fr: Français
+    it: Italiano
+    log_out: Log out
     my_reservations: My Reservations
     open: Open
     pt: Português
     reservations_admin: Reservations
+    ru: Русский
     twilio_sms_approved: 'Your reservation request has been accepted. Association: %{name} Date: %{start_date} - %{end_date} Address: %{address}'
     twilio_sms_refused: Your reservation request from  %{date} has been denied
+    uk: Український
   helpers:
     select:
       prompt: Please select
@@ -171,15 +181,9 @@ en:
     type_care: Care
     type_contact: Contact
     type_eat: Eat
+    type_emergency: Urgent
     type_sleep: Sleep
-    type_contact: "Contact"
-    type_urgent: "Urgent"
-    type_emergency: "Urgent"
-  emergency:
-    police: "Police"
-    ambulance: "Ambulance"
-    firefighter: "Firefighter"
-    toxicology: "Toxicology info(intoxications)"
+    type_urgent: Urgent
   number:
     currency:
       format:
@@ -236,25 +240,13 @@ en:
       back: Discard changes
       btn_cancel: Cancel request
       cancel: Request canceled
+      category-1: Status 1 - up to 30 nights
+      category-2: Status 2 - up to 15 nights
+      category-3: Status 3 - up to 7 nights
       phone: Phone number
       refused: Request refuse
       text-label: Preferred association
       update: Accept request
-      phone: "Phone number"
-      text-label: "Preferred association"
-      category-1: "Status 1 - up to 30 nights"
-      category-2: "Status 2 - up to 15 nights"
-      category-3: "Status 3 - up to 7 nights"
-    new:
-      btn: "Reserve"
-      text: "Your request will be reviewed by the reservation office. You will receive an answer by text message as soon as possible.
-      The office will take your preference into account, but in case of unavailability, they will assign you another accommodation."
-      text-urgence: "For emergency accommodation, please go directly to the association within the proposed hours."
-      text-label: "You can change the association of your preference."
-      text-first: "For the first time, it is necessary to register during the day at the Bureau des réservations. The Bureau des réservations is open from 2:00 p.m. to 4:30 p.m. on Monday, Tuesday, Wednesday and Friday."
-      category-1: "Your status allows you to stay up to 30 nights, renewable."
-      category-2: "Your status allows you to stay up to 15 nights, renewable."
-      category-3: "Your status allows you to stay up to 7 nights, renewable."
     error_end_date: must be after start date
     error_start_date: can't be before today
     index:
@@ -266,6 +258,28 @@ en:
       request_btn: View
       title: My Reservations
       title_admin: Reservations
+    new:
+      btn: Reserve
+      category-1: Your status allows you to stay up to 30 nights, renewable.
+      category-2: Your status allows you to stay up to 15 nights, renewable.
+      category-3: Your status allows you to stay up to 7 nights, renewable.
+      text: Your request will be reviewed by the reservation office. You will receive an answer by text message as soon as possible. The office will take your preference into account, but in case of unavailability, they will assign you another accommodation.
+      text-first: For the first time, it is necessary to register during the day at the Bureau des réservations. The Bureau des réservations is open from 2:00 p.m. to 4:30 p.m. on Monday, Tuesday, Wednesday and Friday.
+      text-label: You can change the association of your preference.
+      text-urgence: For emergency accommodation, please go directly to the association within the proposed hours.
+  seeds:
+    description:
+      borde_47: '"Borde 47" is a winter emergency shelter managed by the City of Lausanne. It is open every night from 9pm to 8am from December 1st, 2021 to April 30th, 2022 and offers 42 places in studios with bathroom. Basic personal hygiene products are available to users. A snack is offered every evening and morning.'
+      echelle: L'Echelle, an entity of the Mother Sofia Foundation supported by the Lausanne Social Service (SSL), travels several times a week in a camper van that serves as an office and a food reserve. Its support is aimed at people living in Lausanne who wish to regain control of their financial situation.
+      emus: The Mobile Social Emergency Team (EMUS) is at the service of the population, vulnerable or not, to provide medical and social support. It intervenes at home or on the street and helps find the appropriate solution. Since July 1, 2021, it has been attached to UNISANTE. Only in the canton of Vaud
+      epicerie_caritas: The Caritas grocery stores, managed by Caritas Vaud, offer basic products (vegetables, fruits, cereals, dairy products) 30 to 50% lower than market prices. The products sold come mainly from surplus production, damaged series, delivery errors or liquidations. Nevertheless, the goods are always of impeccable quality.
+      etape: L'Etape Saint-Martin is a reception centre open all year round and which responds to the need to house homeless people in the city of Lausanne. It offers a temporary accommodation solution to anyone who has no possibility of housing. L'Etape Saint-Martin has 41 places. It is open every night from 9pm to 8am. Adapted sanitary facilities and basic personal hygiene products are at the disposal of the users. A meal is offered every evening and a snack every morning.
+      marmotte: La Marmotte, managed by the Salvation Army, welcomes up to 30 people per night, every day of the year from 8:30 pm to 8:30 am. Showers and hygiene products are available to residents. A meal is offered every evening and a snack every morning.
+      point_eau: point d'Eau Lausanne is a center dedicated to the health and reintegration of the most vulnerable people. Each year, Point d'Eau offers thousands of hygiene services and medical, para-medical and dental care. It employs a team of fourteen people (6 full-time equivalents) supported by 160 volunteers (reception staff, doctors, nurses, chiropodists, dentists, etc.).
+      repit: To adapt to the health situation, Le Répit has taken over one of the huge halls of the Palais de Beaulieu. Le Répit is open every evening from 10:00 to 8:00 and has welcomed up to 170 people in one night.
+      sleep_in: The Sleep-In welcomes up to 26 people per night, every day of the year from 8:30 pm to 8 am. Showers and hygiene products are available. Users have the possibility to use the kitchen in the evening to cook, and a snack is offered every morning.
+      soupe_populaire: The soup kitchen is a structure of the Mother Sofia Foundation supported by the Lausanne Social Service (SSL). Open every evening, as well as Wednesdays, Fridays and Sundays at noon, it offers a hot meal, listening and guidance to anyone who feels the need for it unconditionally.
+      unisante: Emergency service. The center provides care in prisons, as well as for migrants and people at risk. It also conducts prevention campaigns such as raising awareness of sexually transmitted infections among students on Lausanne campuses, the LGBTI community and sex workers.
   show:
     description: 'Description:'
     edit: Edit

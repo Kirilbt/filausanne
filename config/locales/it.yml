@@ -1,2 +1,303 @@
 ---
 it:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Convalida fallita: %{errori}'
+        restrict_dependent_destroy:
+          has_many: Non puoi cancellare il record perché il dipendente %{record} esiste
+          has_one: Non puoi cancellare il record perché esiste un %{record} dipendente
+  date:
+    abbr_day_names:
+    - sole
+    - mon
+    - mar
+    - mare
+    - gioco
+    - ven
+    - sam
+    abbr_month_names:
+    -
+    - jan.
+    - febbraio.
+    - mar.
+    - aprile.
+    - maggio
+    - giugno
+    - jul.
+    - agosto
+    - settembre.
+    - ottobre.
+    - nov.
+    - dec.
+    day_names:
+    - domenica
+    - lunedì
+    - martedì
+    - mercoledì
+    - giovedì
+    - venerdì
+    - sabato
+    formats:
+      default: "%d/%m/%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
+    month_names:
+    -
+    - gennaio
+    - febbraio
+    - marzo
+    - aprile
+    - maggio
+    - giugno
+    - luglio
+    - agosto
+    - settembre
+    - ottobre
+    - novembre
+    - dicembre
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: circa un'ora
+        other: circa %{conteggio} ore
+      about_x_months:
+        one: circa un mese
+        other: circa %{conteggio} mesi
+      about_x_years:
+        one: circa un anno
+        other: circa %{conteggio} anni
+      almost_x_years:
+        one: quasi un anno
+        other: quasi %{conteggio} anni
+      half_a_minute: mezzo minuto
+      less_than_x_minutes:
+        one: meno di un minuto
+        other: meno di %{count} minuti
+        zero: meno di un minuto
+      less_than_x_seconds:
+        one: meno di un secondo
+        other: meno di %{count} secondi
+        zero: meno di un secondo
+      over_x_years:
+        one: più di un anno
+        other: oltre %{count} anni
+      x_days:
+        one: 1 giorno
+        other: "%{conteggio} giorni"
+      x_minutes:
+        one: 1 minuto
+        other: "%{conteggio} minuti"
+      x_months:
+        one: 1 mese
+        other: "%{conteggio} mesi"
+      x_seconds:
+        one: 1 secondo
+        other: "%{count} secondi"
+      x_years:
+        one: 1 anno
+        other: "%{conteggio} anni"
+    prompts:
+      day: Giorno
+      hour: Tempo
+      minute: Minuto
+      month: Mese
+      second: Secondo
+      year: Anno
+  emergency:
+    ambulance: Ambulanza
+    firefighter: Pompiere
+    police: Polizia
+    toxicology: Informazioni tossicologiche (intossicazioni)
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: deve essere accettato
+      blank: deve essere completato
+      confirmation: non corrisponde a %{attributo}
+      empty: deve essere completato
+      equal_to: deve essere uguale a %{count}
+      even: deve essere pari
+      exclusion: non è disponibile
+      greater_than: deve essere maggiore di %{count}
+      greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
+      inclusion: non è incluso nell'elenco
+      invalid: non è valido
+      less_than: deve essere inferiore a %{count}
+      less_than_or_equal_to: deve essere minore o uguale a %{count}
+      model_invalid: 'Convalida fallita: %{errori}'
+      not_a_number: non è un numero
+      not_an_integer: deve essere un numero intero
+      odd: deve essere dispari
+      other_than: deve essere diverso da %{count}
+      present: deve essere vuoto
+      required: deve esistere
+      taken: è già in uso
+      too_long:
+        one: è troppo lungo (non più di un carattere)
+        other: è troppo lungo (non più di %{count} caratteri)
+      too_short:
+        one: è troppo corto (almeno un carattere)
+        other: è troppo corto (almeno %{count} caratteri)
+      wrong_length:
+        one: non è della lunghezza giusta (deve essere un carattere)
+        other: non è della lunghezza corretta (deve essere %{count} caratteri)
+    template:
+      body: Si prega di controllare i seguenti campi
+      header:
+        one: 'Impossibile registrare questo %{modello}: 1 errore'
+        other: 'Impossibile registrare questo %{modello}: %{count} errori'
+  general:
+    association: " associazioni trovate"
+    close: Chiuso
+    de: Deutsche
+    en: Inglese
+    es: Español
+    fr: Francese
+    it: Italiano
+    log_out: Disconnessione
+    my_reservations: Le mie prenotazioni
+    open: Aprire
+    pt: Português
+    reservations_admin: Prenotazioni
+    ru: Русский
+    twilio_sms_approved: 'La sua richiesta di prenotazione è stata accettata. Associazione: %{nome} Data: %{data di inizio} - %{data di fine} Indirizzo: %{indirizzo}'
+    twilio_sms_refused: La tua richiesta di prenotazione per %{date} è stata rifiutata
+    uk: Український
+  helpers:
+    select:
+      prompt: Si prega di selezionare
+    submit:
+      create: Crea un %{modello}
+      submit: Salva questo (tte) %{modello}
+      update: Modifica questo %{modello}
+  home:
+    btn_urgent: Senza riserve
+    title: Cosa state cercando?
+    type_care: Migliorare
+    type_contact: Contatta
+    type_eat: Mangiare
+    type_emergency: Emergenza
+    type_sleep: Dormire
+    type_urgent: Urgente
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: miliardi
+          million: milioni di
+          quadrillion: milioni di miliardi
+          thousand: mille
+          trillion: trilione
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: byte
+            other: bytes
+          eb: Eo
+          gb: Vai
+          kb: ko
+          mb: Mo
+          pb: Po
+          tb: A
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  request:
+    edit:
+      approved: Accettare
+      back: Interrompere
+      btn_cancel: Cancella la richiesta
+      cancel: Applicazione cancellata
+      category-1: Stato 1 - fino a 30 notti
+      category-2: Stato 2 - fino a 15 notti
+      category-3: Stato 3 - fino a 7 notti
+      phone: Numero di telefono
+      refused: Rifiutare la domanda
+      text-label: Associazione preferita
+      update: Accettare l'applicazione
+    error_end_date: deve essere dopo la data di inizio
+    error_start_date: non può essere prima di oggi
+    index:
+      approved: Applicazione accettata
+      cancel: Applicazione annullata
+      pending: In attesa
+      refused: Applicazione rifiutata
+      request: Richiesta di
+      request_btn: Vedere
+      title: Le mie riserve
+      title_admin: Prenotazioni
+    new:
+      btn: Libro
+      category-1: Il tuo status ti permette di soggiornare per un massimo di 30 notti, rinnovabili.
+      category-2: Il tuo status ti permette di soggiornare per un massimo di 15 notti, rinnovabili.
+      category-3: Il tuo status ti permette di soggiornare per un massimo di 7 notti, rinnovabili.
+      text: La vostra richiesta sarà esaminata dall'ufficio prenotazioni. Riceverai una risposta via sms il più presto possibile. L'ufficio terrà conto della vostra preferenza, ma in caso di indisponibilità, vi assegnerà un altro alloggio.
+      text-first: Per la prima volta, è necessario registrarsi durante il giorno all'ufficio prenotazioni. L'ufficio prenotazioni è aperto dalle 14:00 alle 16:30 il lunedì, martedì, mercoledì e venerdì.
+      text-label: Potete cambiare l'associazione di vostra preferenza.
+      text-urgence: Per un alloggio di emergenza, si prega di andare direttamente all'associazione durante le ore proposte.
+  seeds:
+    description:
+      borde_47: '"Borde 47" è un rifugio di emergenza invernale gestito dalla città di Losanna. È aperto tutte le notti dalle 21 alle 8 dal 1 dicembre 2021 al 30 aprile 2022 e offre 42 posti in monolocali con bagno. I prodotti di base per l''igiene personale sono a disposizione degli utenti. Uno spuntino è offerto ogni sera e ogni mattina.'
+      echelle: L'Echelle, un'entità della Fondazione Madre Sofia sostenuta dal Servizio Sociale di Losanna (SSL), viaggia diverse volte alla settimana in un camper che serve da ufficio e da riserva alimentare. Il suo sostegno si rivolge alle persone che vivono a Losanna e che vogliono mettere sotto controllo la loro situazione finanziaria.
+      emus: La Squadra Mobile di Emergenza Sociale (EMUS) è al servizio della popolazione, vulnerabile o meno, per fornire supporto medico e sociale. Interviene a casa o in strada e aiuta a trovare la soluzione adeguata. Dal 1° luglio 2021, è attaccato a UNISANTE. Solo nel cantone di Vaud
+      epicerie_caritas: Le drogherie Caritas, gestite da Caritas Vaud, offrono prodotti di base (verdura, frutta, cereali, latticini) dal 30 al 50% più bassi dei prezzi di mercato. I prodotti venduti provengono principalmente da eccedenze di produzione, serie danneggiate, errori di consegna o liquidazioni. Tuttavia, la merce è sempre di qualità impeccabile.
+      etape: L'Etape Saint-Martin è un centro di accoglienza aperto tutto l'anno che risponde alla necessità di ospitare i senzatetto nella città di Losanna. Offre una soluzione di alloggio temporaneo a chiunque non abbia una casa. L'Etape Saint-Martin ha 41 posti. È aperto tutte le notti dalle 21 alle 8 del mattino. Strutture sanitarie adeguate e prodotti di base per l'igiene personale sono a disposizione degli utenti. Un pasto è offerto ogni sera e uno spuntino ogni mattina.
+      marmotte: La Marmotte, gestita dall'Esercito della Salvezza, accoglie fino a 30 persone per notte, tutti i giorni dell'anno dalle 20.30 alle 8.30. Docce e prodotti per l'igiene sono a disposizione dei residenti. Un pasto è offerto ogni sera e uno spuntino ogni mattina.
+      point_eau: point d'Eau Lausanne è un centro dedicato alla salute e alla reintegrazione delle persone più vulnerabili. Ogni anno, Point d'Eau offre migliaia di servizi di igiene e cure mediche, para-mediche e dentistiche. Impiega un team di quattordici persone (6 equivalenti a tempo pieno) supportate da 160 volontari (personale di accoglienza, medici, infermieri, chiropodisti, dentisti, ecc.)
+      repit: Per adattarsi alla situazione sanitaria, Le Répit ha occupato una delle enormi sale del Palais de Beaulieu. Le Répit è aperto ogni sera dalle 10 alle 8 e ha accolto fino a 170 persone in una notte.
+      sleep_in: Lo Sleep-In accoglie fino a 26 persone per notte, tutti i giorni dell'anno dalle 20.30 alle 8 del mattino. Docce e prodotti per l'igiene sono disponibili. Gli utenti hanno la possibilità di utilizzare la cucina la sera per cucinare, e uno spuntino viene offerto ogni mattina.
+      soupe_populaire: La mensa è una struttura della Fondazione Madre Sofia sostenuta dal Servizio Sociale di Losanna (SSL). Aperto ogni sera, così come il mercoledì, il venerdì e la domenica a mezzogiorno, offre un pasto caldo, ascolto e guida a chiunque si senta incondizionatamente nel bisogno.
+      unisante: Servizio di emergenza. Il centro fornisce assistenza nelle prigioni, così come ai migranti e alle persone a rischio. Inoltre conduce campagne di prevenzione come la sensibilizzazione alle infezioni sessualmente trasmissibili tra gli studenti dei campus di Losanna, la comunità LGBTI e i lavoratori del sesso.
+  show:
+    description: 'Descrizione:'
+    edit: Modifica
+    link_map: Vedere sulla mappa
+    opening: 'Orari di apertura :'
+    reservation: Libro
+    reservation_login: Accedi per prenotare
+    services: 'Servizi disponibili:'
+    telephone: 'Telefono:'
+  support:
+    array:
+      last_word_connector: " e"
+      two_words_connector: " e"
+      words_connector: ","
+  time:
+    am: sono
+    formats:
+      default: "%d %B %Y %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
+    pm: pm
