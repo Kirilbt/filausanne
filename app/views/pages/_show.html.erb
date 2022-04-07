@@ -62,7 +62,13 @@
 </div>
 
 <div class="opening-show">
-  <p type="button" data-bs-toggle="collapse" data-bs-target="#openingHours" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong><%= t 'show.opening' %></strong> Open <i class="fa-solid fa-caret-down"></i></p>
+  <% day_open = object.opening_hours.select { |hours|  hours.day_en.capitalize == (Date.today.strftime("%A")) } %>
+  <% hour_open = day_open.select { |day| Time.now.strftime("%H:%M") > day.opens.strftime("%H:%M") && Time.now.strftime("%H:%M") < day.closes.strftime("%H:%M") } %>
+  <% if hour_open == [] %>
+      <p type="button" data-bs-toggle="collapse" data-bs-target="#openingHours" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong><%= t 'show.opening' %></strong> <%= t 'general.close' %> <i class="fa-solid fa-caret-down"></i></p>
+  <% else %>
+    <p type="button" data-bs-toggle="collapse" data-bs-target="#openingHours" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong><%= t 'show.opening' %></strong> <%= t 'general.open' %> <i class="fa-solid fa-caret-down"></i></p>
+  <% end %>
   <div class="collapse navbar-collapse" id="openingHours">
       <% days = t('date.day_names') %>
       <% days.each do |day| %>
