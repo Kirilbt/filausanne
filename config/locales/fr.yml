@@ -171,7 +171,7 @@ fr:
       submit: Enregistrer ce(tte) %{model}
       update: Modifier ce(tte) %{model}
   home:
-    btn_urgent: Pour ce soir
+    btn_urgent: Sans réservation
     title: Que cherchez-vous?
     type_care: Se soigner
     type_contact: Contact
@@ -180,7 +180,6 @@ fr:
     type_sleep: Dormir
     type_contact: "Contact"
     type_urgent: "Urgent"
-    btn_urgent: "Pour ce soir"
   emergency:
     police: "Police"
     ambulance: "Ambulance"

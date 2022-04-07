@@ -166,7 +166,7 @@ en:
       submit: Save this(tte) %{model}
       update: Edit this(tte) %{model}
   home:
-    btn_urgent: For tonight
+    btn_urgent: Without reservation
     title: What are you looking for?
     type_care: Care
     type_contact: Contact
@@ -174,7 +174,6 @@ en:
     type_sleep: Sleep
     type_contact: "Contact"
     type_urgent: "Urgent"
-    btn_urgent: "For tonight"
     type_emergency: "Urgent"
   emergency:
     police: "Police"

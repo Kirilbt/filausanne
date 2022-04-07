@@ -4,12 +4,36 @@
       <div class="type-nav-content">
         <%= image_tag "arrow.svg", class:"arrow" %>
         <%= image_tag "urgent.svg", class:"type-icon" %>
-        <p><strong><%= t 'home.type_urgent' %></strong> <%= @urgents.count + 1 %> <%= t("general.association") %></p>
+        <p><strong><%= t 'home.type_urgent' %></strong> <%= @urgents.count + 2 %> <%= t("general.association") %></p>
       </div>
     </div>
   </div>
 <% end %>
 <div class="container">
+  <p id="urgent-p"><%= t('request.new.text-urgence') %></p>
+
+  <%= link_to service_path(@soupe) do %>
+    <div class="card-service">
+      <% if @soupe.photo.key? %>
+        <img src=<%= @soupe.photo.url %> alt="">
+      <% else %>
+        <%= image_tag("img-test.jpg") %>
+      <% end %>
+      <div class="card-service-infos">
+        <h2><%= @soupe.name %></h2>
+        <p> <%= @soupe.address%></p>
+        <span class="card-service-type <%= @soupe.type.downcase %>"><%= @soupe.type %></span>
+        <% day_open = @soupe.opening_hours.select { |hours|  hours.day_en == (Date.today.strftime("%A")) } %>
+        <% hour_open = day_open.select { |day| Time.now.strftime("%H:%M") > day.opens.strftime("%H:%M") && Time.now.strftime("%H:%M") < day.closes.strftime("%H:%M") }  %>
+        <% if hour_open == [] %>
+          <span id="close"> <%= t 'general.close' %> </span>
+        <% else %>
+          <span id="open"><%= t 'general.open' %></span>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
   <%= link_to service_path(@unisante) do %>
     <div class="card-service">
       <% if @unisante.photo.key? %>
@@ -31,8 +55,7 @@
       </div>
     </div>
   <% end %>
-  
-  <p id="urgent-p"><%= t('request.new.text-urgence') %></p>
+
   <% @urgents.each do |service| %>
     <%= link_to service_path(service) do %>
       <div class="card-service">

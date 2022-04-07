@@ -5,6 +5,7 @@ class ServicesController < ApplicationController
   def urgent
     @urgents = Service.select { |service| service.urgent == true }
     @unisante = Service.find { |uni| uni.name == "Unisanté" }
+    @soupe = Service.find { |uni| uni.name == "La Soupe Populaire" }
   end
 
   def show

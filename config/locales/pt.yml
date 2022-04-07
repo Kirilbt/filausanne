@@ -166,7 +166,7 @@ pt:
       submit: Guardar isto(tte) %{modelo}
       update: Modifique isto %{modelo}
   home:
-    btn_urgent: Para esta noite
+    btn_urgent: Sem reserva
     title: O que você está procurando?
     type_care: Saúde
     type_contact: Contacto
@@ -174,7 +174,6 @@ pt:
     type_sleep: Dormir
     type_contact: "Contacto"
     type_urgent: "Urgente"
-    btn_urgent: "Para esta noite"
     type_emergency: "Urgente"
   emergency:
     police: "Polícia"
