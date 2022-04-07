@@ -11,7 +11,8 @@ class CaresController < ApplicationController
     @markers = {
       lat: @care.latitude,
       lng: @care.longitude,
-      info_window: render_to_string(partial: "shared/info_window", locals: { service: @care })
+      info_window: render_to_string(partial: "shared/info_window", locals: { service: @care }),
+      image_url: helpers.asset_url("pin_care.svg")
     }
   end
 

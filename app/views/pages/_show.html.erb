@@ -62,7 +62,14 @@
 </div>
 
 <div class="opening-show">
-  <p><strong><%= t 'show.opening' %></strong> Open </p>
+  <p type="button" data-bs-toggle="collapse" data-bs-target="#openingHours" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong><%= t 'show.opening' %></strong> Open <i class="fa-solid fa-caret-down"></i></p>
+  <div class="collapse navbar-collapse" id="openingHours">
+      <% days = t('date.day_names') %>
+      <% days.each do |day| %>
+        <% service_day_hours = object.opening_hours.select { |opening| opening.day == day.capitalize } %>
+        <p><%= "#{day} #{service_day_hours.first.opens.strftime('%H:%M')} - #{service_day_hours.last.closes.strftime('%H:%M')}" %></p>
+      <% end %>
+  </div>
 </div>
 
 <div class="description-show">
