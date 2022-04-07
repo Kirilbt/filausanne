@@ -179,7 +179,7 @@ fr:
     type_emergency: Urgence
     type_sleep: Dormir
     type_contact: "Contact"
-    type_urgent: "Urgente"
+    type_urgent: "Urgent"
     btn_urgent: "Pour ce soir"
   emergency:
     police: "Police"
