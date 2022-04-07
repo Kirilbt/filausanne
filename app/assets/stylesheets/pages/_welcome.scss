@@ -1,6 +1,6 @@
 .all-page {
   position: relative;
-  background-color: $green;
+  background-color: $btn_primary_darker;
   height: 100vh;
   width: 100vw;
 }
@@ -17,64 +17,29 @@
     text-align: center;
     font-size: 24px;
   }
-  form {
+  .logo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 40px;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(171deg) brightness(103%) contrast(102%);
   }
 }
 
 .radio-language {
   position: relative;
-  margin:10px 0;
+  margin:10px auto;
   padding:0;
-  width: 200px;
+  width: 60%;
   height: 40px;
-  border:1px solid $light-gray;
   border-radius: 5px;
-}
-
-.radio-language {
-  label {
-    display:block;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    text-align: center;
-    color: white;
-  }
-  input {
-    opacity:0.011;
-    z-index:100;
-    display:block;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    height: 100%;
+  a {
     width: 100%;
-    cursor: pointer;
+    background-color: transparent;
+    border:1px solid $light-gray;
   }
-  input:checked + label {
-    background:$light-gray;
-    color: $green;
-  }
-  label {
-    padding:5px;
-    cursor:pointer;
-    z-index:90;
-  }
-
-  input[type="radio"]:hover + label {
-    background: $eat_color;
-  }
-}
-
-input[type="submit"] {
-  width: 200px;
-  display: inline-block;
-  margin: 10px 0;
 }

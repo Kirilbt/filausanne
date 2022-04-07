@@ -1,14 +1,13 @@
 <div class="all-page">
   <div class="welcome">
-    <p><i class="fa fa-light fa-globe"></i></p>
-    <form action="">
-        <% I18n.available_locales.each do |locale| %>
-          <div class="radio-language">
-            <input type="radio" id="<%= locale %>" name="locale" value="<%= locale %>">
-            <label for="locale"> <%= t("general.#{locale.to_s}", locale: :fr) %></label><br>
-          </div>
-        <% end %>
-        <input type="submit" value="Submit" class="button-primary button-language">
-    </form>
+    <div class="logo">
+      <%= image_tag "logo-fil.svg" %> fil
+    </div>
+    <%# <p><i class="fa fa-light fa-globe"></i></p> %>
+    <% I18n.available_locales.each do |locale| %>
+      <div class="radio-language">
+        <%= link_to(I18n.t("general.#{locale.to_s}", locale: :fr),  {locale: locale}, class: "btn button-primary") %>
+      </div>
+    <% end %>
   </div>
 </div>
