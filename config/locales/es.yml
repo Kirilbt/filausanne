@@ -1,2 +1,303 @@
 ---
 es:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Validación fallida: %{errores}'
+        restrict_dependent_destroy:
+          has_many: No puede eliminar el registro porque el %{record} dependiente existe
+          has_one: No puede eliminar el registro porque existe un %{record} dependiente
+  date:
+    abbr_day_names:
+    - sol
+    - mon
+    - mar
+    - mar
+    - juego
+    - vie
+    - sam
+    abbr_month_names:
+    -
+    - jan.
+    - feb.
+    - mar.
+    - abril.
+    - mayo
+    - junio
+    - jul.
+    - agosto
+    - septiembre.
+    - oct.
+    - nov.
+    - diciembre.
+    day_names:
+    - domingo
+    - lunes
+    - martes
+    - miércoles
+    - jueves
+    - viernes
+    - sábado
+    formats:
+      default: "%d/%m/%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
+    month_names:
+    -
+    - enero
+    - febrero
+    - marzo
+    - abril
+    - mayo
+    - junio
+    - julio
+    - agosto
+    - septiembre
+    - octubre
+    - noviembre
+    - diciembre
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: alrededor de una hora
+        other: aproximadamente %{count} horas
+      about_x_months:
+        one: alrededor de un mes
+        other: aproximadamente %{count} meses
+      about_x_years:
+        one: alrededor de un año
+        other: aproximadamente %{count} años
+      almost_x_years:
+        one: casi un año
+        other: casi %{count} años
+      half_a_minute: medio minuto
+      less_than_x_minutes:
+        one: menos de un minuto
+        other: menos de %{count} minutos
+        zero: menos de un minuto
+      less_than_x_seconds:
+        one: menos de un segundo
+        other: menos de %{count} segundos
+        zero: menos de un segundo
+      over_x_years:
+        one: más de un año
+        other: más de %{count} años
+      x_days:
+        one: 1 día
+        other: "%{count} días"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_months:
+        one: 1 mes
+        other: "%{count} meses"
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+      x_years:
+        one: 1 año
+        other: "%{count} años"
+    prompts:
+      day: Día
+      hour: Tiempo
+      minute: Minuta
+      month: Mes
+      second: Segundo
+      year: Año
+  emergency:
+    ambulance: Ambulancia
+    firefighter: Bombero
+    police: Policía
+    toxicology: Información toxicológica (intoxicaciones)
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: deben ser aceptados
+      blank: debe ser completado
+      confirmation: no coincide con %{atributo}
+      empty: debe ser completado
+      equal_to: debe ser igual a %{count}
+      even: debe ser uniforme
+      exclusion: no está disponible
+      greater_than: debe ser mayor que %{count}
+      greater_than_or_equal_to: debe ser mayor o igual que %{count}
+      inclusion: no está incluido en la lista
+      invalid: no es válido
+      less_than: debe ser menor que %{count}
+      less_than_or_equal_to: debe ser menor o igual que %{count}
+      model_invalid: 'Validación fallida: %{errores}'
+      not_a_number: no es un número
+      not_an_integer: debe ser un número entero
+      odd: debe ser extraño
+      other_than: debe ser diferente de %{count}
+      present: debe estar vacío
+      required: debe existir
+      taken: ya está en uso
+      too_long:
+        one: es demasiado largo (no más de un carácter)
+        other: es demasiado largo (no más de %{count} caracteres)
+      too_short:
+        one: es demasiado corto (al menos un carácter)
+        other: es demasiado corto (al menos %{count} caracteres)
+      wrong_length:
+        one: no tiene la longitud correcta (debe ser un carácter)
+        other: no tiene la longitud correcta (debe tener %{count} caracteres)
+    template:
+      body: Por favor, compruebe los siguientes campos
+      header:
+        one: 'No se ha podido registrar este %{model}: 1 error'
+        other: 'No se ha podido registrar este %{model}: %{count} errores'
+  general:
+    association: " asociaciones encontradas"
+    close: Cerrado
+    de: Deutsche
+    en: Inglés
+    es: English
+    fr: Francés
+    it: Italiano
+    log_out: Desconexión
+    my_reservations: Mis reservas
+    open: Abrir
+    pt: Português
+    reservations_admin: Reservas
+    ru: Русский
+    twilio_sms_approved: 'Su solicitud de reserva ha sido aceptada. Asociación: %{nombre} Fecha: %{fecha_de_inicio} - %{fecha_de_fin} Dirección: %{dirección}'
+    twilio_sms_refused: Su solicitud de reserva para %{date} ha sido rechazada
+    uk: Український
+  helpers:
+    select:
+      prompt: Por favor, seleccione
+    submit:
+      create: Crea un %{modelo}
+      submit: Guardar este(tte) %{modelo}
+      update: Modifica este %{model}
+  home:
+    btn_urgent: Sin reservas
+    title: "¿Qué buscas?"
+    type_care: Mejorar
+    type_contact: Contacte con
+    type_eat: Coma
+    type_emergency: Emergencia
+    type_sleep: Dormir
+    type_urgent: Urgente
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: mil millones
+          million: un millón de
+          quadrillion: millones de millones
+          thousand: mil
+          trillion: trillón
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: byte
+            other: bytes
+          eb: Eo
+          gb: Ir a
+          kb: ko
+          mb: Mo
+          pb: Po
+          tb: A
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  request:
+    edit:
+      approved: Aceptar
+      back: Descontinuar
+      btn_cancel: Cancelar la solicitud
+      cancel: Solicitud anulada
+      category-1: Estado 1 - hasta 30 noches
+      category-2: Estado 2 - hasta 15 noches
+      category-3: Estatus 3 - hasta 7 noches
+      phone: Número de teléfono
+      refused: Rechazar la solicitud
+      text-label: Asociación preferente
+      update: Aceptación de la solicitud
+    error_end_date: debe ser posterior a la fecha de inicio
+    error_start_date: no puede ser antes de hoy
+    index:
+      approved: Solicitud aceptada
+      cancel: Solicitud anulada
+      pending: En espera
+      refused: Solicitud denegada
+      request: Solicitud de
+      request_btn: Ver
+      title: Mis reservas
+      title_admin: Reservas
+    new:
+      btn: Libro
+      category-1: Su estatus le permite alojarse hasta 30 noches, renovables.
+      category-2: Su estatus le permite alojarse hasta 15 noches, renovables.
+      category-3: Su estatus le permite alojarse hasta 7 noches, renovables.
+      text: Su solicitud será examinada por la oficina de reservas. Recibirá una respuesta por sms lo antes posible. La oficina tendrá en cuenta su preferencia, pero en caso de no estar disponible, le asignará otro alojamiento.
+      text-first: Para la primera vez, es necesario registrarse durante el día en la Oficina de Reservas. La oficina de reservas está abierta de 14:00 a 16:30 los lunes, martes, miércoles y viernes.
+      text-label: Puede cambiar la asociación de su preferencia.
+      text-urgence: Para un alojamiento de urgencia, diríjase directamente a la asociación en el horario propuesto.
+  seeds:
+    description:
+      borde_47: '"Borde 47" es un refugio de emergencia de invierno gestionado por la ciudad de Lausana. Abre todas las noches de 21 a 8 horas desde el 1 de diciembre de 2021 hasta el 30 de abril de 2022 y ofrece 42 plazas en estudios con baño. Los usuarios tienen a su disposición productos básicos de higiene personal. Se ofrece un tentempié cada noche y cada mañana.'
+      echelle: L'Echelle, una entidad de la Fundación Madre Sofía apoyada por el Servicio Social de Lausana (SSL), viaja varias veces a la semana en una furgoneta camper que sirve de oficina y reserva de alimentos. Su apoyo se dirige a las personas que viven en Lausana y quieren controlar su situación financiera.
+      emus: El Equipo Móvil de Emergencia Social (EMUS) está al servicio de la población, vulnerable o no, para prestar apoyo médico y social. Interviene en casa o en la calle y ayuda a encontrar la solución adecuada. Desde el 1 de julio de 2021, está adscrita a UNISANTE. Sólo en el cantón de Vaud
+      epicerie_caritas: Las tiendas de comestibles de Cáritas, gestionadas por Cáritas Vaud, ofrecen productos básicos (verduras, frutas, cereales, productos lácteos) entre un 30 y un 50% más baratos que los precios del mercado. Los productos vendidos proceden principalmente de excedentes de producción, series dañadas, errores de entrega o liquidaciones. Sin embargo, los productos son siempre de una calidad impecable.
+      etape: L'Etape Saint-Martin es un centro de acogida abierto todo el año que responde a la necesidad de albergar a personas sin hogar en la ciudad de Lausana. Ofrece una solución de alojamiento temporal a cualquier persona sin hogar. L'Etape Saint-Martin tiene 41 plazas. Está abierto todas las noches de 21 a 8 horas. Los usuarios tienen a su disposición instalaciones sanitarias adecuadas y productos básicos de higiene personal. Se ofrece una comida cada noche y un refrigerio cada mañana.
+      marmotte: La Marmotte, gestionada por el Ejército de Salvación, acoge hasta 30 personas por noche, todos los días del año, de 20.30 a 8.30 horas. Los residentes tienen a su disposición duchas y productos de higiene. Se ofrece una comida cada noche y un refrigerio cada mañana.
+      point_eau: point d'Eau Lausanne es un centro dedicado a la salud y la reinserción de las personas más vulnerables. Cada año, Point d'Eau ofrece miles de servicios de higiene y atención médica, paramédica y dental. Cuenta con un equipo de catorce personas (6 equivalentes a tiempo completo) apoyado por 160 voluntarios (personal de recepción, médicos, enfermeras, podólogos, dentistas, etc.).
+      repit: Para adaptarse a la situación sanitaria, Le Répit ha ocupado una de las enormes salas del Palacio de Beaulieu. Le Répit abre todas las noches de 10 a 8 y ha recibido hasta 170 personas en una noche.
+      sleep_in: El Sleep-In acoge hasta 26 personas por noche, todos los días del año, de 20.30 a 8.00 horas. Hay duchas y productos de higiene disponibles. Los usuarios tienen la posibilidad de utilizar la cocina por la noche para cocinar, y se ofrece un aperitivo cada mañana.
+      soupe_populaire: El comedor social es una estructura de la Fundación Madre Sofía apoyada por el Servicio Social de Lausana (SSL). Abierto todas las tardes, así como los miércoles, viernes y domingos a mediodía, ofrece una comida caliente, escucha y orientación a cualquier persona que se sienta incondicionalmente necesitada.
+      unisante: Servicio de emergencia. El centro presta atención en las prisiones, así como a los inmigrantes y a las personas en situación de riesgo. También lleva a cabo campañas de prevención, como la concienciación sobre las infecciones de transmisión sexual entre los estudiantes de los campus de Lausana, la comunidad LGBTI y los trabajadores del sexo.
+  show:
+    description: 'Descripción:'
+    edit: Editar
+    link_map: Ver en el mapa
+    opening: 'Horario de apertura :'
+    reservation: Libro
+    reservation_login: Acceder para reservar
+    services: 'Servicios disponibles:'
+    telephone: 'Teléfono :'
+  support:
+    array:
+      last_word_connector: " y"
+      two_words_connector: " y"
+      words_connector: ","
+  time:
+    am: soy
+    formats:
+      default: "%d %B %Y %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
+    pm: pm

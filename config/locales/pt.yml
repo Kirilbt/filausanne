@@ -108,6 +108,11 @@ pt:
       month: Mês
       second: Segundo
       year: Ano
+  emergency:
+    ambulance: Ambulância
+    firefighter: Bombeiros
+    police: Polícia
+    toxicology: Info toxicologia(intoxicações)
   errors:
     format: "%{attribute} %{message}"
     messages:
@@ -147,17 +152,22 @@ pt:
         one: 'Não foi possível registar isto %{model}: 1 erro'
         other: 'Não foi possível registar isto %{model}: %{count} erros'
   general:
-    log_out: "Sair da sessão"
     association: " associações encontradas"
     close: Fechado
+    de: Deutsche
     en: English
+    es: Español
     fr: Français
+    it: Italiano
+    log_out: Sair da sessão
     my_reservations: Minhas Reservas
     open: Aberto
     pt: Português
     reservations_admin: Reservas
+    ru: Русский
     twilio_sms_approved: 'O seu pedido de reserva foi aceite. Associação: %{name} Data: %{start_date} - %{end_date} Morada: %{address}'
     twilio_sms_refused: O seu pedido de reserva do %{date} foi rejeitado
+    uk: Український
   helpers:
     select:
       prompt: Por favor selecione
@@ -171,15 +181,9 @@ pt:
     type_care: Saúde
     type_contact: Contacto
     type_eat: Comer
+    type_emergency: Urgente
     type_sleep: Dormir
-    type_contact: "Contacto"
-    type_urgent: "Urgente"
-    type_emergency: "Urgente"
-  emergency:
-    police: "Polícia"
-    ambulance: "Ambulância"
-    firefighter: "Bombeiros"
-    toxicology: "Info toxicologia(intoxicações)"
+    type_urgent: Urgente
   number:
     currency:
       format:
@@ -236,6 +240,9 @@ pt:
       back: Voltar
       btn_cancel: Anular pedido
       cancel: Pedido anulado
+      category-1: Estatuto 1 - até 30 noites
+      category-2: Estatuto 2 - até 15 noites
+      category-3: Estatuto 3 - até 7 noites
       phone: Número de telefone
       refused: Recusar pedido
       text-label: Associação de preferencia
@@ -251,30 +258,28 @@ pt:
       request_btn: Ver pedido
       title: As minhas reservas
       title_admin: Reservas
-      request: "Pedido de"
-      request_btn: "Ver pedido"
-    edit:
-      update: "Aceitar o pedido"
-      back: "Voltar"
-      btn_cancel: "Anular pedido"
-      cancel: "Pedido anulado"
-      approved: "Aceitar"
-      refused: "Recusar pedido"
-      phone: "Número de telefone"
-      text-label: "Associação de preferencia"
-      category-1: "Estatuto 1 - até 30 noites"
-      category-2: "Estatuto 2 - até 15 noites"
-      category-3: "Estatuto 3 - até 7 noites"
     new:
       btn: Reservar
-      text: "O seu pedido será examinado pelo gabinete de reservas. Receberá uma resposta por sms o mais rapidamente possível.
-      O escritório terá em conta a sua preferência, mas em caso de indisponibilidade, atribuir-lhe-ão outro alojamento."
-      text-urgence: "Para um alojamento de emergência, dirija-se directamente à associação durante as horas propostas."
-      text-label: "Pode escolher a associação da sua preferência."
-      text-first: "Para a primeira vez, é necessário registar-se durante o dia no Bureau des réservations. O Bureau des réservations está aberto das 14:00 às 16:30 na segunda, terça, quarta e sexta-feira."
-      category-1: "O seu estatuto permite-lhe ficar até 30 noites, renováveis."
-      category-2: "O seu estatuto permite-lhe ficar até 15 noites, renováveis."
-      category-3: "O seu estatuto permite-lhe ficar até 7 noites, renováveis."
+      category-1: O seu estatuto permite-lhe ficar até 30 noites, renováveis.
+      category-2: O seu estatuto permite-lhe ficar até 15 noites, renováveis.
+      category-3: O seu estatuto permite-lhe ficar até 7 noites, renováveis.
+      text: O seu pedido será examinado pelo gabinete de reservas. Receberá uma resposta por sms o mais rapidamente possível. O escritório terá em conta a sua preferência, mas em caso de indisponibilidade, atribuir-lhe-ão outro alojamento.
+      text-first: Para a primeira vez, é necessário registar-se durante o dia no Bureau des réservations. O Bureau des réservations está aberto das 14:00 às 16:30 na segunda, terça, quarta e sexta-feira.
+      text-label: Pode escolher a associação da sua preferência.
+      text-urgence: Para um alojamento de emergência, dirija-se directamente à associação durante as horas propostas.
+  seeds:
+    description:
+      borde_47: '"Borde 47" é um abrigo de emergência de Inverno gerido pela Cidade de Lausanne. Está aberto todas as noites das 21h às 8h, de 1 de Dezembro de 2021 a 30 de Abril de 2022 e oferece 42 lugares em estúdios com casas de banho. Os produtos básicos de higiene pessoal estão disponíveis para os utilizadores. Um lanche é oferecido todas as noites e manhãs.'
+      echelle: L'Echelle, uma entidade da Fundação Mãe Sofia apoiada pelo Serviço Social de Lausanne (SSL), viaja várias vezes por semana numa autocaravana que serve de escritório e de reserva alimentar. O seu apoio é dirigido às pessoas que vivem em Lausanne e que querem ter a sua situação financeira sob controlo.
+      emus: A Equipa Móvel de Emergência Social (EMUS) está ao serviço da população, vulnerável ou não, para prestar apoio médico e social. Ela intervém em casa ou na rua e ajuda a encontrar a solução adequada. Desde 1 de Julho de 2021, está ligada à UNISANTE. Somente no cantão de Vaud
+      epicerie_caritas: As mercearias da Caritas, geridas pela Caritas Vaud, oferecem produtos básicos (vegetais, fruta, cereais, lacticínios) 30 a 50% mais baratos do que os preços de mercado. Os produtos vendidos provêm principalmente de produção excedentária, séries danificadas, erros de entrega ou liquidações. No entanto, as mercadorias são sempre de qualidade impecável.
+      etape: L'Etape Saint-Martin é um centro de acolhimento aberto todo o ano e que responde à necessidade de alojar os sem-abrigo na cidade de Lausanne. Oferece uma solução de alojamento temporário a qualquer pessoa sem casa. A L'Etape Saint-Martin tem 41 lugares. Está aberto todas as noites das 21:00 às 8:00. Instalações sanitárias apropriadas e produtos básicos de higiene pessoal estão disponíveis para os usuários. Uma refeição é oferecida todas as noites e um lanche todas as manhãs.
+      marmotte: La Marmotte, dirigida pelo Exército de Salvação, recebe até 30 pessoas por noite, todos os dias do ano, das 20h30 às 8h30. Chuveiros e produtos de higiene estão disponíveis para os residentes. Uma refeição é oferecida todas as noites e um lanche todas as manhãs.
+      point_eau: point d'Eau Lausanne é um centro dedicado à saúde e à reintegração das pessoas mais vulneráveis. Todos os anos, o Point d'Eau oferece milhares de serviços de higiene e cuidados médicos, para-médicos e dentários. Emprega uma equipa de catorze pessoas (6 equivalentes a tempo inteiro) apoiada por 160 voluntários (pessoal de recepção, médicos, enfermeiros, quiropodistas, dentistas, etc.).
+      repit: Para se adaptar à situação sanitária, Le Répit assumiu um dos grandes salões do Palais de Beaulieu. Le Répit está aberto todas as noites das 10 às 8 da manhã e já recebeu até 170 pessoas em uma noite.
+      sleep_in: O Sleep-In recebe até 26 pessoas por noite, todos os dias do ano, das 20h30 às 8h00. Estão disponíveis chuveiros e produtos de higiene. Os usuários têm a possibilidade de usar a cozinha à noite para cozinhar, e um lanche é oferecido todas as manhãs.
+      soupe_populaire: A sopa dos pobres é uma estrutura da Fundação Mãe Sofia apoiada pelo Serviço Social de Lausanne (SSL). Aberto todas as noites, assim como às quartas, sextas e domingos ao meio-dia, oferece uma refeição quente, ouvindo e orientando qualquer pessoa que se sinta incondicionalmente necessitada.
+      unisante: Serviço de emergência. O centro presta cuidados nas prisões, bem como a migrantes e pessoas em risco. Também realiza campanhas de prevenção, como a sensibilização de estudantes nos campi de Lausanne, da comunidade LGBTI e de profissionais do sexo.
   show:
     description: 'Descrição:'
     edit: Editar
