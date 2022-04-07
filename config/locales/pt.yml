@@ -147,6 +147,7 @@ pt:
         one: 'Não foi possível registar isto %{model}: 1 erro'
         other: 'Não foi possível registar isto %{model}: %{count} erros'
   general:
+    log_out: "Sair da sessão"
     association: " associações encontradas"
     close: Fechado
     en: English
@@ -174,6 +175,7 @@ pt:
     type_contact: "Contacto"
     type_urgent: "Urgente"
     btn_urgent: "Para esta noite"
+    type_emergency: "Urgente"
   emergency:
     police: "Polícia"
     ambulance: "Ambulância"

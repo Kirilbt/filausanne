@@ -147,6 +147,7 @@ fr:
         one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
         other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
   general:
+    log_out: "Déconnexion"
     association: " associations trouvées"
     close: Fermé
     de: Deutsche
@@ -178,7 +179,7 @@ fr:
     type_emergency: Urgence
     type_sleep: Dormir
     type_contact: "Contact"
-    type_urgent: "Urgente"
+    type_urgent: "Urgent"
     btn_urgent: "Pour ce soir"
   emergency:
     police: "Police"
