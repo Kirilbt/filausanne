@@ -234,7 +234,7 @@ en:
     edit:
       approved: Accept
       back: Discard changes
-      btn_cancel: Refuse request
+      btn_cancel: Cancel request
       cancel: Request canceled
       phone: Phone number
       refused: Request refuse
