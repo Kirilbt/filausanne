@@ -66,18 +66,18 @@
   <div class="collapse navbar-collapse" id="openingHours">
       <% days = t('date.day_names') %>
       <% days.each do |day| %>
-        <% service_day_hours = object.opening_hours.select { |opening| opening.day == day.capitalize } %>
-        <p><%= "#{day} #{service_day_hours.first.opens.strftime('%H:%M')} - #{service_day_hours.last.closes.strftime('%H:%M')}" %></p>
+        <% service_day_hours = object.opening_hours.select { |opening| opening.day == day } %>
+          <% if service_day_hours.length == 0 %>
+            <p><%= "#{day} - #{t('general.close')}" %></p>
+          <% else %>
+            <p><%= "#{day} #{service_day_hours.first.opens.strftime('%H:%M')} - #{service_day_hours.last.closes.strftime('%H:%M')}" %></p>
+          <% end %>
       <% end %>
   </div>
 </div>
 
 <div class="description-show">
   <p><strong><%= t 'show.description' %></strong> <%= object.description %> </p>
-</div>
-
-<div class="services-show">
-  <p><strong><%= t 'show.services' %></strong> Night shelter · Day reception · Barber · Kitchen · Admin </p>
 </div>
 
 <div style="width: 100%; height: 300px;"

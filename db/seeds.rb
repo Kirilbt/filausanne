@@ -193,13 +193,11 @@ Service.create(
   price: 0
 )
 
-OpeningHour.create(day_translations: { fr: "Lundi", en: "Monday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "L'Échelle").id)
-OpeningHour.create(day_translations: { fr: "Mardi", en: "Tuesday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "L'Échelle").id)
-OpeningHour.create(day_translations: { fr: "Mercredi", en: "Wednesday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "L'Échelle").id)
-OpeningHour.create(day_translations: { fr: "Jeudi", en: "Thursday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "L'Échelle").id)
-OpeningHour.create(day_translations: { fr: "Vendredi", en: "Friday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "L'Échelle").id)
-OpeningHour.create(day_translations: { fr: "Samedi", en: "Saturday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "L'Échelle").id)
-OpeningHour.create(day_translations: { fr: "Dimanche", en: "Sunday" }, opens: "09", closes: "18", service_id: Service.find_by(name: "L'Échelle").id)
+jours_count.each do |jour|
+  translations_object = {}
+  locales_strings.each { |locale| translations_object[locale] = I18n.t('date.day_names', locale: locale.to_sym)[jour]}
+  OpeningHour.create(day_translations: translations_object, opens: "09:00", closes: "18:00", service_id: Service.find_by(name: "L'Échelle").id)
+end
 
 echelle_image = URI.open('https://www.rts.ch/rts-online/medias/images/2021/thumbnail/umbo8r-25068364.image?w=640&h=640')
 Service.find_by(name: "L'Échelle").photo.attach(io: echelle_image, filename: 'echelle.png', content_type: 'image/png')
@@ -249,11 +247,11 @@ Service.create(
   price: 0
 )
 
-OpeningHour.create(day_translations: { fr: "Lundi", en: "Monday" }, opens: "14", closes: "20", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Mardi", en: "Tuesday" }, opens: "10", closes: "16", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Mercredi", en: "Wednesday" }, opens: "10", closes: "16", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Jeudi", en: "Thursday" }, opens: "14", closes: "20", service_id: Service.find_by(name: "Point d'Eau").id)
-OpeningHour.create(day_translations: { fr: "Vendredi", en: "Friday" }, opens: "10", closes: "16", service_id: Service.find_by(name: "Point d'Eau").id)
+OpeningHour.create(day_translations: { fr: "lundi", en: "monday", de: "montag", es: "lunes", it: "lunedì", pt: "segunda-feira", ru: "понедельник", uk: "Понеділок" }, opens: "14", closes: "20", service_id: Service.find_by(name: "Point d'Eau").id)
+OpeningHour.create(day_translations: { fr: "mardi", en: "tuesday", de: "dienstag", es: "martes", it: "martedì", pt: "terça-feira", ru: "вторник", uk: "Вівторок" }, opens: "10", closes: "16", service_id: Service.find_by(name: "Point d'Eau").id)
+OpeningHour.create(day_translations: { fr: "mercredi", en: "wednesday", de: "mittwoch", es: "miércoles", it: "mercoledì", pt: "quarta-feira", ru: "среда", uk: "Середа" }, opens: "10", closes: "16", service_id: Service.find_by(name: "Point d'Eau").id)
+OpeningHour.create(day_translations: { fr: "jeudi", en: "thursday", de: "donnerstag", es: "jueves", it: "giovedì", pt: "quinta-feira", ru: "четверг", uk: "четвер" }, opens: "14", closes: "20", service_id: Service.find_by(name: "Point d'Eau").id)
+OpeningHour.create(day_translations: { fr: "vendredi", en: "friday", de: "freitag", es: "viernes", it: "venerdì", pt: "sexta-feira", ru: "пятница", uk: "п'ятниця" }, opens: "10", closes: "16", service_id: Service.find_by(name: "Point d'Eau").id)
 
 point_eau_image = URI.open('https://www.rts.ch/2021/02/10/20/33/11964631.image/16x9/scale/width/624')
 Service.find_by(name: "Point d'Eau").photo.attach(io: point_eau_image, filename: 'pointeau.png', content_type: 'image/png')
