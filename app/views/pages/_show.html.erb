@@ -58,7 +58,7 @@
 </div>
 
 <div class="phone-show">
-  <p><strong> <%= t 'show.telephone' %></strong> <%= object.phone_number %></p>
+  <p><strong> <%= t 'show.telephone' %></strong> <%= link_to object.phone_number, "tel:#{object.phone_number}" %> </p>
 </div>
 
 <div class="opening-show">
