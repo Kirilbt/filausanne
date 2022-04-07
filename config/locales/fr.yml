@@ -262,7 +262,7 @@ fr:
       title_admin: Réservations
     new:
       btn: "Réserver"
-      text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse dans les plus brefs délais.
+      text: "Votre demande va être examinée par le bureau des réservations. Vous recevrez une réponse par sms dans les plus brefs délais.
       Le bureau prend en compte votre préférence, mais en cas d’indisponibilité il vous attribuera un autre hébergement."
       text-urgence: "Pour un hébergement d’urgence, merci de vous diriger directement à l’association dans les horaires proposés."
       text-label: "Vous pouvez changer l’association de votre préférence."
