@@ -23,7 +23,7 @@
         <h2><%= @soupe.name %></h2>
         <p> <%= @soupe.address%></p>
         <span class="card-service-type <%= @soupe.type.downcase %>"><%= @soupe.type %></span>
-        <% day_open = @soupe.opening_hours.select { |hours|  hours.day.capitalize == (Date.today.strftime("%A")) } %>
+        <% day_open = @soupe.opening_hours.select { |hours|  hours.day_en.capitalize == (Date.today.strftime("%A")) } %>
         <% hour_open = day_open.select { |day| Time.now.strftime("%H:%M") > day.opens.strftime("%H:%M") && Time.now.strftime("%H:%M") < day.closes.strftime("%H:%M") }  %>
         <% if hour_open == [] %>
           <span id="close"> <%= t 'general.close' %> </span>
@@ -45,7 +45,7 @@
         <h2><%= @unisante.name %></h2>
         <p> <%= @unisante.address%></p>
         <span class="card-service-type <%= @unisante.type.downcase %>"><%= @unisante.type %></span>
-        <% day_open = @unisante.opening_hours.select { |hours|  hours.day.capitalize == (Date.today.strftime("%A")) } %>
+        <% day_open = @unisante.opening_hours.select { |hours|  hours.day_en.capitalize == (Date.today.strftime("%A")) } %>
         <% hour_open = day_open.select { |day| Time.now.strftime("%H:%M") > day.opens.strftime("%H:%M") && Time.now.strftime("%H:%M") < day.closes.strftime("%H:%M") }  %>
         <% if hour_open == [] %>
           <span id="close"> <%= t 'general.close' %> </span>
