@@ -3,10 +3,9 @@
     <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "new-logo-fil.svg" %>
     <% end %>
-
     <div class="nav-item dropdown">
       <a href="#" class="nav-item language" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fa fa-light fa-globe"></i> <%= params[:locale] ? (I18n.t "general.#{params[:locale]}", locale: :fr) : (I18n.t "general.#{I18n.default_locale}") %>
+        <%= image_tag "globe.svg", class: "globe-icon" %> <%= params[:locale] ? (I18n.t "general.#{params[:locale]}", locale: :fr) : (I18n.t "general.#{I18n.default_locale}") %>
       </a>
       <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
           <% locales = I18n.available_locales.select { |locale| locale.to_s != params[:locale] } %>
