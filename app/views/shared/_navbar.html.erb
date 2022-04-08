@@ -39,17 +39,15 @@
             <% end %>
           </li>
           <li class="nav-item dropdown">
-            <% if current_user.photo.key? %>
-              <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <% else %>
-              <div class="info-user">
+            <div class="info-user">
+              <% if current_user.photo.key? %>
+                <%= cl_image_tag current_user.photo.key, class: "avatar" %>
+                <%= link_to t('general.log_out'), destroy_user_session_path, method: :delete, class: "nav-link" %>
+              <% else %>
                 <%= image_tag "avatar_default.svg", class: "avatar" %>
                 <%= link_to t('general.log_out'), destroy_user_session_path, method: :delete, class: "nav-link" %>
-              </div>
-            <% end %>
-            <%# <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to t('general.log_out'), destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            <%# </div> %>
+              <% end %>
+            </div>
           </li>
         <% else %>
           <li class="nav-item">
