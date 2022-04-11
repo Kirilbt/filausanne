@@ -6,7 +6,7 @@ FIL is a mobile website that helps you find social centers in Lausanne, Switzerl
 
 ### The challenge
 
-It's currently difficult for people in need to find information about social infrastructures in Lausanne. The information is often hard to understand as it's not in their native language and it's found on various printed medias which are not always up to date or scattered across the web. FIL is here to gather all the information in one place and makes it easy for everyone to access it.
+It's currently difficult for people in need to find information about social infrastructures in Lausanne. The information is either found on various printed medias which are not always up to date or scattered across the web. On top of that, language can be a barrier for most of these people. FIL is here to gather all the information in one place and makes it easy for everyone to access it.
 
 As a user, you are able to:
 
@@ -15,7 +15,7 @@ As a user, you are able to:
 - View detailed information about each center (Description, opening hours, location, contact infos...)
 - Find local emergency numbers
 - Make a reservation request for a night shelter based on your status
-- Get an sms update in your preferred language on your phone when your request is updated
+- Get an sms alert on your phone when your request is updated
 
 As an admin, you are able to:
 
