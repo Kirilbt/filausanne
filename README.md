@@ -35,7 +35,7 @@ As an admin, you are able to:
 
 ## Authors
 
-[Pedro Soares](https://github.com/pedroslvieira)
-[Patrick Correia de Almeida](https://github.com/PatrickCAlmeida)
-[Kiril Bernard Tucker](https://github.com/Kirilbt)
+- [Pedro Soares](https://github.com/pedroslvieira)
+- [Patrick Correia de Almeida](https://github.com/PatrickCAlmeida)
+- [Kiril Bernard Tucker](https://github.com/Kirilbt)
 
