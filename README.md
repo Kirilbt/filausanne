@@ -28,7 +28,7 @@ As an admin, you are able to:
 - Update the details of each center
 - Manage reservation requests
 
-View the project [here](https://filausanne.herokuapp.com/) (Mobile ony)
+View the project [here](https://filausanne.herokuapp.com/) (Mobile only)
 
 ## Our process <a name="process"></a>
 
