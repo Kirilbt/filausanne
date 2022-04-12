@@ -4,7 +4,13 @@ FIL is a mobile website that helps you find social centers in Lausanne, Switzerl
 
 ## Overview
 
-### The challenge
+# Table of Contents
+- [The challenge](#challenge)
+- [Our process](#process)
+  - [Built with](#builtwith)
+- [Authors](#authors)
+
+### The challenge <a name="challenge"></a>
 
 It's currently difficult for people in need to find information about social infrastructures in Lausanne. The information is either found on various printed medias which are not always up to date or scattered across the web. On top of that, language can be a barrier for most of these people. FIL is here to gather all the information in one place and makes it easy for everyone to access it.
 
@@ -22,11 +28,34 @@ As an admin, you are able to:
 - Update the details of each center
 - Manage reservation requests
 
-### Built with
+View the project [here](https://filausanne.herokuapp.com/) (Mobile ony)
+
+## Our process <a name="process"></a>
+
+- Product Design
+  - User Stories
+  - DB Schema
+  - Routes
+  - Mockup
+- Building
+  - Rails
+  - Pair programing
+  - Models & Controllers
+  - Translations
+  - Geolocalization
+  - SMS notification system
+  - Images upload
+  - Authentication
+- Project Management
+  - Kanban Board
+  - Daily Standups
+  - Team Slack Channel
+
+### Built with <a name="builtwith"></a>
 
 - Ruby on rails
 - HTML, CSS, Javascript
-- i18n
+- i18n / DeepL API
 - Mapbox
 - Cloudinary
 - Heroku
