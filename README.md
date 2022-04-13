@@ -2,6 +2,9 @@
 
 FIL is a mobile website that helps you find social centers in Lausanne, Switzerland. It was created in 2 weeks during our fullstack dev bootcamp at [Le Wagon](https://www.lewagon.com/)
 
+![fil-screenshots](https://user-images.githubusercontent.com/98451613/163122226-443ba58c-7317-4f7b-9bbf-53e65e950ffc.png)
+
+
 ## Overview
 
 # Table of Contents
